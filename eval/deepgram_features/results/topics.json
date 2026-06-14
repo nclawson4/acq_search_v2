@@ -1,0 +1,1611 @@
+{
+  "feature": "topics",
+  "alpha": 0.25,
+  "summary": {
+    "target": {
+      "n": 12,
+      "ndcg_base_mean": 0.0443,
+      "ndcg_var_mean": 0.0665,
+      "ndcg_delta_mean": 0.0222,
+      "mean_label_base": 0.025,
+      "mean_label_var": 0.0167,
+      "mean_label_delta": -0.0083,
+      "top1_wins": 1,
+      "top1_losses": 0,
+      "top1_net": 1,
+      "confounder_fp_rate": 0.0,
+      "latency_delta_ms_mean": 7506
+    },
+    "confounder": {
+      "n": 4,
+      "ndcg_base_mean": 0.209,
+      "ndcg_var_mean": 0.25,
+      "ndcg_delta_mean": 0.041,
+      "mean_label_base": 0.25,
+      "mean_label_var": 0.25,
+      "mean_label_delta": 0.0,
+      "top1_wins": 0,
+      "top1_losses": 0,
+      "top1_net": 0,
+      "confounder_fp_rate": 0.75,
+      "latency_delta_ms_mean": 174
+    },
+    "regression": {
+      "n": 4,
+      "ndcg_base_mean": 0.2417,
+      "ndcg_var_mean": 0.1795,
+      "ndcg_delta_mean": -0.0621,
+      "mean_label_base": 0.45,
+      "mean_label_var": 0.35,
+      "mean_label_delta": -0.1,
+      "top1_wins": 0,
+      "top1_losses": 1,
+      "top1_net": -1,
+      "confounder_fp_rate": 0.0,
+      "latency_delta_ms_mean": 181
+    },
+    "verdict": "NO-SHIP"
+  },
+  "per_query": [
+    {
+      "q": "moments about customer retention strategy",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 12047,
+      "latency_var_ms": 100155,
+      "base_top": [
+        {
+          "idx": 5,
+          "video": "-j8_YCWZ05Q",
+          "scene": 3,
+          "label": 0
+        },
+        {
+          "idx": 463,
+          "video": "3fsJFUvA6Ts",
+          "scene": 12,
+          "label": 0
+        },
+        {
+          "idx": 4082,
+          "video": "Jmkq5RLjm0U",
+          "scene": 184,
+          "label": 0
+        },
+        {
+          "idx": 4076,
+          "video": "Jmkq5RLjm0U",
+          "scene": 178,
+          "label": 0
+        },
+        {
+          "idx": 6258,
+          "video": "MH-IMJxbUY4",
+          "scene": 29,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 14120,
+          "video": "oJsLMjaspG0",
+          "scene": 383,
+          "label": 0
+        },
+        {
+          "idx": 4138,
+          "video": "Jmkq5RLjm0U",
+          "scene": 240,
+          "label": 0
+        },
+        {
+          "idx": 1987,
+          "video": "9OkBN4uor5M",
+          "scene": 225,
+          "label": 0
+        },
+        {
+          "idx": 469,
+          "video": "3fsJFUvA6Ts",
+          "scene": 16,
+          "label": 0
+        },
+        {
+          "idx": 4866,
+          "video": "Jmkq5RLjm0U",
+          "scene": 968,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "examples of pricing psychology",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 217,
+      "latency_var_ms": 421,
+      "base_top": [
+        {
+          "idx": 4096,
+          "video": "Jmkq5RLjm0U",
+          "scene": 198,
+          "label": 0
+        },
+        {
+          "idx": 10740,
+          "video": "ZuJryiwxjDw",
+          "scene": 76,
+          "label": 0
+        },
+        {
+          "idx": 7983,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 137,
+          "label": 0
+        },
+        {
+          "idx": 7981,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 135,
+          "label": 0
+        },
+        {
+          "idx": 11933,
+          "video": "cgsWQd5EM1k",
+          "scene": 12,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 15275,
+          "video": "vbcelc94VRQ",
+          "scene": 57,
+          "label": 0
+        },
+        {
+          "idx": 7981,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 135,
+          "label": 0
+        },
+        {
+          "idx": 7975,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 129,
+          "label": 0
+        },
+        {
+          "idx": 4096,
+          "video": "Jmkq5RLjm0U",
+          "scene": 198,
+          "label": 0
+        },
+        {
+          "idx": 7978,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 132,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "discussion of company culture",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 214,
+      "latency_var_ms": 394,
+      "base_top": [
+        {
+          "idx": 13692,
+          "video": "luvQRkxM-pQ",
+          "scene": 218,
+          "label": 0
+        },
+        {
+          "idx": 1779,
+          "video": "9OkBN4uor5M",
+          "scene": 17,
+          "label": 0
+        },
+        {
+          "idx": 10166,
+          "video": "Vx_sSMAJjNg",
+          "scene": 64,
+          "label": 0
+        },
+        {
+          "idx": 9502,
+          "video": "RWQHNc1u-cE",
+          "scene": 183,
+          "label": 0
+        },
+        {
+          "idx": 15007,
+          "video": "u3H7CfpfwHQ",
+          "scene": 313,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 9965,
+          "video": "VR2RLVBiMe8",
+          "scene": 139,
+          "label": 0
+        },
+        {
+          "idx": 3942,
+          "video": "Jmkq5RLjm0U",
+          "scene": 44,
+          "label": 0
+        },
+        {
+          "idx": 12900,
+          "video": "hHkdbr6_JJs",
+          "scene": 10,
+          "label": 0
+        },
+        {
+          "idx": 2715,
+          "video": "CqtFlzNivuI",
+          "scene": 58,
+          "label": 0
+        },
+        {
+          "idx": 7755,
+          "video": "NqtWADqiMCo",
+          "scene": 79,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "leadership during conflict or disagreement",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 206,
+      "latency_var_ms": 380,
+      "base_top": [
+        {
+          "idx": 10183,
+          "video": "Vx_sSMAJjNg",
+          "scene": 81,
+          "label": 0
+        },
+        {
+          "idx": 13061,
+          "video": "hT4ilfJVZeQ",
+          "scene": 122,
+          "label": 0
+        },
+        {
+          "idx": 13057,
+          "video": "hT4ilfJVZeQ",
+          "scene": 118,
+          "label": 0
+        },
+        {
+          "idx": 13202,
+          "video": "hT4ilfJVZeQ",
+          "scene": 263,
+          "label": 0
+        },
+        {
+          "idx": 10453,
+          "video": "ZC0RgDJ3J7Q",
+          "scene": 87,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 13061,
+          "video": "hT4ilfJVZeQ",
+          "scene": 122,
+          "label": 0
+        },
+        {
+          "idx": 23,
+          "video": "-j8_YCWZ05Q",
+          "scene": 16,
+          "label": 0
+        },
+        {
+          "idx": 13187,
+          "video": "hT4ilfJVZeQ",
+          "scene": 248,
+          "label": 0
+        },
+        {
+          "idx": 2225,
+          "video": "A_tx40lNpf8",
+          "scene": 20,
+          "label": 0
+        },
+        {
+          "idx": 8436,
+          "video": "OWorFLIbRoo",
+          "scene": 105,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "managing investor relationships",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 203,
+      "latency_var_ms": 381,
+      "base_top": [
+        {
+          "idx": 8425,
+          "video": "OWorFLIbRoo",
+          "scene": 94,
+          "label": 0
+        },
+        {
+          "idx": 9993,
+          "video": "VR2RLVBiMe8",
+          "scene": 167,
+          "label": 0
+        },
+        {
+          "idx": 11059,
+          "video": "_Kpi8HgzKw8",
+          "scene": 153,
+          "label": 0
+        },
+        {
+          "idx": 11048,
+          "video": "_Kpi8HgzKw8",
+          "scene": 142,
+          "label": 0
+        },
+        {
+          "idx": 10113,
+          "video": "Vx_sSMAJjNg",
+          "scene": 11,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 9775,
+          "video": "UMiAzkNEM4U",
+          "scene": 54,
+          "label": 0
+        },
+        {
+          "idx": 8333,
+          "video": "OWorFLIbRoo",
+          "scene": 2,
+          "label": 0
+        },
+        {
+          "idx": 10113,
+          "video": "Vx_sSMAJjNg",
+          "scene": 11,
+          "label": 0
+        },
+        {
+          "idx": 3775,
+          "video": "ISQkh8bu6EU",
+          "scene": 33,
+          "label": 0
+        },
+        {
+          "idx": 9783,
+          "video": "UMiAzkNEM4U",
+          "scene": 62,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "burnout and recovery for founders",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 205,
+      "latency_var_ms": 385,
+      "base_top": [
+        {
+          "idx": 13917,
+          "video": "oJsLMjaspG0",
+          "scene": 180,
+          "label": 0
+        },
+        {
+          "idx": 15313,
+          "video": "vbcelc94VRQ",
+          "scene": 95,
+          "label": 0
+        },
+        {
+          "idx": 8590,
+          "video": "OcH0864CLPs",
+          "scene": 143,
+          "label": 0
+        },
+        {
+          "idx": 9284,
+          "video": "RJNDXnboXd8",
+          "scene": 227,
+          "label": 0
+        },
+        {
+          "idx": 14854,
+          "video": "u3H7CfpfwHQ",
+          "scene": 160,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 11533,
+          "video": "aMxcZY6aIFU",
+          "scene": 273,
+          "label": 0
+        },
+        {
+          "idx": 4449,
+          "video": "Jmkq5RLjm0U",
+          "scene": 551,
+          "label": 0
+        },
+        {
+          "idx": 9202,
+          "video": "RJNDXnboXd8",
+          "scene": 145,
+          "label": 0
+        },
+        {
+          "idx": 15313,
+          "video": "vbcelc94VRQ",
+          "scene": 95,
+          "label": 0
+        },
+        {
+          "idx": 9284,
+          "video": "RJNDXnboXd8",
+          "scene": 227,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "negotiation tactics in sales calls",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 204,
+      "latency_var_ms": 380,
+      "base_top": [
+        {
+          "idx": 6469,
+          "video": "MH-IMJxbUY4",
+          "scene": 240,
+          "label": 0
+        },
+        {
+          "idx": 6471,
+          "video": "MH-IMJxbUY4",
+          "scene": 242,
+          "label": 0
+        },
+        {
+          "idx": 6470,
+          "video": "MH-IMJxbUY4",
+          "scene": 241,
+          "label": 0
+        },
+        {
+          "idx": 7855,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 9,
+          "label": 0
+        },
+        {
+          "idx": 9220,
+          "video": "RJNDXnboXd8",
+          "scene": 163,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 6486,
+          "video": "MH-IMJxbUY4",
+          "scene": 257,
+          "label": 0
+        },
+        {
+          "idx": 6484,
+          "video": "MH-IMJxbUY4",
+          "scene": 255,
+          "label": 0
+        },
+        {
+          "idx": 6485,
+          "video": "MH-IMJxbUY4",
+          "scene": 256,
+          "label": 0
+        },
+        {
+          "idx": 2173,
+          "video": "A248pGXTSoY",
+          "scene": 41,
+          "label": 0
+        },
+        {
+          "idx": 5252,
+          "video": "Jmkq5RLjm0U",
+          "scene": 1354,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "remote work team dynamics",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 202,
+      "latency_var_ms": 378,
+      "base_top": [
+        {
+          "idx": 3229,
+          "video": "FQOlC-3SUF4",
+          "scene": 27,
+          "label": 0
+        },
+        {
+          "idx": 3751,
+          "video": "ISQkh8bu6EU",
+          "scene": 9,
+          "label": 0
+        },
+        {
+          "idx": 3760,
+          "video": "ISQkh8bu6EU",
+          "scene": 18,
+          "label": 0
+        },
+        {
+          "idx": 15153,
+          "video": "u3H7CfpfwHQ",
+          "scene": 459,
+          "label": 0
+        },
+        {
+          "idx": 14436,
+          "video": "rMJIOK_FgJk",
+          "scene": 11,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 3760,
+          "video": "ISQkh8bu6EU",
+          "scene": 18,
+          "label": 0
+        },
+        {
+          "idx": 9202,
+          "video": "RJNDXnboXd8",
+          "scene": 145,
+          "label": 0
+        },
+        {
+          "idx": 23,
+          "video": "-j8_YCWZ05Q",
+          "scene": 16,
+          "label": 0
+        },
+        {
+          "idx": 13061,
+          "video": "hT4ilfJVZeQ",
+          "scene": 122,
+          "label": 0
+        },
+        {
+          "idx": 6814,
+          "video": "N5MExtki_VI",
+          "scene": 31,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "choosing the right ad channel",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 204,
+      "latency_var_ms": 379,
+      "base_top": [
+        {
+          "idx": 6310,
+          "video": "MH-IMJxbUY4",
+          "scene": 81,
+          "label": 0
+        },
+        {
+          "idx": 6262,
+          "video": "MH-IMJxbUY4",
+          "scene": 33,
+          "label": 0
+        },
+        {
+          "idx": 8018,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 172,
+          "label": 0
+        },
+        {
+          "idx": 8017,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 171,
+          "label": 0
+        },
+        {
+          "idx": 8062,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 216,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 8062,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 216,
+          "label": 0
+        },
+        {
+          "idx": 6335,
+          "video": "MH-IMJxbUY4",
+          "scene": 106,
+          "label": 0
+        },
+        {
+          "idx": 8083,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 237,
+          "label": 0
+        },
+        {
+          "idx": 2225,
+          "video": "A_tx40lNpf8",
+          "scene": 20,
+          "label": 0
+        },
+        {
+          "idx": 6262,
+          "video": "MH-IMJxbUY4",
+          "scene": 33,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "personal finance discipline for founders",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 202,
+      "latency_var_ms": 374,
+      "base_top": [
+        {
+          "idx": 12234,
+          "video": "e1awpbZxVnw",
+          "scene": 30,
+          "label": 0
+        },
+        {
+          "idx": 10991,
+          "video": "_Kpi8HgzKw8",
+          "scene": 85,
+          "label": 0
+        },
+        {
+          "idx": 4104,
+          "video": "Jmkq5RLjm0U",
+          "scene": 206,
+          "label": 0
+        },
+        {
+          "idx": 978,
+          "video": "6BQ3whjWG3M",
+          "scene": 52,
+          "label": 0
+        },
+        {
+          "idx": 8649,
+          "video": "PRFzRtzhZrw",
+          "scene": 9,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 12234,
+          "video": "e1awpbZxVnw",
+          "scene": 30,
+          "label": 0
+        },
+        {
+          "idx": 10991,
+          "video": "_Kpi8HgzKw8",
+          "scene": 85,
+          "label": 0
+        },
+        {
+          "idx": 8083,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 237,
+          "label": 0
+        },
+        {
+          "idx": 4449,
+          "video": "Jmkq5RLjm0U",
+          "scene": 551,
+          "label": 0
+        },
+        {
+          "idx": 978,
+          "video": "6BQ3whjWG3M",
+          "scene": 52,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "scaling operations through systems and SOPs",
+      "cat": "target",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 275,
+      "latency_var_ms": 450,
+      "base_top": [
+        {
+          "idx": 554,
+          "video": "3fsJFUvA6Ts",
+          "scene": 69,
+          "label": 0
+        },
+        {
+          "idx": 15309,
+          "video": "vbcelc94VRQ",
+          "scene": 91,
+          "label": 0
+        },
+        {
+          "idx": 10220,
+          "video": "Vx_sSMAJjNg",
+          "scene": 118,
+          "label": 0
+        },
+        {
+          "idx": 2244,
+          "video": "A_tx40lNpf8",
+          "scene": 39,
+          "label": 0
+        },
+        {
+          "idx": 14296,
+          "video": "qsXxckCbci0",
+          "scene": 48,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 14630,
+          "video": "sL16tsGafcQ",
+          "scene": 79,
+          "label": 0
+        },
+        {
+          "idx": 8157,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 311,
+          "label": 0
+        },
+        {
+          "idx": 12334,
+          "video": "fr78adfAnuA",
+          "scene": 44,
+          "label": 0
+        },
+        {
+          "idx": 6933,
+          "video": "N5MExtki_VI",
+          "scene": 150,
+          "label": 0
+        },
+        {
+          "idx": 554,
+          "video": "3fsJFUvA6Ts",
+          "scene": 69,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "what to do when growth stalls",
+      "cat": "target",
+      "ndcg_base": 0.5317,
+      "ndcg_var": 0.7977,
+      "ndcg_delta": 0.266,
+      "mean_base": 0.3,
+      "mean_var": 0.2,
+      "mean_delta": -0.1,
+      "top1_win": 1,
+      "confounder_fp": 0,
+      "latency_base_ms": 207,
+      "latency_var_ms": 381,
+      "base_top": [
+        {
+          "idx": 14416,
+          "video": "qsXxckCbci0",
+          "scene": 168,
+          "label": 0
+        },
+        {
+          "idx": 14401,
+          "video": "qsXxckCbci0",
+          "scene": 153,
+          "label": 0
+        },
+        {
+          "idx": 14327,
+          "video": "qsXxckCbci0",
+          "scene": 79,
+          "label": 0
+        },
+        {
+          "idx": 9783,
+          "video": "UMiAzkNEM4U",
+          "scene": 62,
+          "label": 1
+        },
+        {
+          "idx": 8443,
+          "video": "OWorFLIbRoo",
+          "scene": 112,
+          "label": 1
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 9783,
+          "video": "UMiAzkNEM4U",
+          "scene": 62,
+          "label": 1
+        },
+        {
+          "idx": 14380,
+          "video": "qsXxckCbci0",
+          "scene": 132,
+          "label": 0
+        },
+        {
+          "idx": 14346,
+          "video": "qsXxckCbci0",
+          "scene": 98,
+          "label": 0
+        },
+        {
+          "idx": 540,
+          "video": "3fsJFUvA6Ts",
+          "scene": 60,
+          "label": 0
+        },
+        {
+          "idx": 2287,
+          "video": "A_tx40lNpf8",
+          "scene": 82,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "show me the funny animated intro",
+      "cat": "confounder",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 1,
+      "latency_base_ms": 205,
+      "latency_var_ms": 380,
+      "base_top": [
+        {
+          "idx": 4601,
+          "video": "Jmkq5RLjm0U",
+          "scene": 703,
+          "label": 0
+        },
+        {
+          "idx": 4596,
+          "video": "Jmkq5RLjm0U",
+          "scene": 698,
+          "label": 0
+        },
+        {
+          "idx": 8684,
+          "video": "PRFzRtzhZrw",
+          "scene": 44,
+          "label": 0
+        },
+        {
+          "idx": 15577,
+          "video": "yb2cLMMuMdQ",
+          "scene": 10,
+          "label": 0
+        },
+        {
+          "idx": 1354,
+          "video": "6by3XnwdsMQ",
+          "scene": 213,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 4261,
+          "video": "Jmkq5RLjm0U",
+          "scene": 363,
+          "label": 0
+        },
+        {
+          "idx": 14631,
+          "video": "sL16tsGafcQ",
+          "scene": 80,
+          "label": 0
+        },
+        {
+          "idx": 9542,
+          "video": "Rccmhnt1ur4",
+          "scene": 4,
+          "label": 0
+        },
+        {
+          "idx": 4819,
+          "video": "Jmkq5RLjm0U",
+          "scene": 921,
+          "label": 0
+        },
+        {
+          "idx": 11324,
+          "video": "aMxcZY6aIFU",
+          "scene": 64,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "podcast set with two chairs and a table",
+      "cat": "confounder",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 1,
+      "latency_base_ms": 220,
+      "latency_var_ms": 396,
+      "base_top": [
+        {
+          "idx": 243,
+          "video": "0iDZ8UDvlWU",
+          "scene": 83,
+          "label": 0
+        },
+        {
+          "idx": 12525,
+          "video": "g3QTLRlmevc",
+          "scene": 143,
+          "label": 0
+        },
+        {
+          "idx": 12533,
+          "video": "g3QTLRlmevc",
+          "scene": 151,
+          "label": 0
+        },
+        {
+          "idx": 12514,
+          "video": "g3QTLRlmevc",
+          "scene": 132,
+          "label": 0
+        },
+        {
+          "idx": 12516,
+          "video": "g3QTLRlmevc",
+          "scene": 134,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 12525,
+          "video": "g3QTLRlmevc",
+          "scene": 143,
+          "label": 0
+        },
+        {
+          "idx": 12514,
+          "video": "g3QTLRlmevc",
+          "scene": 132,
+          "label": 0
+        },
+        {
+          "idx": 12434,
+          "video": "g3QTLRlmevc",
+          "scene": 52,
+          "label": 0
+        },
+        {
+          "idx": 12518,
+          "video": "g3QTLRlmevc",
+          "scene": 136,
+          "label": 0
+        },
+        {
+          "idx": 12421,
+          "video": "g3QTLRlmevc",
+          "scene": 39,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "high-energy hype moments for a reel",
+      "cat": "confounder",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 1,
+      "latency_base_ms": 203,
+      "latency_var_ms": 380,
+      "base_top": [
+        {
+          "idx": 5108,
+          "video": "Jmkq5RLjm0U",
+          "scene": 1210,
+          "label": 0
+        },
+        {
+          "idx": 5105,
+          "video": "Jmkq5RLjm0U",
+          "scene": 1207,
+          "label": 0
+        },
+        {
+          "idx": 10530,
+          "video": "ZC0RgDJ3J7Q",
+          "scene": 164,
+          "label": 0
+        },
+        {
+          "idx": 4574,
+          "video": "Jmkq5RLjm0U",
+          "scene": 676,
+          "label": 0
+        },
+        {
+          "idx": 2626,
+          "video": "BZrgkgCF79g",
+          "scene": 291,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 2319,
+          "video": "A_tx40lNpf8",
+          "scene": 114,
+          "label": 0
+        },
+        {
+          "idx": 583,
+          "video": "3fsJFUvA6Ts",
+          "scene": 85,
+          "label": 0
+        },
+        {
+          "idx": 4450,
+          "video": "Jmkq5RLjm0U",
+          "scene": 552,
+          "label": 0
+        },
+        {
+          "idx": 2266,
+          "video": "A_tx40lNpf8",
+          "scene": 61,
+          "label": 0
+        },
+        {
+          "idx": 5252,
+          "video": "Jmkq5RLjm0U",
+          "scene": 1354,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "first three minutes of any video",
+      "cat": "confounder",
+      "ndcg_base": 0.8359,
+      "ndcg_var": 1.0,
+      "ndcg_delta": 0.1641,
+      "mean_base": 1.0,
+      "mean_var": 1.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 208,
+      "latency_var_ms": 378,
+      "base_top": [
+        {
+          "idx": 4310,
+          "video": "Jmkq5RLjm0U",
+          "scene": 412,
+          "label": 1
+        },
+        {
+          "idx": 15610,
+          "video": "yb2cLMMuMdQ",
+          "scene": 43,
+          "label": 1
+        },
+        {
+          "idx": 15567,
+          "video": "yb2cLMMuMdQ",
+          "scene": 0,
+          "label": 2
+        },
+        {
+          "idx": 4726,
+          "video": "Jmkq5RLjm0U",
+          "scene": 828,
+          "label": 1
+        },
+        {
+          "idx": 4741,
+          "video": "Jmkq5RLjm0U",
+          "scene": 843,
+          "label": 1
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 4313,
+          "video": "Jmkq5RLjm0U",
+          "scene": 415,
+          "label": 1
+        },
+        {
+          "idx": 14305,
+          "video": "qsXxckCbci0",
+          "scene": 57,
+          "label": 1
+        },
+        {
+          "idx": 14348,
+          "video": "qsXxckCbci0",
+          "scene": 100,
+          "label": 1
+        },
+        {
+          "idx": 4861,
+          "video": "Jmkq5RLjm0U",
+          "scene": 963,
+          "label": 1
+        },
+        {
+          "idx": 2275,
+          "video": "A_tx40lNpf8",
+          "scene": 70,
+          "label": 1
+        }
+      ]
+    },
+    {
+      "q": "Leila in podcast format",
+      "cat": "regression",
+      "ndcg_base": 0.9667,
+      "ndcg_var": 0.7182,
+      "ndcg_delta": -0.2485,
+      "mean_base": 1.8,
+      "mean_var": 1.4,
+      "mean_delta": -0.4,
+      "top1_win": -1,
+      "confounder_fp": 0,
+      "latency_base_ms": 201,
+      "latency_var_ms": 376,
+      "base_top": [
+        {
+          "idx": 5893,
+          "video": "LCc-wecNPKg",
+          "scene": 198,
+          "label": 2
+        },
+        {
+          "idx": 2862,
+          "video": "DVtuTp3ykcA",
+          "scene": 124,
+          "label": 2
+        },
+        {
+          "idx": 5894,
+          "video": "LCc-wecNPKg",
+          "scene": 199,
+          "label": 2
+        },
+        {
+          "idx": 2341,
+          "video": "BZrgkgCF79g",
+          "scene": 6,
+          "label": 0
+        },
+        {
+          "idx": 13075,
+          "video": "hT4ilfJVZeQ",
+          "scene": 136,
+          "label": 2
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 2341,
+          "video": "BZrgkgCF79g",
+          "scene": 6,
+          "label": 0
+        },
+        {
+          "idx": 11848,
+          "video": "cXytK82N93Y",
+          "scene": 269,
+          "label": 2
+        },
+        {
+          "idx": 2385,
+          "video": "BZrgkgCF79g",
+          "scene": 50,
+          "label": 0
+        },
+        {
+          "idx": 7903,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 57,
+          "label": 0
+        },
+        {
+          "idx": 6757,
+          "video": "Msk6CwtDrYQ",
+          "scene": 181,
+          "label": 2
+        }
+      ]
+    },
+    {
+      "q": "moments where the talking head is animated",
+      "cat": "regression",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 204,
+      "latency_var_ms": 397,
+      "base_top": [
+        {
+          "idx": 4336,
+          "video": "Jmkq5RLjm0U",
+          "scene": 438,
+          "label": 0
+        },
+        {
+          "idx": 10086,
+          "video": "VR2RLVBiMe8",
+          "scene": 260,
+          "label": 0
+        },
+        {
+          "idx": 4338,
+          "video": "Jmkq5RLjm0U",
+          "scene": 440,
+          "label": 0
+        },
+        {
+          "idx": 666,
+          "video": "4vxWJUx32Rw",
+          "scene": 26,
+          "label": 0
+        },
+        {
+          "idx": 12039,
+          "video": "cgsWQd5EM1k",
+          "scene": 118,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 10788,
+          "video": "ZuJryiwxjDw",
+          "scene": 124,
+          "label": 0
+        },
+        {
+          "idx": 9202,
+          "video": "RJNDXnboXd8",
+          "scene": 145,
+          "label": 0
+        },
+        {
+          "idx": 4312,
+          "video": "Jmkq5RLjm0U",
+          "scene": 414,
+          "label": 0
+        },
+        {
+          "idx": 4336,
+          "video": "Jmkq5RLjm0U",
+          "scene": 438,
+          "label": 0
+        },
+        {
+          "idx": 6572,
+          "video": "MZPVPCIeUpg",
+          "scene": 34,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "scenes with two speakers in dialogue",
+      "cat": "regression",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 216,
+      "latency_var_ms": 398,
+      "base_top": [
+        {
+          "idx": 4356,
+          "video": "Jmkq5RLjm0U",
+          "scene": 458,
+          "label": 0
+        },
+        {
+          "idx": 4652,
+          "video": "Jmkq5RLjm0U",
+          "scene": 754,
+          "label": 0
+        },
+        {
+          "idx": 9910,
+          "video": "VR2RLVBiMe8",
+          "scene": 84,
+          "label": 0
+        },
+        {
+          "idx": 9482,
+          "video": "RWQHNc1u-cE",
+          "scene": 163,
+          "label": 0
+        },
+        {
+          "idx": 9217,
+          "video": "RJNDXnboXd8",
+          "scene": 160,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 4384,
+          "video": "Jmkq5RLjm0U",
+          "scene": 486,
+          "label": 0
+        },
+        {
+          "idx": 4312,
+          "video": "Jmkq5RLjm0U",
+          "scene": 414,
+          "label": 0
+        },
+        {
+          "idx": 13061,
+          "video": "hT4ilfJVZeQ",
+          "scene": 122,
+          "label": 0
+        },
+        {
+          "idx": 4533,
+          "video": "Jmkq5RLjm0U",
+          "scene": 635,
+          "label": 0
+        },
+        {
+          "idx": 4584,
+          "video": "Jmkq5RLjm0U",
+          "scene": 686,
+          "label": 0
+        }
+      ]
+    },
+    {
+      "q": "videos uploaded in the last 30 days",
+      "cat": "regression",
+      "ndcg_base": 0.0,
+      "ndcg_var": 0.0,
+      "ndcg_delta": 0.0,
+      "mean_base": 0.0,
+      "mean_var": 0.0,
+      "mean_delta": 0.0,
+      "top1_win": 0,
+      "confounder_fp": 0,
+      "latency_base_ms": 216,
+      "latency_var_ms": 390,
+      "base_top": [
+        {
+          "idx": 4310,
+          "video": "Jmkq5RLjm0U",
+          "scene": 412,
+          "label": 0
+        },
+        {
+          "idx": 1055,
+          "video": "6BQ3whjWG3M",
+          "scene": 97,
+          "label": 0
+        },
+        {
+          "idx": 4379,
+          "video": "Jmkq5RLjm0U",
+          "scene": 481,
+          "label": 0
+        },
+        {
+          "idx": 1054,
+          "video": "6BQ3whjWG3M",
+          "scene": 96,
+          "label": 0
+        },
+        {
+          "idx": 4726,
+          "video": "Jmkq5RLjm0U",
+          "scene": 828,
+          "label": 0
+        }
+      ],
+      "var_top": [
+        {
+          "idx": 4313,
+          "video": "Jmkq5RLjm0U",
+          "scene": 415,
+          "label": 0
+        },
+        {
+          "idx": 7354,
+          "video": "N5MExtki_VI",
+          "scene": 571,
+          "label": 0
+        },
+        {
+          "idx": 9635,
+          "video": "Rccmhnt1ur4",
+          "scene": 97,
+          "label": 0
+        },
+        {
+          "idx": 2271,
+          "video": "A_tx40lNpf8",
+          "scene": 66,
+          "label": 0
+        },
+        {
+          "idx": 8083,
+          "video": "OQf2Ba-Lp_4",
+          "scene": 237,
+          "label": 0
+        }
+      ]
+    }
+  ]
+}
