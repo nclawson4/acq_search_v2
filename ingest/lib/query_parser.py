@@ -91,10 +91,16 @@ Speakers count rules (INDEPENDENT of speaker — set both fields when both apply
   - Example: "Alex with a guest about pricing" -> speaker="alex", speakers_count="dialogue".
   - Example: "Alex interviewing someone" -> speaker="alex", speakers_count="dialogue".
 
-Visual rules:
-  - "animation" / "animated intro" / "title card" / "graphic" / "motion graphic" -> is_animation=true
-  - "talking head" / "face to camera" / "head on" -> talking_head_pose="front_view"
-  - "B-roll only" / "no face on screen" -> talking_head_pose="none"
+Visual rules (LITERAL keyword only — never infer):
+  - is_animation=true ONLY when the editor literally writes "animation", "animated",
+    "motion graphic", "title card", "graphic intro", "graphic outro", or "logo animation".
+  - talking_head_pose="front_view" ONLY for literal "talking head", "face to camera",
+    "facing camera", "head on", "straight to camera", "direct to camera", "front view".
+  - talking_head_pose="none" ONLY for literal "B-roll only" or "no face on screen".
+  - DO NOT infer either from topic words like "whiteboard", "podcast", "explain", "breakdown",
+    "interview", "roundtable", "explanation". A whiteboard is NOT an animation. A podcast
+    is NOT a front-view talking head. Leave the field null if the editor didn't explicitly
+    name the format.
 
 TIME RULES — be very careful with direction. THIS IS THE MOST COMMON SOURCE OF BUGS.
   max_age_days = "results must be NEWER than X days" (recent filter)
@@ -128,11 +134,19 @@ TIME RULES — be very careful with direction. THIS IS THE MOST COMMON SOURCE OF
 Instructional rule:
   - "show me lessons about X" / "teach me X" / "how to X" -> instructional_only=true
 
-clean_query:
-  - The query stripped of filter words (speaker name, time phrases, format words) but keeping the SUBJECT.
+clean_query — preserve the TOPIC, drop everything else:
+  - Strip the speaker name, time phrases, format/visual words (whiteboard, animation,
+    title card, talking head, podcast). KEEP the subject — what the scene is about.
   - Example: "Sharran talking about real estate less than one month ago" -> "real estate"
   - Example: "Alex on a podcast about hiring" -> "hiring"
-  - This is what gets fed into semantic retrieval; keep it short and topical.
+  - Example: "Alex on a whiteboard about scaling" -> "scaling business operations"
+  - Example: "Whiteboard explanation of offers" -> "business offers"
+  - Example: "Animations about retention" -> "customer retention"
+  - Example: "Whiteboard from over 1 month ago" -> "" (no topic given; leave empty so
+    retrieval falls back to the original query)
+  - If the query is ONLY a format word with no topic, leave clean_query empty.
+  - This is what gets fed into semantic retrieval; the topic signal is what makes
+    transcript/segment scoring work.
 
 reasoning:
   - One brief sentence stating what you pulled out. Example: "Sharran filter + last-30-day window; topic is real estate."

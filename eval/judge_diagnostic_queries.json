@@ -1,0 +1,63 @@
+{
+  "queries": [
+    {"q": "Leila talking about leadership, talking head video", "dims": ["who", "topic", "pose"], "note": "user example"},
+    {"q": "Sharran less than 3 weeks ago talking about real estate", "dims": ["who", "time", "topic"], "note": "user example"},
+    {"q": "Animations talking about stress and anxiety", "dims": ["anim", "topic"], "note": "user example; mindset corpus is large (265 segs)"},
+    {"q": "Alex talking with another person about their offer", "dims": ["who", "count", "topic"], "note": "user example"},
+    {"q": "Whiteboard from over 1 month ago", "dims": ["visual", "time"], "note": "user example"},
+
+    {"q": "Leila on hiring decisions", "dims": ["who", "topic"]},
+    {"q": "Leila about firing employees", "dims": ["who", "topic"]},
+    {"q": "Leila on company culture", "dims": ["who", "topic"]},
+    {"q": "Leila about operations and SOPs", "dims": ["who", "topic"]},
+    {"q": "Leila explaining accountability", "dims": ["who", "topic"]},
+
+    {"q": "Sharran about networking strategies", "dims": ["who", "topic"]},
+    {"q": "Sharran on personal branding", "dims": ["who", "topic"]},
+    {"q": "Sharran about real estate sales tactics", "dims": ["who", "topic"]},
+    {"q": "Sharran on morning routines and mindset", "dims": ["who", "topic"]},
+    {"q": "Sharran talking about negotiation", "dims": ["who", "topic"]},
+
+    {"q": "Alex on pricing strategy", "dims": ["who", "topic"]},
+    {"q": "Alex about scaling to ten million", "dims": ["who", "topic"]},
+    {"q": "Alex on customer retention", "dims": ["who", "topic"]},
+    {"q": "Alex about hiring fast", "dims": ["who", "topic"]},
+    {"q": "Alex on content creation", "dims": ["who", "topic"]},
+    {"q": "Alex about offers and value", "dims": ["who", "topic"]},
+    {"q": "Alex on churn", "dims": ["who", "topic"]},
+
+    {"q": "Talking head Leila about leadership", "dims": ["who", "pose", "topic"]},
+    {"q": "Alex talking head explaining pricing", "dims": ["who", "pose", "topic"]},
+    {"q": "Sharran face to camera about real estate", "dims": ["who", "pose", "topic"]},
+    {"q": "Front-view Leila explaining hiring", "dims": ["who", "pose", "topic"]},
+    {"q": "Alex direct to camera about scaling", "dims": ["who", "pose", "topic"]},
+
+    {"q": "Animations about retention", "dims": ["anim", "topic"]},
+    {"q": "Animated intro graphics about sales", "dims": ["anim", "topic"]},
+    {"q": "Title cards from this year", "dims": ["anim", "time"]},
+    {"q": "Animation explaining pricing strategy", "dims": ["anim", "topic"]},
+    {"q": "Animated outro about leadership", "dims": ["anim", "topic"]},
+
+    {"q": "Whiteboard explanation of offers", "dims": ["visual", "topic"]},
+    {"q": "Alex on a whiteboard about scaling", "dims": ["who", "visual", "topic"]},
+    {"q": "Whiteboard breakdown of pricing", "dims": ["visual", "topic"]},
+    {"q": "Whiteboard about churn and retention", "dims": ["visual", "topic"]},
+    {"q": "Alex whiteboard from last week", "dims": ["who", "visual", "time"], "note": "may be empty - edge"},
+
+    {"q": "Alex content from the last week", "dims": ["who", "time"]},
+    {"q": "Leila videos within 2 weeks", "dims": ["who", "time"]},
+    {"q": "Sharran from over a month ago about sales", "dims": ["who", "time", "topic"]},
+    {"q": "Recent Alex content about scaling", "dims": ["who", "time", "topic"]},
+    {"q": "Original Alex videos about offers", "dims": ["who", "time", "topic"]},
+
+    {"q": "Alex with a guest about hiring", "dims": ["who", "count", "topic"]},
+    {"q": "Two-person dialogue about scaling", "dims": ["count", "topic"]},
+    {"q": "Leila solo about leadership", "dims": ["who", "count", "topic"]},
+    {"q": "Sharran alone about real estate negotiation", "dims": ["who", "count", "topic"]},
+    {"q": "Alex and Sharran conversation about acquisition", "dims": ["count", "topic"]},
+
+    {"q": "Leila talking head about firing employees recently", "dims": ["who", "pose", "topic", "time"]},
+    {"q": "Animations from over a month ago about pricing", "dims": ["anim", "time", "topic"]},
+    {"q": "Alex with another person about offers within the last 30 days", "dims": ["who", "count", "topic", "time"]}
+  ]
+}
