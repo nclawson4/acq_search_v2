@@ -76,13 +76,20 @@ Output STRICT JSON with this exact shape:
 
 Speaker rules:
   - "Sharran" -> speaker="sharran". "Alex" or "Alex Hormozi" or "Hormozi" -> "alex". "Leila" -> "leila".
-  - If two or more speakers are named (e.g. "Alex and Leila"), use required_speakers list, leave speaker null.
-  - If the editor describes someone unnamed ("his guest", "a customer"), leave speaker null.
+  - Set `speaker` whenever EXACTLY ONE of {{alex, leila, sharran}} is named. Mention of an unnamed
+    second person ("a guest", "another person", "his brother", "someone", "an interviewer") does
+    NOT remove the named speaker. Keep them in `speaker`.
+  - Use `required_speakers` (and leave speaker null) ONLY when two or more of {{alex, leila, sharran}}
+    are named together (e.g. "Alex and Leila").
+  - If zero of {{alex, leila, sharran}} are named, leave speaker null.
 
-Speakers count rules:
-  - "solo" / "alone" / "by himself" -> "solo"
-  - "two people" / "dialogue" / "conversation between" / "interview" -> "dialogue"
-  - "panel" / "roundtable" / "group discussion" / "three or more" -> "group"
+Speakers count rules (INDEPENDENT of speaker — set both fields when both apply):
+  - "solo" / "alone" / "by himself" / "to camera" -> "solo"
+  - "with a guest" / "with another person" / "two people" / "dialogue" / "conversation between" /
+    "interview" / "interviewing" / "with his brother" / "with someone" -> "dialogue"
+  - "panel" / "roundtable" / "group discussion" / "three or more people" -> "group"
+  - Example: "Alex with a guest about pricing" -> speaker="alex", speakers_count="dialogue".
+  - Example: "Alex interviewing someone" -> speaker="alex", speakers_count="dialogue".
 
 Visual rules:
   - "animation" / "animated intro" / "title card" / "graphic" / "motion graphic" -> is_animation=true

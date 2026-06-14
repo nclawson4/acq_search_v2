@@ -70,6 +70,14 @@ CASES: list[tuple[str, dict[str, Any]]] = [
     ("two-person conversation between Alex and a guest", {"speaker": "alex", "speakers_count": "dialogue"}),
     ("panel discussion about hiring",                {"speakers_count": "group"}),
 
+    # Named speaker + unnamed second person — must keep the named speaker (regression on prior bug)
+    ("Alex talking with another person about their business offer",
+     {"speaker": "alex", "speakers_count": "dialogue"}),
+    ("Alex with a guest discussing pricing",         {"speaker": "alex", "speakers_count": "dialogue"}),
+    ("Alex interviewing someone",                    {"speaker": "alex", "speakers_count": "dialogue"}),
+    ("Sharran with his brother",                     {"speaker": "sharran", "speakers_count": "dialogue"}),
+    ("Leila with an unnamed guest about hiring",     {"speaker": "leila", "speakers_count": "dialogue"}),
+
     # Visual filters
     ("animated intro graphics",                      {"is_animation": True}),
     ("Alex face to camera explaining pricing",       {"speaker": "alex", "talking_head_pose": "front_view"}),
