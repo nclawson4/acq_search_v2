@@ -62,6 +62,14 @@ There's no remaining content ask.
 topic the editor happened to be talking about ON the title card / animation — that is EXPECTED and \
 not a reason to penalize.
 
+A `visual: "<phrase>"` entry in structural_satisfied is the editor's literal visual phrasing \
+(any visual concept — whiteboard, dry erase board, chalkboard, title card, B-roll, wide shot, \
+podcast set, animated intro, two-shot, drone shot, anything else). CLIP visual retrieval has \
+already filtered candidates to ones that visually match this phrase. NEVER write a reason like \
+"not a whiteboard" / "not a dry erase board" / "not a title card" / "not B-roll" / "isn't a wide \
+shot" — the visual has been verified. Score only the CONTENT in the transcript (any non-visual \
+part of the query).
+
 Concrete examples — follow these exactly:
 
   query: "title cards from this year"
@@ -81,11 +89,23 @@ Concrete examples — follow these exactly:
   CORRECT: score=1.0, reason="Sharran on real estate listing strategy and the 48-hour pricing window."
   WRONG:   score=0.7, reason="discusses real estate, but not specifically within the last three weeks"
 
-  query: "whiteboard breakdown of offers"
-  verified_visual_facts: {is_animation: false, talking_head_pose: "front_view"}
-  transcript_snippet: "[alex] our offer is structured around a three-tier ladder..."
-  CORRECT: score=0.4, reason="Discusses offer structure but visual is talking-head, not a whiteboard."
-  (Here verified_visual_facts indicates it's NOT a whiteboard — visual mismatch is real and you may say so.)
+  query: "dry erase board explaining offers"
+  structural_satisfied: ['visual: "dry erase board" (CLIP visual retrieval matched this)']
+  transcript_snippet: "[alex] hook at the beginning ... two o's ... VSL — video sales letter ..."
+  CORRECT: score=1.0, reason="Alex breaks down VSL hook structure and walks through pricing tiers."
+  WRONG:   score=0.0, reason="Content is about VSLs, not a dry erase board."
+
+  query: "B-roll of city skylines for an intro reel"
+  structural_satisfied: ['visual: "B-roll" (CLIP visual retrieval matched this)']
+  transcript_snippet: "[alex] we shot this in downtown Vegas after the conference..."
+  CORRECT: score=1.0, reason="Vegas downtown footage shot after conference; matches city-skyline B-roll need."
+  WRONG:   score=0.0, reason="not B-roll of city skylines"
+
+  query: "two-shot interview about scaling SaaS"
+  structural_satisfied: ['visual: "two-shot interview" (CLIP visual retrieval matched this)']
+  transcript_snippet: "[alex] ARR went from one to ten million in eighteen months..."
+  CORRECT: score=1.0, reason="Alex on scaling ARR 1M to 10M in eighteen months."
+  WRONG:   score=0.4, reason="discusses scaling but the visual isn't clearly a two-shot interview"
 
 NEVER write a `reason` that contradicts an already-verified dimension. Do not say "not an animation" \
 when verified_visual_facts.is_animation=true. Do not say "not the right speaker" when speaker is in \

@@ -81,7 +81,10 @@ CASES: list[tuple[str, dict[str, Any]]] = [
     # Visual filters
     ("animated intro graphics",                      {"is_animation": True}),
     ("Alex face to camera explaining pricing",       {"speaker": "alex", "talking_head_pose": "front_view"}),
-    ("title cards from this year",                   {"is_animation": True, "max_age_days": 365}),
+    # Visual concepts are now captured by visual_concept, not is_animation (which is
+    # only set when the editor literally writes "animation"/"animated"). title cards
+    # become visual_concept, not is_animation.
+    ("title cards from this year (old format-flag test)", {"max_age_days": 365}),
 
     # Segment metadata
     ("Sharran real estate content",                  {"speaker": "sharran", "industries": ["real_estate"]}),
@@ -92,6 +95,19 @@ CASES: list[tuple[str, dict[str, Any]]] = [
     ("real estate stuff",                            {"speaker": None, "max_age_days": None, "min_age_days": None}),
     ("show me clips",                                {"speaker": None, "max_age_days": None, "min_age_days": None}),
     ("",                                             {"speaker": None, "max_age_days": None, "min_age_days": None}),
+
+    # visual_concept — loose, open-ended; speaker stays independent
+    ("dry erase board",                              {"visual_concept": "dry erase board", "speaker": None, "clean_query": ""}),
+    ("Alex on a whiteboard about scaling",           {"visual_concept": "whiteboard", "speaker": "alex"}),
+    ("Sharran chalkboard pricing breakdown",         {"visual_concept": "chalkboard", "speaker": "sharran"}),
+    ("wide shot of Leila explaining hiring",         {"visual_concept": "wide shot", "speaker": "leila"}),
+    ("B-roll of city skylines",                      {"visual_concept": "B-roll"}),
+    ("two-shot interview about scaling SaaS",        {"visual_concept": "two-shot interview"}),
+    ("title cards from this year",                   {"visual_concept": "title cards", "max_age_days": 365}),
+    ("podcast set Alex and Sharran on retention",    {"visual_concept": "podcast set", "required_speakers": ["alex", "sharran"]}),
+    # No visual concept → must be null, not over-extracted
+    ("Leila on hiring decisions",                    {"visual_concept": None, "speaker": "leila"}),
+    ("Alex about pricing",                           {"visual_concept": None, "speaker": "alex"}),
 ]
 
 

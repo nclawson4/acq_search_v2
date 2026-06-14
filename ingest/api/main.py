@@ -327,9 +327,33 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     instructional_only = req.instructional_only or bool(parsed.get("instructional_only"))
     max_age_days = req.max_age_days if req.max_age_days is not None else parsed.get("max_age_days")
     min_age_days = req.min_age_days if req.min_age_days is not None else parsed.get("min_age_days")
+    visual_concept = parsed.get("visual_concept")
 
-    # Use the LLM-cleaned query for retrieval if available (filter words stripped).
-    retrieval_query = parsed.get("clean_query") or req.query
+    # Retrieval query: prefer LLM clean_query, fall back to original. For pure-visual
+    # queries (visual concept but no remaining topic), use the visual_concept as the
+    # CLIP query so retrieval is driven by what the editor wants to SEE.
+    clean_q = (parsed.get("clean_query") or "").strip()
+    if clean_q:
+        retrieval_query = clean_q
+    elif visual_concept:
+        retrieval_query = visual_concept
+    else:
+        retrieval_query = req.query
+
+    # When deciding "visual-only" below, leftover time/filter words don't count as a
+    # content ask. A query like "title cards from this year" after stripping the
+    # visual concept may still leave "from this year" in clean_q — that's a time
+    # filter (already captured separately), not a topic for the judge to grade.
+    if clean_q:
+        residual_topic = re.sub(
+            r"\b(in|from|within|over|under|more|less|older|newer|than|recently|"
+            r"recent|this|last|past|the|of|a|an|ago|to|for|about|years?|months?|"
+            r"weeks?|days?|today|yesterday|years?)\b|\d+",
+            "", clean_q, flags=re.IGNORECASE,
+        )
+        residual_topic = re.sub(r"\s+", " ", residual_topic).strip(" ,.;:-")
+    else:
+        residual_topic = ""
     if parsed_by == "llm" and retrieval_query and retrieval_query != req.query:
         qv = embed_query_text(STATE, retrieval_query)
 
@@ -355,9 +379,18 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
         speakers_count=speakers_count,
         max_age_days=max_age_days,
         min_age_days=min_age_days,
+        visual_concept=visual_concept,
     )
 
-    if req.rerank and hits:
+    # Visual-only short-circuit: when the editor's query is purely about what's on
+    # screen (visual_concept present, no remaining topic for the judge to grade),
+    # CLIP retrieval IS the answer. The transcript-only judge has nothing useful to
+    # add and tends to score 0.0 because the transcript never literally mentions
+    # the visual concept. Skip the judge, trust the ranking we already have.
+    visual_only = bool(visual_concept) and not residual_topic
+    do_rerank = req.rerank and hits and not visual_only
+
+    if do_rerank:
         hits = await rerank_async(
             STATE, req.query, hits,
             structural_satisfied=structural_dims,
@@ -370,6 +403,12 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
         # Re-rank field reflects the new order
         for i, h in enumerate(hits, 1):
             h["rank"] = i
+    elif visual_only and hits:
+        # Judge was skipped because there is no content ask. CLIP did the work;
+        # mark each result as judge-verified at 1.0 so the UI doesn't hide them.
+        for h in hits:
+            h["judge_score"] = 1.0
+            h["why"] = f'Matched on "{visual_concept}" visually.'
 
     results: list[SearchResult] = []
     for h in hits:

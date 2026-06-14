@@ -70,7 +70,8 @@ Output STRICT JSON with this exact shape:
   "age_group": null | "early_career_18_30" | "mid_career_25_45" | "established_35_60" | "general_all",
   "lessons_categories": null | [{", ".join(repr(x) for x in LESSONS)}],
   "instructional_only": false | true,
-  "clean_query": "<query with filter language removed, for semantic retrieval>",
+  "visual_concept": null | "<verbatim phrase from the query that describes what's on screen>",
+  "clean_query": "<query with filter language AND visual_concept removed, for semantic retrieval>",
   "reasoning": "<one short sentence explaining what you extracted>"
 }}
 
@@ -134,18 +135,46 @@ TIME RULES — be very careful with direction. THIS IS THE MOST COMMON SOURCE OF
 Instructional rule:
   - "show me lessons about X" / "teach me X" / "how to X" -> instructional_only=true
 
-clean_query — preserve the TOPIC, drop everything else:
-  - Strip the speaker name, time phrases, format/visual words (whiteboard, animation,
-    title card, talking head, podcast). KEEP the subject — what the scene is about.
-  - Example: "Sharran talking about real estate less than one month ago" -> "real estate"
-  - Example: "Alex on a podcast about hiring" -> "hiring"
-  - Example: "Alex on a whiteboard about scaling" -> "scaling business operations"
-  - Example: "Whiteboard explanation of offers" -> "business offers"
-  - Example: "Animations about retention" -> "customer retention"
-  - Example: "Whiteboard from over 1 month ago" -> "" (no topic given; leave empty so
-    retrieval falls back to the original query)
-  - If the query is ONLY a format word with no topic, leave clean_query empty.
-  - This is what gets fed into semantic retrieval; the topic signal is what makes
+visual_concept — what's on screen, separate from what's being said:
+  - If the query describes anything about the VISUAL — what the editor wants to SEE
+    in the frame — lift it out verbatim. CLIP visual retrieval handles this; the
+    transcript-only judge should NOT re-judge it.
+  - Use the editor's exact phrasing (do not normalize "dry erase board" to "whiteboard").
+  - This is intentionally OPEN-ENDED. Visual concepts include but are not limited to:
+      surfaces / drawing: whiteboard, dry erase board, chalkboard, blackboard, sketchpad
+      graphics / titles: title card, lower third, animated intro, motion graphic, infographic
+      camera: B-roll, wide shot, close-up, drone shot, screen recording, screen share
+      shot framing: two-shot, over-the-shoulder, profile shot, podcast set, studio set
+      on-screen visuals: kinetic typography, slide deck, presentation slide
+      people on screen: talking head, face to camera, hand-drawn animation
+      anything else the editor describes about what's IN the frame (not what's being said)
+  - If NOTHING in the query is about the visual, leave it null.
+  - Topic words like "scaling", "real estate", "leadership", "pricing" are NEVER visual.
+  - Speaker names are NEVER visual.
+  - Time phrases are NEVER visual.
+
+  Examples — note that visual_concept is INDEPENDENT of speaker/time/topic.
+  Setting visual_concept does NOT cancel out speaker or other fields. Always
+  extract every applicable field. Format below: (speaker | visual_concept | clean_query):
+
+    "dry erase board"                                          -> (null   | "dry erase board"     | "")
+    "Alex on a whiteboard about scaling"                       -> (alex   | "whiteboard"          | "scaling")
+    "title cards from this year"                               -> (null   | "title cards"         | "")
+    "Sharran chalkboard pricing breakdown"                     -> (sharran| "chalkboard"          | "pricing")
+    "B-roll of city skylines"                                  -> (null   | "B-roll"              | "city skylines")
+    "wide shot of Leila explaining hiring"                     -> (leila  | "wide shot"           | "hiring")
+    "two-shot interview about scaling SaaS"                    -> (null   | "two-shot interview"  | "scaling SaaS")
+    "podcast set Alex and Sharran on retention"                -> (null,  | "podcast set"         | "retention")  [also required_speakers=[alex,sharran]]
+    "animated intro Leila leadership last 30 days"             -> (leila  | "animated intro"      | "leadership")  [also max_age_days=30]
+    "screen-share Sharran showing a spreadsheet"               -> (sharran| "screen-share"        | "spreadsheet")
+    "Leila on hiring decisions"                                -> (leila  | null                  | "hiring decisions")
+    "Sharran less than 3 weeks ago talking about real estate"  -> (sharran| null                  | "real estate")  [also max_age_days=21]
+
+clean_query — the TOPIC the transcript-only judge will grade against:
+  - Strip the speaker name, time phrases, AND the visual_concept. KEEP the subject.
+  - When the query is purely visual with no topic, leave clean_query empty so
+    retrieval falls back to the original query.
+  - This is what gets fed into transcript scoring; the topic signal is what makes
     transcript/segment scoring work.
 
 reasoning:
@@ -194,6 +223,7 @@ def _empty_parse(query: str) -> dict:
         "age_group": None,
         "lessons_categories": None,
         "instructional_only": False,
+        "visual_concept": None,
         "clean_query": query,
         "reasoning": "",
     }
@@ -247,9 +277,25 @@ def _validate(raw: dict, original_query: str) -> dict:
     if raw.get("instructional_only") is True:
         out["instructional_only"] = True
 
+    vc = raw.get("visual_concept")
+    if isinstance(vc, str):
+        vc = vc.strip()
+        # Only accept values that actually appear in the original query (case-insensitive),
+        # so the LLM can't fabricate a visual concept that wasn't there.
+        if vc and vc.lower() in original_query.lower():
+            out["visual_concept"] = vc
+
     cq = raw.get("clean_query")
     if isinstance(cq, str) and cq.strip():
         out["clean_query"] = cq.strip()
+
+    # Safety net: the LLM sometimes leaves the visual_concept inside clean_query
+    # despite the prompt. Strip it out — the judge should never see it.
+    if out["visual_concept"] and out["clean_query"]:
+        pattern = re.compile(re.escape(out["visual_concept"]), re.IGNORECASE)
+        stripped = pattern.sub("", out["clean_query"])
+        stripped = re.sub(r"\s+", " ", stripped).strip(" ,.;:-")
+        out["clean_query"] = stripped
 
     r = raw.get("reasoning")
     if isinstance(r, str) and r.strip():
