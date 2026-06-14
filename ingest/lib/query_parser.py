@@ -289,13 +289,31 @@ def _validate(raw: dict, original_query: str) -> dict:
     if isinstance(cq, str) and cq.strip():
         out["clean_query"] = cq.strip()
 
-    # Safety net: the LLM sometimes leaves the visual_concept inside clean_query
-    # despite the prompt. Strip it out — the judge should never see it.
-    if out["visual_concept"] and out["clean_query"]:
-        pattern = re.compile(re.escape(out["visual_concept"]), re.IGNORECASE)
-        stripped = pattern.sub("", out["clean_query"])
-        stripped = re.sub(r"\s+", " ", stripped).strip(" ,.;:-")
-        out["clean_query"] = stripped
+    # Safety net: the LLM sometimes leaves the visual_concept and/or the verified
+    # speaker name inside clean_query despite the prompt. Strip them — the judge
+    # and the retrieval embedder should never see them.
+    if out["clean_query"]:
+        strip_phrases: list[str] = []
+        if out["visual_concept"]:
+            strip_phrases.append(out["visual_concept"])
+        # Verified speaker names + the "hormozi" surname (parser keyword for alex)
+        verified_speakers: list[str] = []
+        if out.get("speaker"):
+            verified_speakers.append(out["speaker"])
+        if out.get("required_speakers"):
+            verified_speakers.extend(out["required_speakers"])
+        for name in verified_speakers:
+            strip_phrases.append(name)
+            if name == "alex":
+                strip_phrases.append("hormozi")
+        if strip_phrases:
+            stripped = out["clean_query"]
+            # Longest first so multi-word concepts get cleared before their tokens.
+            for phrase in sorted(strip_phrases, key=len, reverse=True):
+                pattern = re.compile(rf"\b{re.escape(phrase)}\b", re.IGNORECASE)
+                stripped = pattern.sub("", stripped)
+            stripped = re.sub(r"\s+", " ", stripped).strip(" ,.;:-")
+            out["clean_query"] = stripped
 
     r = raw.get("reasoning")
     if isinstance(r, str) and r.strip():

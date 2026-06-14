@@ -328,32 +328,33 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     max_age_days = req.max_age_days if req.max_age_days is not None else parsed.get("max_age_days")
     min_age_days = req.min_age_days if req.min_age_days is not None else parsed.get("min_age_days")
     visual_concept = parsed.get("visual_concept")
-
-    # Retrieval query: prefer LLM clean_query, fall back to original. For pure-visual
-    # queries (visual concept but no remaining topic), use the visual_concept as the
-    # CLIP query so retrieval is driven by what the editor wants to SEE.
     clean_q = (parsed.get("clean_query") or "").strip()
-    if clean_q:
-        retrieval_query = clean_q
-    elif visual_concept:
-        retrieval_query = visual_concept
-    else:
-        retrieval_query = req.query
 
-    # When deciding "visual-only" below, leftover time/filter words don't count as a
-    # content ask. A query like "title cards from this year" after stripping the
-    # visual concept may still leave "from this year" in clean_q — that's a time
-    # filter (already captured separately), not a topic for the judge to grade.
+    # residual_topic: clean_q minus filler words (prepositions, articles, time words).
+    # If empty, there's no real content ask for the judge to grade and no useful
+    # query to embed — fall back to visual_concept for retrieval if available.
     if clean_q:
         residual_topic = re.sub(
             r"\b(in|from|within|over|under|more|less|older|newer|than|recently|"
-            r"recent|this|last|past|the|of|a|an|ago|to|for|about|years?|months?|"
-            r"weeks?|days?|today|yesterday|years?)\b|\d+",
+            r"recent|this|last|past|the|of|a|an|ago|to|for|about|with|at|on|by|"
+            r"and|or|talking|discussing|explaining|showing|years?|months?|weeks?|"
+            r"days?|today|yesterday)\b|\d+",
             "", clean_q, flags=re.IGNORECASE,
         )
         residual_topic = re.sub(r"\s+", " ", residual_topic).strip(" ,.;:-")
     else:
         residual_topic = ""
+
+    # Pick the CLIP retrieval query in order of usefulness:
+    #   1. residual_topic (real content) — graded by judge
+    #   2. visual_concept (when there's no content ask, drive retrieval by visual)
+    #   3. original query (final fallback)
+    if residual_topic:
+        retrieval_query = clean_q or residual_topic
+    elif visual_concept:
+        retrieval_query = visual_concept
+    else:
+        retrieval_query = req.query
     if parsed_by == "llm" and retrieval_query and retrieval_query != req.query:
         qv = embed_query_text(STATE, retrieval_query)
 
