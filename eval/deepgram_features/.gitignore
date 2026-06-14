@@ -1,0 +1,3 @@
+results/judge_cache.json
+results/*.json
+!results/.gitkeep
