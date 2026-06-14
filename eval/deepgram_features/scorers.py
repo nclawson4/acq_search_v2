@@ -97,15 +97,21 @@ class TopicsScorer:
     def __init__(self, alpha: float | None = None):
         self.alpha = DEFAULT_ALPHA["topics"] if alpha is None else alpha
         with (OUT_DIR / "topics.json").open("r", encoding="utf-8") as f:
-            self.by_vid: dict[str, list[dict]] = json.load(f)
-        # Unique topic labels for batched embedding.
+            by_vid: dict[str, list[dict]] = json.load(f)
         labels = set()
-        for rows in self.by_vid.values():
+        for rows in by_vid.values():
             for r in rows:
                 if r["topic"]:
                     labels.add(r["topic"])
         self.label_list = sorted(labels)
         self.label_to_idx = {lab: i for i, lab in enumerate(self.label_list)}
+        # Pre-build per-video tuples once.
+        self.cache: dict[str, list[tuple[float, float, int, float]]] = {}
+        for vid, rows in by_vid.items():
+            self.cache[vid] = [
+                (float(r["start_s"]), float(r["end_s"]), self.label_to_idx[r["topic"]], float(r["confidence"]))
+                for r in rows if r["topic"] in self.label_to_idx
+            ]
         self._label_vecs: np.ndarray | None = None
 
     def _ensure_label_vecs(self, state):
@@ -115,7 +121,9 @@ class TopicsScorer:
         if not self.label_list:
             self._label_vecs = np.zeros((0, state.vectors.shape[1]), dtype=np.float32)
             return
+        print(f"  [topics] embedding {len(self.label_list)} unique topic labels (one-time)...", flush=True)
         self._label_vecs = embed_query_texts(state, self.label_list)
+        print(f"  [topics] label embeddings ready: {self._label_vecs.shape}", flush=True)
 
     def boost(self, state, query_text: str) -> np.ndarray:
         from lib.hybrid import embed_query_text  # noqa: E402
@@ -125,23 +133,13 @@ class TopicsScorer:
             return out
         self._ensure_label_vecs(state)
         qv = embed_query_text(state, query_text)
-        sims = self._label_vecs @ qv  # (L,)
-        # CLIP text-text cosine norms to a 0..1 boost range similar to segment scoring.
+        sims = self._label_vecs @ qv
         sims_n = np.clip((sims - 0.15) / 0.30, 0.0, 1.0)
-
-        cache: dict[str, list[tuple[float, float, int, float]]] = {}
-        for vid, rows in self.by_vid.items():
-            cache[vid] = [
-                (r["start_s"], r["end_s"], self.label_to_idx[r["topic"]], float(r["confidence"]))
-                for r in rows if r["topic"] in self.label_to_idx
-            ]
-
         for i, m in enumerate(state.meta):
-            vid = m["video_id"]
-            rows = cache.get(vid)
+            rows = self.cache.get(m["video_id"])
             if not rows:
                 continue
-            scene = state.scenes.get(vid, {}).get(int(m["scene_idx"]))
+            scene = state.scenes.get(m["video_id"], {}).get(int(m["scene_idx"]))
             if scene is None:
                 continue
             ss, se = scene

@@ -188,9 +188,9 @@ def _print_summary(feature: str, s: dict):
             continue
         print(
             f"  {cat:>10}  n={c['n']:>2}  "
-            f"nDCG Δ={c['ndcg_delta_mean']:+.3f}  "
-            f"mean-label Δ={c['mean_label_delta']:+.3f}  "
+            f"nDCG d={c['ndcg_delta_mean']:+.3f}  "
+            f"mean-label d={c['mean_label_delta']:+.3f}  "
             f"top1 net={c['top1_net']:+d}  "
             f"FP={c['confounder_fp_rate']*100:.0f}%  "
-            f"lat Δ={c['latency_delta_ms_mean']}ms"
+            f"lat d={c['latency_delta_ms_mean']}ms"
         )
