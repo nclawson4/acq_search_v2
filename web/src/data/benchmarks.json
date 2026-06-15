@@ -10,7 +10,7 @@
       "metric_label": "deterministic",
       "metric_value": "no error",
       "source": "ingest/scripts/extract_scenes.py",
-      "note": "Threshold-based on luma deltas; reproducible bit-for-bit per video. No accuracy gate because there is nothing to learn — same input always produces the same scenes.",
+      "note": "Threshold-based on luma deltas; reproducible bit-for-bit per video. No accuracy gate because there is nothing to learn. Same input always produces the same scenes.",
       "meets_target": true
     },
     {
@@ -75,7 +75,7 @@
         {"k": "sharran appears in", "v": "32 videos"}
       ],
       "source": "ingest/scripts/identify_speakers.py · ingest/scripts/compute_audio_tags.py",
-      "note": "No held-out P/R is computed — the mapping is anchored to reference voice samples for each speaker, then the 1-second activity threshold suppresses backchannel false-positives so dialogue scenes are detected even when the guest is unknown.",
+      "note": "No held-out P/R is computed. The mapping is anchored to reference voice samples for each speaker, and a 1-second activity threshold suppresses backchannel false-positives so dialogue scenes are detected even when the guest is unknown.",
       "meets_target": true
     },
     {
@@ -106,13 +106,13 @@
         {"k": "visual-only short-circuit", "v": "skips judge when CLIP did the work"}
       ],
       "source": "eval/judge_diagnostic.py · ingest/lib/reranker.py",
-      "note": "No global accuracy gate — relevance is subjective. The judge was rebuilt from a failure-mode audit (see eval/judge_diagnostic.py) that catalogued where it was contradicting verified filters or refusing to credit visual matches.",
+      "note": "No global accuracy gate (relevance is subjective). The judge was rebuilt from a failure-mode audit (see eval/judge_diagnostic.py) that catalogued where it was contradicting verified filters or refusing to credit visual matches.",
       "meets_target": true
     }
   ],
   "summary": {
     "hits_95": "On the labeled query set the production hybrid retrieval clears 95% recall@20 on the original split and clears 95% recall@50 on every split.",
-    "below_95": "CLIP-only at K=20 (87.6%) and the parser regression set (91%) sit below the 95% target on their own. They compose — CLIP feeds hybrid, parser failures fall through to the original query — so the end-to-end behavior still clears the bar.",
-    "plain_english": "Every stage is measured against a ground-truth set and a target. The retrieval stage that decides what the editor sees clears the 95% bar. Earlier stages that don't are not relied on alone — their output feeds a stage that does."
+    "below_95": "CLIP-only at K=20 (87.6%) and the parser regression set (91%) sit below the 95% target on their own. They compose: CLIP feeds hybrid, and parser failures fall through to the original query, so the end-to-end behavior still clears the bar.",
+    "plain_english": "Every stage is measured against a ground-truth set and a target. The retrieval stage that decides what the editor sees clears the 95% bar. Earlier stages that do not are never relied on alone; their output feeds a stage that does."
   }
 }

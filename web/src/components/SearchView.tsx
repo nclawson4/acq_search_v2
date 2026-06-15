@@ -92,19 +92,19 @@ const SEARCH_STAGES: SearchStage[] = [
   { label: "Ranking results",      help: "GPT-4o-mini judges each candidate against the topic", percentStart: 60 },
 ];
 
-// Search latency model used to animate the progress bar. A warm reranked
-// search typically takes 3-6 s; cold starts (Modal scale-from-zero) can
-// reach 25-30 s while the container boots. The bar advances through three
-// phases and asymptotes just under 100% so it never completes ahead of the
-// actual response.
+// Search latency model used to animate the progress bar. Paced to match the
+// real backend stages: parse ~1 s, retrieve ~1.5 s, rerank ~2.5 s, then a
+// short tail for response wrap-up. The bar fills evenly through the middle
+// instead of sprinting at the start or stalling near the end. After the
+// expected warm window it holds at 95% rather than creeping, so a cold
+// start no longer looks "stuck near done."
 function progressForElapsed(ms: number): number {
   const t = ms / 1000;
-  if (t < 0.8) return (t / 0.8) * 25;                  // parse phase
-  if (t < 2.3) return 25 + ((t - 0.8) / 1.5) * 35;     // CLIP + hybrid retrieval
-  if (t < 5.3) return 60 + ((t - 2.3) / 3.0) * 30;     // judge rerank
-  // After the typical warm window, creep slowly toward 95% so cold starts
-  // still look alive but never imply completion.
-  return Math.min(95, 90 + (1 - Math.exp(-(t - 5.3) / 8)) * 5);
+  if (t < 1.0) return t * 25;                       // parse:   0  -> 25  in 1.0 s
+  if (t < 2.5) return 25 + (t - 1.0) * (35 / 1.5);  // retrieve:25 -> 60  in 1.5 s
+  if (t < 5.0) return 60 + (t - 2.5) * 10;          // rerank:  60 -> 85  in 2.5 s
+  if (t < 7.0) return 85 + (t - 5.0) * 5;           // wrap-up: 85 -> 95  in 2.0 s
+  return 95;                                        // hold at 95 until response arrives
 }
 
 function currentStageIndex(percent: number): number {
@@ -184,7 +184,7 @@ export function SearchView({ mode }: { mode: Mode }) {
         {mode === "debug" && (
           <div className="rounded-lg bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300 text-xs px-3 py-2 mb-6 flex items-center justify-between">
             <span>
-              <strong>debug mode</strong> — all top-K shown, including results the judge marked irrelevant.
+              <strong>debug mode.</strong> All top-K shown, including results the judge marked irrelevant.
             </span>
             <Link href="/" className="font-medium underline">
               back to default view →
@@ -206,7 +206,7 @@ export function SearchView({ mode }: { mode: Mode }) {
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="describe a clip — speaker, topic, time, visual…"
+            placeholder="describe a clip: speaker, topic, time, visual…"
             className="flex-1 rounded-full border border-zinc-300 dark:border-zinc-700 px-5 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-zinc-900"
             autoFocus
           />
@@ -335,7 +335,7 @@ export function SearchView({ mode }: { mode: Mode }) {
                     <Link href="/debug-mode" className="text-blue-600 dark:text-blue-400 underline">
                       Open debug mode
                     </Link>{" "}
-                    to see all {hidden} retrieved results (some may still be useful — the judge isn&apos;t perfect).
+                    to see all {hidden} retrieved results (some may still be useful; the judge isn&apos;t perfect).
                   </p>
                 )}
               </div>

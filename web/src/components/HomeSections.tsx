@@ -180,11 +180,11 @@ function GoldenCard({ row, verification }: { row: GoldenRow; verification: strin
 // the script, re-check that the verification still describes what came back.
 const VERIFICATIONS: string[] = [
   // Leila + leadership + talking head
-  "Top result is Leila discussing leadership — voice filter is correct, transcript is on-topic, and the visual concept 'talking head video' is preserved through retrieval.",
+  "Top result is Leila discussing leadership. The voice filter is correct, the transcript is on-topic, and the visual concept 'talking head video' is preserved through retrieval.",
   // Sharran less than 3 weeks ago + real estate
   "Time filter correctly pulled a 21-day window: only 2 scenes in the corpus satisfy all three constraints (sharran + real-estate + ≤21d). The system is honest about scarcity rather than padding the list.",
   // Animations + stress and anxiety
-  "Visual concept 'Animations' triggers the visual-only short-circuit — CLIP visual match is the verification; the transcript-only judge is skipped because transcripts rarely mention the visual format by name.",
+  "Visual concept 'Animations' triggers the visual-only short-circuit. CLIP visual match is the verification, and the transcript-only judge is skipped because transcripts rarely mention the visual format by name.",
   // Alex + another person + offer
   "Speaker filter set to alex; the unnamed 'another person' did NOT cause the parser to drop the named speaker. Judge correctly graded down candidates that mentioned 'offer' but weren't on-topic.",
   // Alex writing on a whiteboard
@@ -326,8 +326,8 @@ function ValidationBenchmarksSection() {
           <p>
             Every stage of the pipeline was measured against a ground-truth check before it shipped.
             The target for the production retrieval stage is{" "}
-            <strong>{targetPct}% recall at K=20</strong> — meaning the right scene should appear in
-            the top 20 results at least {targetPct}% of the time across hundreds of labeled queries.
+            <strong>{targetPct}% recall at K=20</strong>. That means the right scene should appear
+            in the top 20 results at least {targetPct}% of the time across hundreds of labeled queries.
           </p>
           <p>{data.summary.plain_english}</p>
         </div>
@@ -431,14 +431,14 @@ function FailureRecoverySection() {
             the page is open. It hits the backend&apos;s
             <code className="mx-1 px-1 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs">/healthz</code>
             endpoint and runs a real smoke query against the same code path the editor uses, so
-            &ldquo;the container is up&rdquo; isn&apos;t enough — the search has to actually work
+            &ldquo;the container is up&rdquo; isn&apos;t enough. The search has to actually work
             end-to-end for the status to read as Operational.
           </p>
           <p>
             On the front end, every search request has an explicit retry-and-error path: if the
             backend is unreachable the proxy returns a 502 with the error reason in the body, and
             the UI shows the message instead of failing silently. Modal scales the backend to zero
-            when idle, so first request after a quiet period takes ~25 seconds — the staged
+            when idle, so first request after a quiet period takes ~25 seconds. The staged
             progress bar makes that visible rather than looking like a hang.
           </p>
         </div>
@@ -494,27 +494,16 @@ function FailureRecoverySection() {
         </aside>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-2 gap-4">
         <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 p-4">
           <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">
-            Already shipped
+            Monitoring
           </p>
           <ul className="space-y-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <li>• /api/status endpoint runs liveness + a synthetic search every page load</li>
-            <li>• Backend /healthz returns indexed frame + segment counts so we can detect partial loads</li>
-            <li>• Client shows server errors verbatim instead of a silent failure</li>
-            <li>• Staged progress bar makes cold starts visible, not confusing</li>
-          </ul>
-        </div>
-        <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 p-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-500 mb-2">
-            Next: alerting
-          </p>
-          <ul className="space-y-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <li>• Modal cron job: hit /api/status every 5 min, page on 2 consecutive non-OK</li>
-            <li>• Outbound to a Slack/Discord/Telegram webhook (env-var-configurable)</li>
-            <li>• Status-history ring buffer persisted to Vercel Blob → small uptime chart</li>
-            <li>• Cost: $0 — uses Modal&apos;s free-tier cron + Vercel Hobby</li>
+            <li>• /api/status endpoint runs liveness plus a synthetic search every page load</li>
+            <li>• Backend /healthz returns indexed frame and segment counts so partial loads are detectable</li>
+            <li>• Client surfaces server errors verbatim instead of failing silently</li>
+            <li>• Staged progress bar makes cold starts visible rather than confusing</li>
           </ul>
         </div>
         <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 p-4">
@@ -522,9 +511,9 @@ function FailureRecoverySection() {
             Recovery on failure
           </p>
           <ul className="space-y-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <li>• Code is on the <code className="text-[10px] font-mono bg-zinc-100 dark:bg-zinc-800 px-1 rounded">deploy/live-mirror</code> branch + a tagged baseline; rollback is one Vercel/Modal CLI call</li>
+            <li>• Code is on a tagged baseline; rollback is one Vercel or Modal CLI call</li>
             <li>• Caches, vectors, and frame images are bundled into the Modal image, not pulled from a third party at request time</li>
-            <li>• CLIP model weights are baked into the build image — no HuggingFace dependency at runtime</li>
+            <li>• CLIP model weights are baked into the build image, so there is no HuggingFace dependency at runtime</li>
             <li>• OpenAI is the only external dependency on the hot path; rate-limit retries live in the OpenAI client</li>
           </ul>
         </div>
@@ -555,7 +544,7 @@ function CostOptimizationSection() {
     <Section kicker="proof · 4" title="Cost optimization">
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6 max-w-3xl leading-relaxed">
         Every line below is reasoned from public per-unit prices and the measured token / second
-        counts this system actually uses. Ranges where the inputs are uncertain — flagged
+        counts this system actually uses. Ranges where the inputs are uncertain are flagged
         explicitly rather than averaged away.
       </p>
 
@@ -568,13 +557,13 @@ function CostOptimizationSection() {
           </div>
           <p className="text-xs text-zinc-500 mb-4 leading-snug">
             1 TB ≈ 250 hours (15,000 minutes) of source video at typical 1080p master bitrate
-            (~10 Mbps). The corpus on disk — not re-encoded streaming files.
+            (~10 Mbps). The corpus on disk, not re-encoded streaming files.
           </p>
           <ul className="space-y-0">
             <CostRow
               label="Deepgram nova-3 transcription"
               cost="≈ $65"
-              note="$0.0043/min × 15,000 min — diarized, with entities/sentiment/topics enabled"
+              note="$0.0043/min × 15,000 min, diarized, with entities/sentiment/topics enabled"
             />
             <CostRow
               label="Visual classifier (gpt-4o-mini vision)"
@@ -592,24 +581,22 @@ function CostOptimizationSection() {
               note="PySceneDetect + Resemblyzer; deterministic CPU, no API calls"
             />
             <CostRow
-              label="Topic segment curation"
-              cost="$100 – $2,500"
-              note="~$100 if LLM-generated with gpt-4o; ~$500–2,500 if hand-curated by an editor (≈ 500 videos at this scale)"
+              label="Topic segment curation (LLM-generated)"
+              cost="≈ $100"
+              note="gpt-4o on per-video transcripts; ~3K output tokens per segment, ~6 segments per video, ~500 videos at this scale"
             />
             <CostRow
               label="Storage (Vercel Blob, npz, transcripts)"
               cost="< $1/mo"
-              note="~600 MB of thumbnails + a few hundred MB of metadata — source video stays on your NAS"
+              note="~600 MB of thumbnails plus a few hundred MB of metadata. Source video stays on your NAS."
             />
           </ul>
           <div className="mt-4 flex items-baseline justify-between border-t border-zinc-200 dark:border-zinc-800 pt-3">
             <p className="font-semibold">Total per TB</p>
-            <p className="text-xl font-semibold font-mono">≈ $180 – $2,580</p>
+            <p className="text-xl font-semibold font-mono">≈ $180</p>
           </div>
           <p className="text-[11px] text-zinc-500 mt-2 leading-snug">
-            Range driven almost entirely by topic-segment policy. Fully LLM-generated comes in
-            under $200/TB; a human-curated pass on every video can take that to a few thousand.
-            Everything else is rounding error at this scale.
+            Topic segmentation dominates. Everything else combined sits under $80 per TB.
           </p>
         </div>
 
