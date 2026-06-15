@@ -218,16 +218,8 @@ function GoldenSetsSection() {
   return (
     <Section title="Golden sets">
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6 max-w-3xl leading-relaxed">
-        Five canonical queries an editor would type. Each was run against the live production
-        backend; the panels below show exactly what came back. Re-runnable: see
-        <code className="px-1 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs mx-1">
-          web/scripts/run-golden-queries.mjs
-        </code>
-        for the source script and the saved JSON in
-        <code className="px-1 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs ml-1">
-          src/data/golden-queries.json
-        </code>
-        .
+        Six real searches a video editor might run. Each one was sent to the live system, and the
+        cards below show exactly what came back.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
