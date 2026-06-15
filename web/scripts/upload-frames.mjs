@@ -63,12 +63,26 @@ async function collectFiles() {
 async function uploadOne({ vid, file, abs }) {
   const pathname = `${vid}/${file}`;
   const data = await readFile(abs);
-  await put(pathname, data, {
-    access: "public",
-    allowOverwrite: ALLOW_OVERWRITE,
-    contentType: "image/jpeg",
-  });
-  return pathname;
+  // Retry-with-backoff on transient errors (rate-limit, network). "already exists"
+  // surfaces immediately and the caller treats it as success.
+  let lastErr;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      await put(pathname, data, {
+        access: "public",
+        allowOverwrite: ALLOW_OVERWRITE,
+        contentType: "image/jpeg",
+      });
+      return pathname;
+    } catch (e) {
+      const msg = String(e && e.message || e);
+      if (msg.includes("already exists") || msg.includes("blob_already_exists")) throw e;
+      lastErr = e;
+      // Backoff: 200ms, 600ms, 1400ms
+      await new Promise((r) => setTimeout(r, 200 * (3 ** attempt - 1) / 2));
+    }
+  }
+  throw lastErr;
 }
 
 async function main() {
@@ -95,7 +109,8 @@ async function main() {
           // OK — pre-existing
         } else {
           failed++;
-          if (failed <= 5) console.error(`  FAIL ${item.vid}/${item.file}: ${msg}`);
+          // Log every failure so we can post-mortem the remaining set.
+          process.stderr.write(`FAIL ${item.vid}/${item.file}: ${msg}\n`);
         }
       }
       done++;
