@@ -16,6 +16,7 @@ const QUERIES = [
   "Animations talking about stress and anxiety",
   "Alex talking about churn",
   "Alex writing on a whiteboard",
+  "Leila and Sharran talking together",
 ];
 
 async function run(q) {

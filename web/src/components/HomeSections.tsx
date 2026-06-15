@@ -211,6 +211,10 @@ const VERIFICATIONS: Verification[] = [
   {
     text: "Speaker and visual concept extracted independently. Visual-only short-circuit fires because there is no remaining topic ask. All 5 results are Alex.",
   },
+  // Leila and Sharran together
+  {
+    text: "Both named speakers go into required_speakers, and 'together' triggers the dialogue speakers_count filter. Only 3 scenes in the corpus satisfy both constraints, and every result has Leila and Sharran co-present in the audio.",
+  },
 ];
 
 function GoldenSetsSection() {

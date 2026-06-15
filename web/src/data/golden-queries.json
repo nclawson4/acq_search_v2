@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T18:26:05.480Z",
+  "generated_at": "2026-06-15T18:39:21.092Z",
   "backend": "https://nclawson4--acq-search-v2-backend-fastapi-app.modal.run",
   "queries": [
     {
       "q": "Leila talking about leadership, talking head video",
-      "latency_ms": 3044,
+      "latency_ms": 6004,
       "response": {
         "query": "Leila talking about leadership, talking head video",
         "parsed": {
@@ -52,8 +52,8 @@
             "rank": 1,
             "score": 0.6531228423118591,
             "judge_score": 1,
-            "why": "speaker=leila (audio voice match verified). Leila explains key aspects of effective leadership and the importance of handling upset people.",
-            "judge_reason": "Leila explains key aspects of effective leadership and the importance of handling upset people.",
+            "why": "speaker=leila (audio voice match verified). Leila discusses key aspects of leadership and the importance of making tough decisions.",
+            "judge_reason": "Leila discusses key aspects of leadership and the importance of making tough decisions.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -108,8 +108,8 @@
             "rank": 2,
             "score": 0.6222449541091919,
             "judge_score": 0.7,
-            "why": "speaker=leila (audio voice match verified). Mentions leading effectively and managing energy, relevant to leadership.",
-            "judge_reason": "Mentions leading effectively and managing energy, relevant to leadership.",
+            "why": "speaker=leila (audio voice match verified). Talks about leading effectively and managing energy, relevant to leadership.",
+            "judge_reason": "Talks about leading effectively and managing energy, relevant to leadership.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -159,10 +159,10 @@
           },
           {
             "rank": 3,
-            "score": 0.5892897248268127,
+            "score": 0.5713911056518555,
             "judge_score": 0.7,
-            "why": "speaker=leila (audio voice match verified). Talks about leadership skills and experiences, relevant to the concept of leadership.",
-            "judge_reason": "Talks about leadership skills and experiences, relevant to the concept of leadership.",
+            "why": "speaker=leila (audio voice match verified). Discusses the importance of rest for leaders, relevant to leadership effectiveness.",
+            "judge_reason": "Discusses the importance of rest for leaders, relevant to leadership effectiveness.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -170,38 +170,40 @@
               "speakers_count=solo (audio diarization verified)",
               "visual: \"talking head video\" (CLIP visual retrieval matched this)"
             ],
-            "video_id": "hT4ilfJVZeQ",
-            "scene_idx": 2,
-            "start_s": 5.583,
-            "end_s": 8.917,
-            "frame_url": "/api/frames/hT4ilfJVZeQ/0002",
-            "youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=6s",
+            "video_id": "DmenYQ_MEEA",
+            "scene_idx": 152,
+            "start_s": 443.5,
+            "end_s": 451.083,
+            "frame_url": "/api/frames/DmenYQ_MEEA/0152",
+            "youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=444s",
             "voice": "leila",
             "voices_present": [
               "leila"
             ],
             "speakers_count": "solo",
             "segment": {
-              "video_id": "hT4ilfJVZeQ",
-              "segment_idx": 0,
-              "start_s": 0,
-              "end_s": 63.5,
-              "topic_title": "Leila's hook: five rules of leadership at 100+ teammates",
-              "summary": "Leila opens with the Guinness World Record, second building, 100 teammates, $100M in three days year. Promises five most-underrated leadership skills she learned in ten years.",
+              "video_id": "DmenYQ_MEEA",
+              "segment_idx": 4,
+              "start_s": 418.5,
+              "end_s": 494.5,
+              "topic_title": "Rest as nonnegotiable — Leila on becoming optional",
+              "summary": "Leila reframes rest like elite athletes do: nonnegotiable. During injury recovery she deleted nice-to-have meetings, hit record revenue numbers, and watched her team step into leadership roles she didn't know they could fill.",
               "lessons_categories": [
-                "leadership"
+                "leadership",
+                "operations",
+                "scaling"
               ],
               "industries": [
                 "general_business"
               ],
               "audience": [
-                "leadership",
-                "business_owners"
+                "business_owners",
+                "leadership"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=0s",
-            "recency_days": 133,
-            "upload_date": "2026-01-30",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=418s",
+            "recency_days": 225,
+            "upload_date": "2025-10-30",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
@@ -215,8 +217,8 @@
             "rank": 4,
             "score": 0.6588801145553589,
             "judge_score": 0.4,
-            "why": "speaker=leila (audio voice match verified). Discusses leadership changes but not specific leadership principles.",
-            "judge_reason": "Discusses leadership changes but not specific leadership principles.",
+            "why": "speaker=leila (audio voice match verified). Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
+            "judge_reason": "Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -268,10 +270,10 @@
           },
           {
             "rank": 5,
-            "score": 0.5713911056518555,
+            "score": 0.5892897248268127,
             "judge_score": 0.4,
-            "why": "speaker=leila (audio voice match verified). Discusses energy management in leadership but not core leadership principles.",
-            "judge_reason": "Discusses energy management in leadership but not core leadership principles.",
+            "why": "speaker=leila (audio voice match verified). Mentions leadership but emphasizes personal growth and achievements rather than leadership concepts.",
+            "judge_reason": "Mentions leadership but emphasizes personal growth and achievements rather than leadership concepts.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -279,40 +281,38 @@
               "speakers_count=solo (audio diarization verified)",
               "visual: \"talking head video\" (CLIP visual retrieval matched this)"
             ],
-            "video_id": "DmenYQ_MEEA",
-            "scene_idx": 152,
-            "start_s": 443.5,
-            "end_s": 451.083,
-            "frame_url": "/api/frames/DmenYQ_MEEA/0152",
-            "youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=444s",
+            "video_id": "hT4ilfJVZeQ",
+            "scene_idx": 2,
+            "start_s": 5.583,
+            "end_s": 8.917,
+            "frame_url": "/api/frames/hT4ilfJVZeQ/0002",
+            "youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=6s",
             "voice": "leila",
             "voices_present": [
               "leila"
             ],
             "speakers_count": "solo",
             "segment": {
-              "video_id": "DmenYQ_MEEA",
-              "segment_idx": 4,
-              "start_s": 418.5,
-              "end_s": 494.5,
-              "topic_title": "Rest as nonnegotiable — Leila on becoming optional",
-              "summary": "Leila reframes rest like elite athletes do: nonnegotiable. During injury recovery she deleted nice-to-have meetings, hit record revenue numbers, and watched her team step into leadership roles she didn't know they could fill.",
+              "video_id": "hT4ilfJVZeQ",
+              "segment_idx": 0,
+              "start_s": 0,
+              "end_s": 63.5,
+              "topic_title": "Leila's hook: five rules of leadership at 100+ teammates",
+              "summary": "Leila opens with the Guinness World Record, second building, 100 teammates, $100M in three days year. Promises five most-underrated leadership skills she learned in ten years.",
               "lessons_categories": [
-                "leadership",
-                "operations",
-                "scaling"
+                "leadership"
               ],
               "industries": [
                 "general_business"
               ],
               "audience": [
-                "business_owners",
-                "leadership"
+                "leadership",
+                "business_owners"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=418s",
-            "recency_days": 225,
-            "upload_date": "2025-10-30",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=0s",
+            "recency_days": 133,
+            "upload_date": "2026-01-30",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
@@ -327,7 +327,7 @@
     },
     {
       "q": "Sharran less than 3 weeks ago talking about real estate",
-      "latency_ms": 4878,
+      "latency_ms": 5566,
       "response": {
         "query": "Sharran less than 3 weeks ago talking about real estate",
         "parsed": {
@@ -348,11 +348,11 @@
           "judge_query": "real estate",
           "is_visual_only": false,
           "clean_query": "real estate",
-          "reasoning": "Sharran filter + last-21-day window; topic is real estate.",
+          "reasoning": "Sharran filter + last-3-week window; topic is real estate.",
           "_parsed_by": "llm",
-          "_ts": 1781547971
+          "_ts": 1781548770
         },
-        "parsed_reasoning": "Sharran filter + last-21-day window; topic is real estate.",
+        "parsed_reasoning": "Sharran filter + last-3-week window; topic is real estate.",
         "parsed_by": "llm",
         "filters_applied": {
           "speaker": "sharran",
@@ -485,7 +485,7 @@
     },
     {
       "q": "Animations talking about stress and anxiety",
-      "latency_ms": 3068,
+      "latency_ms": 575,
       "response": {
         "query": "Animations talking about stress and anxiety",
         "parsed": {
@@ -795,13 +795,13 @@
     },
     {
       "q": "Alex talking about churn",
-      "latency_ms": 5072,
+      "latency_ms": 8616,
       "response": {
         "query": "Alex talking about churn",
         "parsed": {
           "speaker": "alex",
           "required_speakers": null,
-          "speakers_count": "solo",
+          "speakers_count": null,
           "is_animation": null,
           "talking_head_pose": null,
           "max_age_days": null,
@@ -811,21 +811,15 @@
           "age_group": null,
           "lessons_categories": null,
           "instructional_only": false,
-          "visual_concept": null,
-          "retrieval_query": "churn",
-          "judge_query": "churn",
-          "is_visual_only": false,
-          "clean_query": "churn",
-          "reasoning": "Extracted topic 'churn' from Alex's discussion.",
-          "_parsed_by": "llm",
-          "_ts": 1781547978
+          "clean_query": "Alex talking about churn",
+          "reasoning": ""
         },
-        "parsed_reasoning": "Extracted topic 'churn' from Alex's discussion.",
-        "parsed_by": "llm",
+        "parsed_reasoning": "",
+        "parsed_by": "regex",
         "filters_applied": {
           "speaker": "alex",
           "required_speakers": null,
-          "speakers_count": "solo",
+          "speakers_count": null,
           "is_animation": null,
           "talking_head_pose": null,
           "industries": null,
@@ -835,19 +829,18 @@
           "instructional_only": false,
           "max_age_days": null,
           "min_age_days": null,
-          "retrieval_query": "churn"
+          "retrieval_query": "Alex talking about churn"
         },
         "n": 5,
         "results": [
           {
             "rank": 1,
-            "score": 0.8030082583427429,
+            "score": 0.9141154289245605,
             "judge_score": 1,
             "why": "speaker=alex (audio voice match verified). Alex discusses churn rates in memberships, focusing on critical timeframes.",
             "judge_reason": "Alex discusses churn rates in memberships, focusing on critical timeframes.",
             "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "speakers_count=solo (audio diarization verified)"
+              "speaker=alex (audio voice match verified)"
             ],
             "video_id": "3fsJFUvA6Ts",
             "scene_idx": 20,
@@ -893,72 +886,19 @@
           },
           {
             "rank": 2,
-            "score": 0.5137746930122375,
-            "judge_score": 0.4,
-            "why": "speaker=alex (audio voice match verified). Mentions user retention and growth, but not specifically about churn.",
-            "judge_reason": "Mentions user retention and growth, but not specifically about churn.",
+            "score": 0.7169501781463623,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Alex explains how reducing offerings can significantly lower churn rates.",
+            "judge_reason": "Alex explains how reducing offerings can significantly lower churn rates.",
             "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "speakers_count=solo (audio diarization verified)"
-            ],
-            "video_id": "qsXxckCbci0",
-            "scene_idx": 132,
-            "start_s": 3742.155,
-            "end_s": 3759.339,
-            "frame_url": "/api/frames/qsXxckCbci0/0132",
-            "youtube_url": "https://www.youtube.com/watch?v=qsXxckCbci0&t=3742s",
-            "voice": "alex",
-            "voices_present": [
-              "alex"
-            ],
-            "speakers_count": "solo",
-            "segment": {
-              "video_id": "qsXxckCbci0",
-              "segment_idx": 16,
-              "start_s": 3722.3,
-              "end_s": 3947,
-              "topic_title": "Growth-as-a-line vs growth-as-cumulative-retention (Facebook framework)",
-              "summary": "Alex on the Facebook head-of-growth visual: people think growth is a line, it's actually compounding retention. Revenue retention > logo retention — Skool's 20M users as the example. 100%+ NRR is the game.",
-              "lessons_categories": [
-                "operations",
-                "scaling",
-                "pricing"
-              ],
-              "industries": [
-                "saas"
-              ],
-              "audience": [
-                "business_owners"
-              ]
-            },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=qsXxckCbci0&t=3722s",
-            "recency_days": 149,
-            "upload_date": "2026-01-14",
-            "signals": {
-              "visual_weight": 0.5,
-              "transcript_weight": 0.2,
-              "speaker_filter": "alex",
-              "is_animation_filter": null,
-              "talking_head_pose_filter": null,
-              "reranked": true
-            }
-          },
-          {
-            "rank": 3,
-            "score": 0.7804146409034729,
-            "judge_score": 0,
-            "why": "speaker=alex (audio voice match verified). Content is about business functions, not related to churn.",
-            "judge_reason": "Content is about business functions, not related to churn.",
-            "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "speakers_count=solo (audio diarization verified)"
+              "speaker=alex (audio voice match verified)"
             ],
             "video_id": "-j8_YCWZ05Q",
-            "scene_idx": 32,
-            "start_s": 199.199,
-            "end_s": 206.006,
-            "frame_url": "/api/frames/-j8_YCWZ05Q/0032",
-            "youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=199s",
+            "scene_idx": 59,
+            "start_s": 667.2,
+            "end_s": 681.414,
+            "frame_url": "/api/frames/-j8_YCWZ05Q/0059",
+            "youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=667s",
             "voice": "alex",
             "voices_present": [
               "alex"
@@ -966,22 +906,25 @@
             "speakers_count": "solo",
             "segment": {
               "video_id": "-j8_YCWZ05Q",
-              "segment_idx": 3,
-              "start_s": 154.7,
-              "end_s": 205.6,
-              "topic_title": "Roadmap promo: acquisition.com/roadmap mid-roll",
-              "summary": "Alex pitches his free 10-stage scaling roadmap covering eight business functions, available at acquisition.com/roadmap.",
+              "segment_idx": 8,
+              "start_s": 566.9,
+              "end_s": 720,
+              "topic_title": "Tip 7: Overwhelm is the #1 churn driver - Planet Fitness lesson",
+              "summary": "Alex uses Planet Fitness as the case study: cheaper, stripped-down gyms beat fully-loaded health clubs because customers feel they use 100% of value. More features makes people feel they're getting less value.",
               "lessons_categories": [
-                "none"
+                "operations",
+                "pricing",
+                "branding"
               ],
               "industries": [
-                "general_business"
+                "general_business",
+                "fitness"
               ],
               "audience": [
                 "business_owners"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=155s",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=567s",
             "recency_days": 80,
             "upload_date": "2026-03-24",
             "signals": {
@@ -994,21 +937,71 @@
             }
           },
           {
-            "rank": 4,
-            "score": 0.577009916305542,
+            "rank": 3,
+            "score": 0.705971360206604,
             "judge_score": 0,
-            "why": "speaker=alex (audio voice match verified). Discusses passion, unrelated to churn.",
-            "judge_reason": "Discusses passion, unrelated to churn.",
+            "why": "speaker=alex (audio voice match verified). Content is about video production, not related to churn.",
+            "judge_reason": "Content is about video production, not related to churn.",
             "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "speakers_count=solo (audio diarization verified)"
+              "speaker=alex (audio voice match verified)"
+            ],
+            "video_id": "Jmkq5RLjm0U",
+            "scene_idx": 538,
+            "start_s": 3637.217,
+            "end_s": 3649.312,
+            "frame_url": "/api/frames/Jmkq5RLjm0U/0538",
+            "youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=3637s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "Jmkq5RLjm0U",
+              "segment_idx": 9,
+              "start_s": 3398.7,
+              "end_s": 3705.1,
+              "topic_title": "Razzle vs language, overproduction, and pre-search not post-production",
+              "summary": "Alex shares his data: 75% of top reels emphasized language not razzle; visual effects distract from learning. Pre-search beats post-production — 4 weeks of research saves 90% of edit work and 4x output.",
+              "lessons_categories": [
+                "content",
+                "operations",
+                "marketing"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=3399s",
+            "recency_days": 90,
+            "upload_date": "2026-03-14",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": null,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.6791946887969971,
+            "judge_score": 0,
+            "why": "speaker=alex (audio voice match verified). Content discusses passion, not related to churn.",
+            "judge_reason": "Content discusses passion, not related to churn.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)"
             ],
             "video_id": "_KlZoPxbStk",
-            "scene_idx": 4,
-            "start_s": 19.953,
-            "end_s": 22.155,
-            "frame_url": "/api/frames/_KlZoPxbStk/0004",
-            "youtube_url": "https://www.youtube.com/watch?v=_KlZoPxbStk&t=20s",
+            "scene_idx": 2,
+            "start_s": 6.54,
+            "end_s": 14.681,
+            "frame_url": "/api/frames/_KlZoPxbStk/0002",
+            "youtube_url": "https://www.youtube.com/watch?v=_KlZoPxbStk&t=7s",
             "voice": "alex",
             "voices_present": [
               "alex"
@@ -1047,36 +1040,35 @@
           },
           {
             "rank": 5,
-            "score": 0.545989453792572,
+            "score": 0.6562544107437134,
             "judge_score": 0,
-            "why": "speaker=alex (audio voice match verified). Content is about media strategy, not related to churn.",
-            "judge_reason": "Content is about media strategy, not related to churn.",
+            "why": "speaker=alex (audio voice match verified). Content is about business services, not related to churn.",
+            "judge_reason": "Content is about business services, not related to churn.",
             "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "speakers_count=solo (audio diarization verified)"
+              "speaker=alex (audio voice match verified)"
             ],
-            "video_id": "Jmkq5RLjm0U",
-            "scene_idx": 715,
-            "start_s": 4844.757,
-            "end_s": 4861.106,
-            "frame_url": "/api/frames/Jmkq5RLjm0U/0715",
-            "youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=4845s",
+            "video_id": "hHkdbr6_JJs",
+            "scene_idx": 16,
+            "start_s": 209.709,
+            "end_s": 211.712,
+            "frame_url": "/api/frames/hHkdbr6_JJs/0016",
+            "youtube_url": "https://www.youtube.com/watch?v=hHkdbr6_JJs&t=210s",
             "voice": "alex",
             "voices_present": [
               "alex"
             ],
             "speakers_count": "solo",
             "segment": {
-              "video_id": "Jmkq5RLjm0U",
-              "segment_idx": 13,
-              "start_s": 4507.1,
-              "end_s": 4990.6,
-              "topic_title": "Repost your best content + the Simpsons intro lesson",
-              "summary": "Alex tells viewers to repost last year's best piece — new audience hasn't seen it, and reminders compound. Uses The Simpsons opening (Bart writing on the board changes every episode) as the variety-within-consistency template.",
+              "video_id": "hHkdbr6_JJs",
+              "segment_idx": 2,
+              "start_s": 193.3,
+              "end_s": 254.9,
+              "topic_title": "Alex on the advisory practice levels: L1 $5K, L2 $35K, L3 $135K",
+              "summary": "Alex breaks the Advisory Practice into three tiers — L1 ($5K), L2 ($35K), L3 ($135K). Workshops in Vegas with associates, analysts, directors; people ascend as they want more access.",
               "lessons_categories": [
-                "content",
-                "marketing",
-                "branding"
+                "pricing",
+                "sales",
+                "operations"
               ],
               "industries": [
                 "general_business"
@@ -1085,9 +1077,9 @@
                 "business_owners"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=4507s",
-            "recency_days": 90,
-            "upload_date": "2026-03-14",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=hHkdbr6_JJs&t=193s",
+            "recency_days": 56,
+            "upload_date": "2026-04-17",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
@@ -1102,7 +1094,7 @@
     },
     {
       "q": "Alex writing on a whiteboard",
-      "latency_ms": 597,
+      "latency_ms": 618,
       "response": {
         "query": "Alex writing on a whiteboard",
         "parsed": {
@@ -1415,6 +1407,221 @@
               "transcript_weight": 0.2,
               "speaker_filter": "alex",
               "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "q": "Leila and Sharran talking together",
+      "latency_ms": 4602,
+      "response": {
+        "query": "Leila and Sharran talking together",
+        "parsed": {
+          "speaker": null,
+          "required_speakers": [
+            "leila",
+            "sharran"
+          ],
+          "speakers_count": "dialogue",
+          "is_animation": null,
+          "talking_head_pose": null,
+          "max_age_days": null,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": null,
+          "retrieval_query": "Leila and Sharran talking together",
+          "judge_query": null,
+          "is_visual_only": false,
+          "clean_query": "Leila and Sharran talking together",
+          "reasoning": "Leila and Sharran are both named, indicating a dialogue format.",
+          "_parsed_by": "llm",
+          "_ts": 1781548784
+        },
+        "parsed_reasoning": "Leila and Sharran are both named, indicating a dialogue format.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": null,
+          "required_speakers": [
+            "leila",
+            "sharran"
+          ],
+          "speakers_count": "dialogue",
+          "is_animation": null,
+          "talking_head_pose": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": null,
+          "min_age_days": null,
+          "retrieval_query": "Leila and Sharran talking together"
+        },
+        "n": 3,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.5758933424949646,
+            "judge_score": 0.7,
+            "why": "required_speakers=[leila, sharran] verified by audio diarization. Sharran and Leila discuss growth and communication, relevant to their collaboration.",
+            "judge_reason": "Sharran and Leila discuss growth and communication, relevant to their collaboration.",
+            "structural_dims": [
+              "required_speakers=[leila, sharran] verified by audio diarization",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 365,
+            "start_s": 2402.734,
+            "end_s": 2413.661,
+            "frame_url": "/api/frames/g3QTLRlmevc/0365",
+            "youtube_url": "https://www.youtube.com/watch?v=g3QTLRlmevc&t=2403s",
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "g3QTLRlmevc",
+              "segment_idx": 15,
+              "start_s": 2358.8,
+              "end_s": 2489.4,
+              "topic_title": "Sharran on sourcing six execs: internal, network, search firm thirds",
+              "summary": "Sharran breaks down the split: two execs promoted internally, two from network, two via external search. Leila warns about the team noticing communication lapses during transition.",
+              "lessons_categories": [
+                "hiring",
+                "leadership",
+                "scaling"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "leadership",
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=g3QTLRlmevc&t=2359s",
+            "recency_days": 88,
+            "upload_date": "2026-03-16",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": null,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.3404686450958252,
+            "judge_score": 0.4,
+            "why": "required_speakers=[leila, sharran] verified by audio diarization. Leila and Sharran interact, but the content is more about scaling than their direct conversation.",
+            "judge_reason": "Leila and Sharran interact, but the content is more about scaling than their direct conversation.",
+            "structural_dims": [
+              "required_speakers=[leila, sharran] verified by audio diarization",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "u3H7CfpfwHQ",
+            "scene_idx": 364,
+            "start_s": 1069.569,
+            "end_s": 1078.327,
+            "frame_url": "/api/frames/u3H7CfpfwHQ/0364",
+            "youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=1070s",
+            "voice": "leila",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "u3H7CfpfwHQ",
+              "segment_idx": 6,
+              "start_s": 950,
+              "end_s": 1100,
+              "topic_title": "1,000 books per second — the room hits product market fit live",
+              "summary": "Team realizes they're selling 1,000 books per second. 'Holy fuck.' Crew watches stars align in real time. The whole company gung-ho, energy compounds — winning makes you want to keep winning.",
+              "lessons_categories": [
+                "sales",
+                "branding"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=950s",
+            "recency_days": 161,
+            "upload_date": "2026-01-02",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": null,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.2641925811767578,
+            "judge_score": 0,
+            "why": "required_speakers=[leila, sharran] verified by audio diarization. Content focuses on conversion issues, not a dialogue between Leila and Sharran.",
+            "judge_reason": "Content focuses on conversion issues, not a dialogue between Leila and Sharran.",
+            "structural_dims": [
+              "required_speakers=[leila, sharran] verified by audio diarization",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "N5MExtki_VI",
+            "scene_idx": 100,
+            "start_s": 446.029,
+            "end_s": 473.223,
+            "frame_url": "/api/frames/N5MExtki_VI/0100",
+            "youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=446s",
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "N5MExtki_VI",
+              "segment_idx": 2,
+              "start_s": 301.6,
+              "end_s": 530,
+              "topic_title": "Funnel breakdown: 5-day challenge with 5% show rate",
+              "summary": "Alex digs into their five-day challenge funnel: 511 leads, 26 attendees, 12 calls booked, 6 sales. CPL is $815, show rate 5.25%. Alex pitches reframing as a 4-hour date night with the world's biggest date night ad angle.",
+              "lessons_categories": [
+                "customer_acquisition",
+                "marketing",
+                "sales"
+              ],
+              "industries": [
+                "services",
+                "education"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=302s",
+            "recency_days": 133,
+            "upload_date": "2026-01-30",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": null,
               "talking_head_pose_filter": null,
               "reranked": true
             }
