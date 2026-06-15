@@ -328,33 +328,17 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     max_age_days = req.max_age_days if req.max_age_days is not None else parsed.get("max_age_days")
     min_age_days = req.min_age_days if req.min_age_days is not None else parsed.get("min_age_days")
     visual_concept = parsed.get("visual_concept")
-    clean_q = (parsed.get("clean_query") or "").strip()
 
-    # residual_topic: clean_q minus filler words (prepositions, articles, time words).
-    # If empty, there's no real content ask for the judge to grade and no useful
-    # query to embed — fall back to visual_concept for retrieval if available.
-    if clean_q:
-        residual_topic = re.sub(
-            r"\b(in|from|within|over|under|more|less|older|newer|than|recently|"
-            r"recent|this|last|past|the|of|a|an|ago|to|for|about|with|at|on|by|"
-            r"and|or|talking|discussing|explaining|showing|years?|months?|weeks?|"
-            r"days?|today|yesterday)\b|\d+",
-            "", clean_q, flags=re.IGNORECASE,
-        )
-        residual_topic = re.sub(r"\s+", " ", residual_topic).strip(" ,.;:-")
-    else:
-        residual_topic = ""
-
-    # Pick the CLIP retrieval query in order of usefulness:
-    #   1. residual_topic (real content) — graded by judge
-    #   2. visual_concept (when there's no content ask, drive retrieval by visual)
-    #   3. original query (final fallback)
-    if residual_topic:
-        retrieval_query = clean_q or residual_topic
-    elif visual_concept:
-        retrieval_query = visual_concept
-    else:
-        retrieval_query = req.query
+    # The LLM parser owns these strings end-to-end — no regex post-processing.
+    # retrieval_query: what CLIP embeds. judge_query: what the judge grades against
+    # (None means there's no content ask; the judge will be skipped). is_visual_only
+    # is the parser's explicit signal that CLIP did the work.
+    retrieval_query = (parsed.get("retrieval_query") or parsed.get("clean_query") or req.query).strip()
+    if not retrieval_query:
+        retrieval_query = visual_concept or req.query
+    judge_query = parsed.get("judge_query")
+    if isinstance(judge_query, str):
+        judge_query = judge_query.strip() or None
     if parsed_by == "llm" and retrieval_query and retrieval_query != req.query:
         qv = embed_query_text(STATE, retrieval_query)
 
@@ -383,17 +367,19 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
         visual_concept=visual_concept,
     )
 
-    # Visual-only short-circuit: when the editor's query is purely about what's on
-    # screen (visual_concept present, no remaining topic for the judge to grade),
-    # CLIP retrieval IS the answer. The transcript-only judge has nothing useful to
-    # add and tends to score 0.0 because the transcript never literally mentions
-    # the visual concept. Skip the judge, trust the ranking we already have.
-    visual_only = bool(visual_concept) and not residual_topic
+    # Visual-only short-circuit: the parser decides this explicitly via is_visual_only
+    # OR by leaving judge_query null with a visual_concept set. In either case, CLIP
+    # retrieval IS the answer — the transcript-only judge would just score 0.0 because
+    # the transcript doesn't literally mention the visual concept.
+    visual_only = bool(visual_concept) and (parsed.get("is_visual_only") or not judge_query)
     do_rerank = req.rerank and hits and not visual_only
 
     if do_rerank:
+        # The judge grades against judge_query (topic-only) when available — the
+        # full query has speaker + visual + time noise the judge shouldn't re-judge.
+        judge_target = judge_query or req.query
         hits = await rerank_async(
-            STATE, req.query, hits,
+            STATE, judge_target, hits,
             structural_satisfied=structural_dims,
         )
         # Re-sort by judge score (descending); break ties with similarity

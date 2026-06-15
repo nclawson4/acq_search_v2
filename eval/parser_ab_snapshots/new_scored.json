@@ -1,0 +1,5340 @@
+{
+  "label": "new",
+  "agg": {
+    "n_queries": 50,
+    "p_at_5_mean": 0.408,
+    "mrr_mean": 0.68,
+    "broken_query_count": 28,
+    "broken_query_rate": 0.56,
+    "great_query_count": 15,
+    "great_query_rate": 0.3,
+    "zero_results_count": 1
+  },
+  "scored": [
+    {
+      "q": "Alex talking about pricing",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "pricing"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 135,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Alex discusses pricing strategies directly.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 9,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 0,
+          "judge_why": "Content is about sales rules, not pricing.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 80,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 1,
+          "judge_why": "Right speaker but focuses more on coaching than pricing.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ZuJryiwxjDw",
+          "scene_idx": 74,
+          "voice": "alex",
+          "recency_days": 109,
+          "judge_label": 0,
+          "judge_why": "Discusses car sales, not related to pricing.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "jfW6gL6hKhk",
+          "scene_idx": 28,
+          "voice": "alex",
+          "recency_days": 100,
+          "judge_label": 0,
+          "judge_why": "Content is about starting a business, not pricing.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "Leila on hiring",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "hiring"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "cgsWQd5EM1k",
+          "scene_idx": 248,
+          "voice": "leila",
+          "recency_days": 189,
+          "judge_label": 1,
+          "judge_why": "Leila discusses hiring assistants but not directly about hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "e1awpbZxVnw",
+          "scene_idx": 38,
+          "voice": "leila",
+          "recency_days": 66,
+          "judge_label": 0,
+          "judge_why": "Content focuses on money scripts, unrelated to hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "scene_idx": 198,
+          "voice": "leila",
+          "recency_days": 154,
+          "judge_label": 0,
+          "judge_why": "Discusses movement and mental health, not related to hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "oJsLMjaspG0",
+          "scene_idx": 217,
+          "voice": "leila",
+          "recency_days": 112,
+          "judge_label": 0,
+          "judge_why": "Talks about business constraints, not specifically hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "LCc-wecNPKg",
+          "scene_idx": 187,
+          "voice": "leila",
+          "recency_days": 43,
+          "judge_label": 0,
+          "judge_why": "Content is about job transitions and leadership, not directly about hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "Sharran real estate negotiation",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "real estate negotiation"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "vbcelc94VRQ",
+          "scene_idx": 71,
+          "voice": "sharran",
+          "recency_days": 21,
+          "judge_label": 2,
+          "judge_why": "Sharran discusses acquiring REMAX, directly related to real estate negotiation.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "scene_idx": 47,
+          "voice": "sharran",
+          "recency_days": 93,
+          "judge_label": 1,
+          "judge_why": "Mentions real estate market dynamics but lacks specific negotiation details.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 1,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 0,
+          "judge_why": "Content focuses on wealth building, not real estate negotiation.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Vx_sSMAJjNg",
+          "scene_idx": 57,
+          "voice": "sharran",
+          "recency_days": 49,
+          "judge_label": 0,
+          "judge_why": "Content is about client relationships, not real estate negotiation.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ISQkh8bu6EU",
+          "scene_idx": 105,
+          "voice": "sharran",
+          "recency_days": 36,
+          "judge_label": 0,
+          "judge_why": "Discusses land investing but not negotiation in real estate.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "alex hormozi about scaling",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "scaling"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 39,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 2,
+          "judge_why": "directly discusses scaling roadmap and steps to scale a business",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 48,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 2,
+          "judge_why": "directly explains scaling roadmap and offers help for scaling businesses",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "k5-57282taI",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 2,
+          "judge_label": 0,
+          "judge_why": "content is not about scaling, focuses on trust and presentations",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 92,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "discusses scaling stages but focuses on specific business examples",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 150,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 1,
+          "judge_why": "mentions scaling but focuses more on packaging than scaling strategies",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "leila firing employees",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "firing employees"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "scene_idx": 34,
+          "voice": "leila",
+          "recency_days": 147,
+          "judge_label": 2,
+          "judge_why": "Leila discusses firing employees directly.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "oJsLMjaspG0",
+          "scene_idx": 437,
+          "voice": "leila",
+          "recency_days": 112,
+          "judge_label": 1,
+          "judge_why": "Right speaker but not specifically about firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "7FiKGWYA65g",
+          "scene_idx": 91,
+          "voice": "leila",
+          "recency_days": 91,
+          "judge_label": 0,
+          "judge_why": "Content does not mention firing employees.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "9OkBN4uor5M",
+          "scene_idx": 208,
+          "voice": "leila",
+          "recency_days": 105,
+          "judge_label": 1,
+          "judge_why": "Right speaker but unrelated to firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "0iDZ8UDvlWU",
+          "scene_idx": 135,
+          "voice": "leila",
+          "recency_days": 217,
+          "judge_label": 0,
+          "judge_why": "Right speaker but not related to firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "customer retention",
+      "dims": [
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "customer retention"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "-j8_YCWZ05Q",
+          "scene_idx": 3,
+          "voice": "alex",
+          "recency_days": 80,
+          "judge_label": 2,
+          "judge_why": "Directly discusses customer retention strategies.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "oJsLMjaspG0",
+          "scene_idx": 383,
+          "voice": "leila",
+          "recency_days": 112,
+          "judge_label": 1,
+          "judge_why": "Talks about customer success relevant to retention.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 12,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 1,
+          "judge_why": "Mentions churn, indirectly related to retention.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 196,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content is about brand building, not retention.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 29,
+          "voice": "sharran",
+          "recency_days": 104,
+          "judge_label": 0,
+          "judge_why": "Focuses on client acquisition, not retention.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "pricing strategy for SaaS",
+      "dims": [
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 0.5,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "pricing strategy SaaS"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 18,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 1,
+          "judge_why": "Relates to pricing but not specifically SaaS.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ZuJryiwxjDw",
+          "scene_idx": 103,
+          "voice": "alex",
+          "recency_days": 109,
+          "judge_label": 2,
+          "judge_why": "Directly discusses pricing strategy for SaaS.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 20,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 2,
+          "judge_why": "Directly discusses SaaS pricing strategy.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "hHkdbr6_JJs",
+          "scene_idx": 26,
+          "voice": "alex",
+          "recency_days": 56,
+          "judge_label": 0,
+          "judge_why": "Mentions business opportunities, not SaaS pricing.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "sL16tsGafcQ",
+          "scene_idx": 45,
+          "voice": "alex",
+          "recency_days": 8,
+          "judge_label": 0,
+          "judge_why": "Talks about market pricing, not SaaS pricing.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "scaling past 10 million",
+      "dims": [
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "scaling past 10 million"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 48,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 2,
+          "judge_why": "Directly addresses scaling past 10 million.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 39,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 2,
+          "judge_why": "Elaborates on scaling roadmap relevant to past 10 million.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 92,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "Mentions scaling roadmap stages but less focused on past 10 million.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 209,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 1,
+          "judge_why": "Animated content discusses scaling roadmap but not specifically past 10 million.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 134,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 1,
+          "judge_why": "Animated segment discusses scaling roadmap but not specifically past 10 million.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "hiring fast",
+      "dims": [
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "hiring fast"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "R23CiC80t7c",
+          "scene_idx": 12,
+          "voice": "leila",
+          "recency_days": 232,
+          "judge_label": 2,
+          "judge_why": "Mentions speed as an advantage in business, relevant to hiring fast.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "cgsWQd5EM1k",
+          "scene_idx": 248,
+          "voice": "leila",
+          "recency_days": 189,
+          "judge_label": 1,
+          "judge_why": "Discusses saving time and hiring assistants, but not directly about hiring fast.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "OcH0864CLPs",
+          "scene_idx": 51,
+          "voice": "sharran",
+          "recency_days": 65,
+          "judge_label": 0,
+          "judge_why": "Content is about decision-making and fear, unrelated to hiring fast.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "jfW6gL6hKhk",
+          "scene_idx": 57,
+          "voice": "alex",
+          "recency_days": 100,
+          "judge_label": 0,
+          "judge_why": "Focuses on business strategies, not related to hiring fast.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "luvQRkxM-pQ",
+          "scene_idx": 161,
+          "voice": "sharran",
+          "recency_days": 121,
+          "judge_label": 0,
+          "judge_why": "Describes a long sales process, not relevant to hiring fast.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "company culture",
+      "dims": [
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "company culture"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "NqtWADqiMCo",
+          "scene_idx": 106,
+          "voice": "leila",
+          "recency_days": 63,
+          "judge_label": 2,
+          "judge_why": "Leila discusses toxic culture and its impact on workplace dynamics, directly addressing company culture.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "9OkBN4uor5M",
+          "scene_idx": 17,
+          "voice": "leila",
+          "recency_days": 105,
+          "judge_label": 1,
+          "judge_why": "Leila mentions culture as a system but lacks depth on company culture specifics.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "luvQRkxM-pQ",
+          "scene_idx": 218,
+          "voice": "sharran",
+          "recency_days": 121,
+          "judge_label": 1,
+          "judge_why": "Sharran highlights the power of culture in organizations, relevant but not solely focused on company culture.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Vx_sSMAJjNg",
+          "scene_idx": 64,
+          "voice": "sharran",
+          "recency_days": 49,
+          "judge_label": 0,
+          "judge_why": "Content is about business growth strategies, not related to company culture.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 449,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Discussion revolves around personal experiences and business decisions, not company culture.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "whiteboard",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "whiteboard",
+        "clean_query": "whiteboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 130,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 2,
+          "judge_why": "Matched on \"whiteboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1192,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on \"whiteboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 122,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 2,
+          "judge_why": "Matched on \"whiteboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "XsWSvz-aewA",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 17,
+          "judge_label": 2,
+          "judge_why": "Matched on \"whiteboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 758,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on \"whiteboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "dry erase board",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "dry erase board",
+        "clean_query": "dry erase board"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 104,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 2,
+          "judge_why": "Matched on \"dry erase board\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "7FiKGWYA65g",
+          "scene_idx": 184,
+          "voice": "leila",
+          "recency_days": 91,
+          "judge_label": 2,
+          "judge_why": "Matched on \"dry erase board\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1348,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on \"dry erase board\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 571,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on \"dry erase board\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 73,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 2,
+          "judge_why": "Matched on \"dry erase board\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "chalkboard",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "chalkboard",
+        "clean_query": "chalkboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 339,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 529,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "7FiKGWYA65g",
+          "scene_idx": 184,
+          "voice": "leila",
+          "recency_days": 91,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1373,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 104,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 2,
+          "judge_why": "Matched on 'chalkboard' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "title cards",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "title cards",
+        "clean_query": "title cards"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "a0l48z18fJU",
+          "scene_idx": 93,
+          "voice": "leila",
+          "recency_days": 84,
+          "judge_label": 2,
+          "judge_why": "Matched on 'title cards' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "yb2cLMMuMdQ",
+          "scene_idx": 18,
+          "voice": "alex",
+          "recency_days": 66,
+          "judge_label": 2,
+          "judge_why": "Matched on 'title cards' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "luvQRkxM-pQ",
+          "scene_idx": 96,
+          "voice": "sharran",
+          "recency_days": 121,
+          "judge_label": 2,
+          "judge_why": "Matched on 'title cards' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 248,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on 'title cards' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "cXytK82N93Y",
+          "scene_idx": 241,
+          "voice": "leila",
+          "recency_days": 98,
+          "judge_label": 2,
+          "judge_why": "Matched on 'title cards' visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "animation",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": true,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "animation",
+        "clean_query": "animation"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "R23CiC80t7c",
+          "scene_idx": 142,
+          "voice": "leila",
+          "recency_days": 232,
+          "judge_label": 1,
+          "judge_why": "Visuals are animation but topic is not about animation.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "aMxcZY6aIFU",
+          "scene_idx": 64,
+          "voice": "leila",
+          "recency_days": 197,
+          "judge_label": 1,
+          "judge_why": "Visuals are animation but topic is not about animation.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 709,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 1,
+          "judge_why": "Visuals are animation but topic is not about animation.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "scene_idx": 174,
+          "voice": "leila",
+          "recency_days": 154,
+          "judge_label": 1,
+          "judge_why": "Visuals are animation but topic is not about animation.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "cXytK82N93Y",
+          "scene_idx": 202,
+          "voice": "leila",
+          "recency_days": 98,
+          "judge_label": 1,
+          "judge_why": "Visuals are animation but topic is not about animation.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "B-roll",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "B-roll",
+        "clean_query": "B-roll"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 521,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on \"B-roll\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 469,
+          "voice": null,
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Matched on \"B-roll\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 303,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 2,
+          "judge_why": "Matched on \"B-roll\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "scene_idx": 198,
+          "voice": "leila",
+          "recency_days": 77,
+          "judge_label": 2,
+          "judge_why": "Matched on \"B-roll\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "9q5ojtkqsBs",
+          "scene_idx": 35,
+          "voice": "alex",
+          "recency_days": 73,
+          "judge_label": 2,
+          "judge_why": "Matched on \"B-roll\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "podcast set",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "podcast set",
+        "clean_query": "podcast set"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 78,
+          "voice": "sharran",
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Matched on \"podcast set\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "0iDZ8UDvlWU",
+          "scene_idx": 139,
+          "voice": "leila",
+          "recency_days": 217,
+          "judge_label": 2,
+          "judge_why": "Matched on \"podcast set\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "cXytK82N93Y",
+          "scene_idx": 56,
+          "voice": "leila",
+          "recency_days": 98,
+          "judge_label": 2,
+          "judge_why": "Matched on \"podcast set\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "9OkBN4uor5M",
+          "scene_idx": 215,
+          "voice": "leila",
+          "recency_days": 105,
+          "judge_label": 2,
+          "judge_why": "Matched on \"podcast set\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "DmenYQ_MEEA",
+          "scene_idx": 108,
+          "voice": "leila",
+          "recency_days": 225,
+          "judge_label": 2,
+          "judge_why": "Matched on \"podcast set\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "wide shot",
+      "dims": [
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "wide shot",
+        "clean_query": "wide shot"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 366,
+          "voice": "alex",
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "scene_idx": 31,
+          "voice": "leila",
+          "recency_days": 147,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "CqtFlzNivuI",
+          "scene_idx": 57,
+          "voice": "leila",
+          "recency_days": 168,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "RJNDXnboXd8",
+          "scene_idx": 224,
+          "voice": "leila",
+          "recency_days": 182,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "DmenYQ_MEEA",
+          "scene_idx": 75,
+          "voice": "leila",
+          "recency_days": 225,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "whiteboard breakdown of offers",
+      "dims": [
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "whiteboard",
+        "clean_query": "offers breakdown on a whiteboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 138,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Directly discusses offers breakdown on a whiteboard.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1328,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 1,
+          "judge_why": "Mentions whiteboard but not specifically about offers breakdown.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 101,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 1,
+          "judge_why": "Mentions whiteboard but not a clear breakdown of offers.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 153,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to offers breakdown.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 99,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to offers breakdown.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "podcast about hiring",
+      "dims": [
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "podcast",
+        "clean_query": "hiring podcast"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "cgsWQd5EM1k",
+          "scene_idx": 248,
+          "voice": "leila",
+          "recency_days": 189,
+          "judge_label": 1,
+          "judge_why": "Discusses hiring assistants but not broadly about hiring.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "LCc-wecNPKg",
+          "scene_idx": 58,
+          "voice": "leila",
+          "recency_days": 43,
+          "judge_label": 1,
+          "judge_why": "Tangentially related to hiring but not directly about it.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Vx_sSMAJjNg",
+          "scene_idx": 157,
+          "voice": "sharran",
+          "recency_days": 49,
+          "judge_label": 0,
+          "judge_why": "Focuses on communication skills, not hiring.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "OcH0864CLPs",
+          "scene_idx": 51,
+          "voice": "sharran",
+          "recency_days": 65,
+          "judge_label": 0,
+          "judge_why": "Content is about decision-making, not hiring.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 888,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Discusses agency work, unrelated to hiring.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "title card about pricing",
+      "dims": [
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "title card",
+        "clean_query": "pricing title card"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 129,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "Visual matches title card but topic is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 254,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 1,
+          "judge_why": "Visual matches title card but topic is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 110,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 1,
+          "judge_why": "Visual matches title card but topic is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 78,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 1,
+          "judge_why": "Visual matches title card but topic is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 147,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 1,
+          "judge_why": "Visual matches title card but topic is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "animation explaining scaling",
+      "dims": [
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": true,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "animation",
+        "clean_query": "scaling animation"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "k5-57282taI",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 2,
+          "judge_label": 1,
+          "judge_why": "Animation is present but topic of scaling is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 151,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 1,
+          "judge_why": "Animation is present but topic of scaling is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "fr78adfAnuA",
+          "scene_idx": 21,
+          "voice": "alex",
+          "recency_days": 52,
+          "judge_label": 1,
+          "judge_why": "Animation is present but topic of scaling is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 209,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 1,
+          "judge_why": "Animation is present but topic of scaling is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 134,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 1,
+          "judge_why": "Animation is present but topic of scaling is unclear.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "videos from the last week",
+      "dims": [
+        "time"
+      ],
+      "n": 1,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": 7,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "videos from the last week"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "k5-57282taI",
+          "scene_idx": 5,
+          "voice": "alex",
+          "recency_days": 2,
+          "judge_label": 1,
+          "judge_why": "Uploaded in the last 7 days but topic is not specific to the last week.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "this month",
+      "dims": [
+        "time"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": 30,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "this month"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "DVtuTp3ykcA",
+          "scene_idx": 49,
+          "voice": "leila",
+          "recency_days": 24,
+          "judge_label": 0,
+          "judge_why": "Not related to the current month.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "sL16tsGafcQ",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 8,
+          "judge_label": 0,
+          "judge_why": "Not relevant to this month.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "vbcelc94VRQ",
+          "scene_idx": 65,
+          "voice": "sharran",
+          "recency_days": 21,
+          "judge_label": 0,
+          "judge_why": "Not related to this month.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 92,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 0,
+          "judge_why": "Not relevant to this month.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "k5-57282taI",
+          "scene_idx": 21,
+          "voice": "alex",
+          "recency_days": 2,
+          "judge_label": 0,
+          "judge_why": "Not related to this month.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "recent uploads",
+      "dims": [
+        "time"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": 30,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "uploads"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "sL16tsGafcQ",
+          "scene_idx": 62,
+          "voice": "alex",
+          "recency_days": 8,
+          "judge_label": 2,
+          "judge_why": "uploaded within the last month and relevant topic",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": true
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 151,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 2,
+          "judge_why": "uploaded within the last month and relevant topic",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": true
+        },
+        {
+          "video_id": "RWQHNc1u-cE",
+          "scene_idx": 45,
+          "voice": "leila",
+          "recency_days": 11,
+          "judge_label": 1,
+          "judge_why": "Uploaded recently but unrelated topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "EonibwnAEME",
+          "scene_idx": 69,
+          "voice": "alex",
+          "recency_days": 25,
+          "judge_label": 1,
+          "judge_why": "Uploaded recently but unrelated topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "vbcelc94VRQ",
+          "scene_idx": 132,
+          "voice": "sharran",
+          "recency_days": 21,
+          "judge_label": 1,
+          "judge_why": "Uploaded recently but unrelated topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "older videos",
+      "dims": [
+        "time"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": 180,
+        "visual_concept": null,
+        "clean_query": "older videos"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "RJNDXnboXd8",
+          "scene_idx": 207,
+          "voice": "leila",
+          "recency_days": 182,
+          "judge_label": 2,
+          "judge_why": "Uploaded over 6 months ago and fits older video context.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": true
+        },
+        {
+          "video_id": "VR2RLVBiMe8",
+          "scene_idx": 207,
+          "voice": "leila",
+          "recency_days": 210,
+          "judge_label": 1,
+          "judge_why": "Relevant topic but not specifically about older videos.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "PRFzRtzhZrw",
+          "scene_idx": 156,
+          "voice": "leila",
+          "recency_days": 239,
+          "judge_label": 1,
+          "judge_why": "Relevant to older video themes but not directly about them.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "R23CiC80t7c",
+          "scene_idx": 116,
+          "voice": "leila",
+          "recency_days": 232,
+          "judge_label": 1,
+          "judge_why": "Mentions history but not directly about older videos.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "cgsWQd5EM1k",
+          "scene_idx": 84,
+          "voice": "leila",
+          "recency_days": 189,
+          "judge_label": 0,
+          "judge_why": "Content unrelated to older videos.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "Alex on pricing from last month",
+      "dims": [
+        "who",
+        "topic",
+        "time"
+      ],
+      "n": 4,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": 30,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "pricing"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "sL16tsGafcQ",
+          "scene_idx": 108,
+          "voice": "alex",
+          "recency_days": 8,
+          "judge_label": 1,
+          "judge_why": "Right speaker but wrong topic.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "k5-57282taI",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 2,
+          "judge_label": 1,
+          "judge_why": "Right speaker and topic but not from last month.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "EonibwnAEME",
+          "scene_idx": 46,
+          "voice": "alex",
+          "recency_days": 25,
+          "judge_label": 0,
+          "judge_why": "Right speaker but unrelated topic.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        },
+        {
+          "video_id": "XsWSvz-aewA",
+          "scene_idx": 38,
+          "voice": "alex",
+          "recency_days": 17,
+          "judge_label": 0,
+          "judge_why": "Right speaker but unrelated topic.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "ok",
+            "ok": true
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "Leila about hiring this week",
+      "dims": [
+        "who",
+        "topic",
+        "time"
+      ],
+      "n": 0,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": 7,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "hiring"
+      },
+      "retrieval_query": "hiring",
+      "results": []
+    },
+    {
+      "q": "Alex talking with a guest on a podcast",
+      "dims": [
+        "who",
+        "count",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "dialogue",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "podcast",
+        "clean_query": "podcast"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 57,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies all dimensions.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 228,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies all dimensions.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 734,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies all dimensions.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 520,
+          "voice": "alex",
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies all dimensions.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 182,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies all dimensions.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "Sharran on a chalkboard",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "chalkboard",
+        "clean_query": "chalkboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "BZrgkgCF79g",
+          "scene_idx": 275,
+          "voice": "sharran",
+          "recency_days": 135,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies both speaker and visual dimensions.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "luvQRkxM-pQ",
+          "scene_idx": 161,
+          "voice": "sharran",
+          "recency_days": 121,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "scene_idx": 87,
+          "voice": "sharran",
+          "recency_days": 93,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 347,
+          "voice": "sharran",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Matched on \"chalkboard\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "UMiAzkNEM4U",
+          "scene_idx": 8,
+          "voice": "sharran",
+          "recency_days": 79,
+          "judge_label": 2,
+          "judge_why": "Directly satisfies both speaker and visual dimensions.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "Leila in a wide shot",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "wide shot",
+        "clean_query": "wide shot"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 316,
+          "voice": "leila",
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "scene_idx": 31,
+          "voice": "leila",
+          "recency_days": 147,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "CqtFlzNivuI",
+          "scene_idx": 57,
+          "voice": "leila",
+          "recency_days": 168,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "RJNDXnboXd8",
+          "scene_idx": 224,
+          "voice": "leila",
+          "recency_days": 182,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "DmenYQ_MEEA",
+          "scene_idx": 75,
+          "voice": "leila",
+          "recency_days": 225,
+          "judge_label": 2,
+          "judge_why": "Matched on \"wide shot\" visually.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "Alex at his whiteboard explaining offers",
+      "dims": [
+        "who",
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "whiteboard",
+        "clean_query": "offers on a whiteboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 74,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 1,
+          "judge_why": "Discusses pricing but not specifically about offers.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 101,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 1,
+          "judge_why": "Mentions pricing tiers but not directly about offers.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ZuJryiwxjDw",
+          "scene_idx": 137,
+          "voice": "alex",
+          "recency_days": 109,
+          "judge_label": 1,
+          "judge_why": "Talks about improving offers but lacks direct focus.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 235,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "Mentions offers but not in detail.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 862,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to offers.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "podcast interview between Alex and Sharran about acquisition",
+      "dims": [
+        "count",
+        "topic",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": null,
+        "required_speakers": [
+          "alex",
+          "sharran"
+        ],
+        "speakers_count": "dialogue",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "podcast interview",
+        "clean_query": "acquisition podcast interview"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 423,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "Right speakers but wrong topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 228,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 1,
+          "judge_why": "Right speakers but wrong topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 881,
+          "voice": "sharran",
+          "recency_days": 133,
+          "judge_label": 1,
+          "judge_why": "Right speakers but wrong topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 182,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 1,
+          "judge_why": "Right speakers but wrong topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 520,
+          "voice": "alex",
+          "recency_days": 161,
+          "judge_label": 1,
+          "judge_why": "Right speaker but wrong topic.",
+          "speaker_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "alex chart customer retention",
+      "dims": [
+        "who",
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "chart",
+        "clean_query": "chart customer retention"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "-j8_YCWZ05Q",
+          "scene_idx": 3,
+          "voice": "alex",
+          "recency_days": 80,
+          "judge_label": 2,
+          "judge_why": "directly discusses customer retention strategies by Alex",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 12,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 1,
+          "judge_why": "mentions retention but focuses on business growth strategies",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 175,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 1,
+          "judge_why": "Mentions revenue retention but not specifically customer retention.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 111,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content is about branding, not customer retention.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "jfW6gL6hKhk",
+          "scene_idx": 73,
+          "voice": "alex",
+          "recency_days": 100,
+          "judge_label": 0,
+          "judge_why": "Discusses tools, not customer retention.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "leila hire fire",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "hire fire"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "scene_idx": 34,
+          "voice": "leila",
+          "recency_days": 147,
+          "judge_label": 1,
+          "judge_why": "Leila discusses firing but not hiring.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "9OkBN4uor5M",
+          "scene_idx": 208,
+          "voice": "leila",
+          "recency_days": 105,
+          "judge_label": 1,
+          "judge_why": "Leila talks about talent acquisition but not hiring or firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "oJsLMjaspG0",
+          "scene_idx": 437,
+          "voice": "leila",
+          "recency_days": 112,
+          "judge_label": 0,
+          "judge_why": "Content is about managing teams, not hiring or firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "7FiKGWYA65g",
+          "scene_idx": 92,
+          "voice": "leila",
+          "recency_days": 91,
+          "judge_label": 0,
+          "judge_why": "Focuses on leadership perspectives, not hiring or firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "cgsWQd5EM1k",
+          "scene_idx": 248,
+          "voice": "leila",
+          "recency_days": 189,
+          "judge_label": 0,
+          "judge_why": "Discusses time management and wealth, unrelated to hiring or firing.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "sharran show me real estate stuff",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "real estate stuff"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OWorFLIbRoo",
+          "scene_idx": 47,
+          "voice": "sharran",
+          "recency_days": 93,
+          "judge_label": 2,
+          "judge_why": "directly discusses real estate market and buyers",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "vbcelc94VRQ",
+          "scene_idx": 71,
+          "voice": "sharran",
+          "recency_days": 21,
+          "judge_label": 2,
+          "judge_why": "directly discusses acquiring a real estate company",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Vx_sSMAJjNg",
+          "scene_idx": 101,
+          "voice": "sharran",
+          "recency_days": 49,
+          "judge_label": 1,
+          "judge_why": "focuses on negotiation techniques, not directly real estate",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ISQkh8bu6EU",
+          "scene_idx": 60,
+          "voice": "sharran",
+          "recency_days": 36,
+          "judge_label": 1,
+          "judge_why": "tangentially related to real estate ownership concepts",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 1,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 0,
+          "judge_why": "discusses wealth building, not real estate",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "the one where Alex talks about churn",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "churn"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 20,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 2,
+          "judge_why": "Alex discusses churn rates directly.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 132,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 1,
+          "judge_why": "Right speaker but not specifically about churn.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "-j8_YCWZ05Q",
+          "scene_idx": 32,
+          "voice": "alex",
+          "recency_days": 80,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to churn.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "_KlZoPxbStk",
+          "scene_idx": 4,
+          "voice": "alex",
+          "recency_days": 115,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to churn.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 715,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to churn.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "alex in front of a whiteboard",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "whiteboard",
+        "clean_query": "whiteboard"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "MH-IMJxbUY4",
+          "scene_idx": 130,
+          "voice": "alex",
+          "recency_days": 104,
+          "judge_label": 2,
+          "judge_why": "Matched on 'whiteboard' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1192,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on 'whiteboard' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 122,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 2,
+          "judge_why": "Matched on 'whiteboard' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "XsWSvz-aewA",
+          "scene_idx": 44,
+          "voice": "alex",
+          "recency_days": 17,
+          "judge_label": 2,
+          "judge_why": "Matched on 'whiteboard' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 758,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on 'whiteboard' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "leila behind a podium",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "behind a podium",
+        "clean_query": "behind a podium"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "xO4lpL0FNLg",
+          "scene_idx": 90,
+          "voice": "leila",
+          "recency_days": 115,
+          "judge_label": 2,
+          "judge_why": "Matched on both speaker and visual.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "hT4ilfJVZeQ",
+          "scene_idx": 15,
+          "voice": "leila",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on both speaker and visual.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "cXytK82N93Y",
+          "scene_idx": 57,
+          "voice": "leila",
+          "recency_days": 98,
+          "judge_label": 2,
+          "judge_why": "Matched on both speaker and visual.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "CqtFlzNivuI",
+          "scene_idx": 50,
+          "voice": "leila",
+          "recency_days": 168,
+          "judge_label": 2,
+          "judge_why": "Matched on both speaker and visual.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "R23CiC80t7c",
+          "scene_idx": 162,
+          "voice": "leila",
+          "recency_days": 232,
+          "judge_label": 2,
+          "judge_why": "Matched on both speaker and visual.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "alex next to a chart",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "chart",
+        "clean_query": "chart"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "EonibwnAEME",
+          "scene_idx": 48,
+          "voice": "alex",
+          "recency_days": 25,
+          "judge_label": 2,
+          "judge_why": "Matched on 'alex' and 'chart' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1481,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on 'alex' and 'chart' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 471,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Matched on 'alex' and 'chart' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 73,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 2,
+          "judge_why": "Matched on 'alex' and 'chart' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "ZuJryiwxjDw",
+          "scene_idx": 33,
+          "voice": "alex",
+          "recency_days": 109,
+          "judge_label": 2,
+          "judge_why": "Matched on 'alex' and 'chart' visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "alex talking head about scaling",
+      "dims": [
+        "who",
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": "front_view",
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "talking head",
+        "clean_query": "scaling talking head"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "XsWSvz-aewA",
+          "scene_idx": 41,
+          "voice": "alex",
+          "recency_days": 17,
+          "judge_label": 2,
+          "judge_why": "Alex discusses scaling sales teams directly.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "9q5ojtkqsBs",
+          "scene_idx": 72,
+          "voice": "alex",
+          "recency_days": 73,
+          "judge_label": 2,
+          "judge_why": "Alex talks about scaling opportunities, matching the topic.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "qsXxckCbci0",
+          "scene_idx": 108,
+          "voice": "alex",
+          "recency_days": 149,
+          "judge_label": 0,
+          "judge_why": "Not about scaling, focuses on business risks.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Mentions personal branding, not scaling.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 338,
+          "voice": "alex",
+          "recency_days": 161,
+          "judge_label": 0,
+          "judge_why": "Content unrelated to scaling, focuses on records.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "sharran solo to camera explaining commission splits",
+      "dims": [
+        "who",
+        "count",
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": "front_view",
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "commission splits"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 403,
+          "voice": "sharran",
+          "recency_days": 35,
+          "judge_label": 0,
+          "judge_why": "Discusses customer acquisition costs, not commission splits.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 9,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 0,
+          "judge_why": "Focuses on compounding and wealth, unrelated to commission splits.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "_Kpi8HgzKw8",
+          "scene_idx": 45,
+          "voice": "sharran",
+          "recency_days": 107,
+          "judge_label": 0,
+          "judge_why": "Discusses investment fees and returns, not commission splits.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "UMiAzkNEM4U",
+          "scene_idx": 74,
+          "voice": "sharran",
+          "recency_days": 79,
+          "judge_label": 0,
+          "judge_why": "Talks about investment strategies, not commission splits.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "vbcelc94VRQ",
+          "scene_idx": 59,
+          "voice": "sharran",
+          "recency_days": 21,
+          "judge_label": 0,
+          "judge_why": "Narrative about crowdsourced funding, unrelated to commission splits.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "leila pep talk for new hires",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "pep talk new hires"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "NqtWADqiMCo",
+          "scene_idx": 148,
+          "voice": "leila",
+          "recency_days": 63,
+          "judge_label": 2,
+          "judge_why": "Directly fits the pep talk theme.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "LCc-wecNPKg",
+          "scene_idx": 40,
+          "voice": "leila",
+          "recency_days": 43,
+          "judge_label": 1,
+          "judge_why": "Right speaker but not a direct pep talk.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "RWQHNc1u-cE",
+          "scene_idx": 144,
+          "voice": "leila",
+          "recency_days": 11,
+          "judge_label": 1,
+          "judge_why": "Right speaker but not specifically a pep talk.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "scene_idx": 214,
+          "voice": "leila",
+          "recency_days": 77,
+          "judge_label": 1,
+          "judge_why": "Right speaker but not a direct pep talk.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "DVtuTp3ykcA",
+          "scene_idx": 2,
+          "voice": "leila",
+          "recency_days": 24,
+          "judge_label": 0,
+          "judge_why": "Content unrelated to pep talk.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "alex hyped up about offers",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": null,
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "hyped up offers"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 47,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 2,
+          "judge_why": "Directly discusses offers in an animated and engaging manner.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 257,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 1,
+          "judge_why": "Mentions offers but lacks the hyped-up enthusiasm.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 855,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 1,
+          "judge_why": "Discusses offers but not in a hyped context.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 828,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to offers.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 142,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to offers.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "frustrated leila on bad managers",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 1,
+      "p_at_5": 0.2,
+      "mrr": 0.5,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "frustrated bad managers"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "RWQHNc1u-cE",
+          "scene_idx": 144,
+          "voice": "leila",
+          "recency_days": 11,
+          "judge_label": 1,
+          "judge_why": "right speaker but not directly about frustrations with bad managers",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "oJsLMjaspG0",
+          "scene_idx": 401,
+          "voice": "leila",
+          "recency_days": 112,
+          "judge_label": 2,
+          "judge_why": "directly addresses frustrations with management",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "aMxcZY6aIFU",
+          "scene_idx": 185,
+          "voice": "leila",
+          "recency_days": 197,
+          "judge_label": 0,
+          "judge_why": "Content focuses on personal development, unrelated to bad managers.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "LpNODHhn-60",
+          "scene_idx": 210,
+          "voice": "leila",
+          "recency_days": 126,
+          "judge_label": 0,
+          "judge_why": "Discusses meeting efficiency, not related to bad managers.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "0iDZ8UDvlWU",
+          "scene_idx": 135,
+          "voice": "leila",
+          "recency_days": 217,
+          "judge_label": 0,
+          "judge_why": "Content about partnerships and personal growth, not about bad managers.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "alex roasting bad founders",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "roasting bad founders"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 80,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content discusses advertising and branding, not roasting bad founders.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 84,
+          "voice": "alex",
+          "recency_days": 59,
+          "judge_label": 0,
+          "judge_why": "Content focuses on DIY markets, unrelated to bad founders.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "scene_idx": 63,
+          "voice": "alex",
+          "recency_days": 41,
+          "judge_label": 0,
+          "judge_why": "Content discusses market trends, not roasting bad founders.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 21,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 0,
+          "judge_why": "Content is about retirement savings strategy, unrelated to bad founders.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "EonibwnAEME",
+          "scene_idx": 5,
+          "voice": "alex",
+          "recency_days": 25,
+          "judge_label": 0,
+          "judge_why": "Content shares principles for success, not roasting bad founders.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "leila being calm about a tough decision",
+      "dims": [
+        "who",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 2,
+      "p_at_5": 0.4,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": null,
+        "clean_query": "calm tough decision"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "PRFzRtzhZrw",
+          "scene_idx": 188,
+          "voice": "leila",
+          "recency_days": 239,
+          "judge_label": 2,
+          "judge_why": "Leila reflects on making decisions under emotional stress, directly addressing calmness in tough decisions.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Msk6CwtDrYQ",
+          "scene_idx": 51,
+          "voice": "leila",
+          "recency_days": 176,
+          "judge_label": 1,
+          "judge_why": "Talks about decision-making and emotional states, but not directly about calmness.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "cXytK82N93Y",
+          "scene_idx": 264,
+          "voice": "leila",
+          "recency_days": 98,
+          "judge_label": 1,
+          "judge_why": "Mentions decision-making flexibility, but not specifically about being calm.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "scene_idx": 76,
+          "voice": "leila",
+          "recency_days": 154,
+          "judge_label": 2,
+          "judge_why": "Leila discusses calming techniques for decision-making, relevant to being calm about tough decisions.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "0iDZ8UDvlWU",
+          "scene_idx": 232,
+          "voice": "leila",
+          "recency_days": 217,
+          "judge_label": 0,
+          "judge_why": "Focuses on negotiation, not a tough decision.",
+          "speaker_check": {
+            "filter": "leila",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "sharran in a relaxed home setup",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": false,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "relaxed home setup",
+        "clean_query": "relaxed home setup"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "BZrgkgCF79g",
+          "scene_idx": 115,
+          "voice": "sharran",
+          "recency_days": 135,
+          "judge_label": 2,
+          "judge_why": "Matched on \"relaxed home setup\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "HGZOxBfnF-E",
+          "scene_idx": 242,
+          "voice": "sharran",
+          "recency_days": 59,
+          "judge_label": 2,
+          "judge_why": "Matched on \"relaxed home setup\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 82,
+          "voice": "sharran",
+          "recency_days": 161,
+          "judge_label": 2,
+          "judge_why": "Matched on \"relaxed home setup\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "OcH0864CLPs",
+          "scene_idx": 163,
+          "voice": "sharran",
+          "recency_days": 65,
+          "judge_label": 2,
+          "judge_why": "Matched on \"relaxed home setup\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "scene_idx": 34,
+          "voice": "sharran",
+          "recency_days": 9,
+          "judge_label": 2,
+          "judge_why": "Matched on \"relaxed home setup\" visually.",
+          "speaker_check": {
+            "filter": "sharran",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    },
+    {
+      "q": "alex animated intro about $100M offers",
+      "dims": [
+        "who",
+        "visual",
+        "topic"
+      ],
+      "n": 5,
+      "n_good": 0,
+      "p_at_5": 0.0,
+      "mrr": 0.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": true,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "animated intro",
+        "clean_query": "animated intro $100M offers"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 32,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 0,
+          "judge_why": "Discusses savings and investments, not relevant to the query.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "u3H7CfpfwHQ",
+          "scene_idx": 443,
+          "voice": "alex",
+          "recency_days": 161,
+          "judge_label": 1,
+          "judge_why": "Mentions $100M offers but lacks direct focus on animated intro.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1117,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 0,
+          "judge_why": "Content is unrelated to $100M offers or animated intro.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "A248pGXTSoY",
+          "scene_idx": 10,
+          "voice": "alex",
+          "recency_days": 126,
+          "judge_label": 1,
+          "judge_why": "Mentions a $106M book launch but not specifically about offers or animated intro.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        },
+        {
+          "video_id": "ZuJryiwxjDw",
+          "scene_idx": 100,
+          "voice": "alex",
+          "recency_days": 109,
+          "judge_label": 1,
+          "judge_why": "Right speaker and visual format, but topic is not specified.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": false
+        }
+      ]
+    },
+    {
+      "q": "any alex video where he draws on something",
+      "dims": [
+        "who",
+        "visual"
+      ],
+      "n": 5,
+      "n_good": 5,
+      "p_at_5": 1.0,
+      "mrr": 1.0,
+      "parsed_summary": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "speakers_count": "solo",
+        "is_animation": null,
+        "talking_head_pose": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "visual_concept": "drawing on something",
+        "clean_query": "drawing on something"
+      },
+      "retrieval_query": null,
+      "results": [
+        {
+          "video_id": "OQf2Ba-Lp_4",
+          "scene_idx": 339,
+          "voice": "alex",
+          "recency_days": 35,
+          "judge_label": 2,
+          "judge_why": "Matched on \"drawing on something\" visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "A_tx40lNpf8",
+          "scene_idx": 72,
+          "voice": "alex",
+          "recency_days": 154,
+          "judge_label": 2,
+          "judge_why": "Matched on \"drawing on something\" visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "6BQ3whjWG3M",
+          "scene_idx": 65,
+          "voice": "alex",
+          "recency_days": 120,
+          "judge_label": 2,
+          "judge_why": "Matched on \"drawing on something\" visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "N5MExtki_VI",
+          "scene_idx": 248,
+          "voice": "alex",
+          "recency_days": 133,
+          "judge_label": 2,
+          "judge_why": "Matched on \"drawing on something\" visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        },
+        {
+          "video_id": "Jmkq5RLjm0U",
+          "scene_idx": 1293,
+          "voice": "alex",
+          "recency_days": 90,
+          "judge_label": 2,
+          "judge_why": "Matched on \"drawing on something\" visually.",
+          "speaker_check": {
+            "filter": "alex",
+            "ok": true
+          },
+          "time_check": {
+            "filter": "n/a",
+            "ok": null
+          },
+          "good": true
+        }
+      ]
+    }
+  ]
+}

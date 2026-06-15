@@ -49,11 +49,12 @@ LESSONS = ["sales", "hiring", "leadership", "operations", "scaling", "mindset", 
            "personal_development", "marketing"]
 
 SYSTEM_PROMPT = f"""You parse natural-language search queries from video editors into a strict JSON \
-filter object for a video search API. The corpus is long-form business content from Alex Hormozi, \
-Leila Hormozi, and Sharran Srivatsaa.
+search plan. The corpus is long-form business content from Alex Hormozi, Leila Hormozi, and \
+Sharran Srivatsaa.
 
-Extract every filter that is clearly implied. If a filter is NOT clearly asked for, leave it null. \
-Do not invent filters. Do not guess.
+You are the ONLY parser in this pipeline. There is no post-processing — your output strings go \
+directly into CLIP embedding and the LLM judge. Strip every filter word out of the query strings \
+yourself; the downstream pipeline will not "clean up" anything.
 
 Output STRICT JSON with this exact shape:
 
@@ -71,8 +72,18 @@ Output STRICT JSON with this exact shape:
   "lessons_categories": null | [{", ".join(repr(x) for x in LESSONS)}],
   "instructional_only": false | true,
   "visual_concept": null | "<verbatim phrase from the query that describes what's on screen>",
-  "clean_query": "<query with filter language AND visual_concept removed, for semantic retrieval>",
-  "reasoning": "<one short sentence explaining what you extracted>"
+  "retrieval_query": "<the EXACT string CLIP will embed. Must be ONLY searchable content —
+                      no speaker names, no filler words, no time phrases, no leftover
+                      prepositions. Can be the topic, the visual_concept, or both joined.
+                      If there's nothing searchable, use the visual_concept verbatim.>",
+  "judge_query": null | "<the EXACT topic the transcript-only judge will grade against.
+                          null when the query has no content ask (purely visual, purely
+                          speaker, purely time, etc.). Should NOT include the visual_concept
+                          (visual is already verified by CLIP retrieval).>",
+  "is_visual_only": <true if the query is ONLY about what's on screen with no topic ask;
+                     when true, the judge will be skipped entirely and CLIP ranking trusted.
+                     false otherwise.>,
+  "reasoning": "<one short sentence explaining your decisions>"
 }}
 
 Speaker rules:
@@ -170,12 +181,73 @@ visual_concept — what's on screen, separate from what's being said:
     "Leila on hiring decisions"                                -> (leila  | null                  | "hiring decisions")
     "Sharran less than 3 weeks ago talking about real estate"  -> (sharran| null                  | "real estate")  [also max_age_days=21]
 
-clean_query — the TOPIC the transcript-only judge will grade against:
-  - Strip the speaker name, time phrases, AND the visual_concept. KEEP the subject.
-  - When the query is purely visual with no topic, leave clean_query empty so
-    retrieval falls back to the original query.
-  - This is what gets fed into transcript scoring; the topic signal is what makes
-    transcript/segment scoring work.
+retrieval_query and judge_query — the two strings the downstream pipeline uses verbatim.
+
+You decide exactly what CLIP embeds (retrieval_query) and what the judge grades
+against (judge_query). The pipeline does not post-process — what you write is what
+gets used. So make them clean.
+
+Rules:
+  - Strip out every speaker name (alex, leila, sharran, hormozi), every time phrase
+    ("last week", "from 2 months ago", "recently", any digit-units pattern), and every
+    structural filler ("at a", "on a", "in front of", "behind", "next to", "with a",
+    "showing", "talking", "discussing", "explaining", "about", "of").
+  - retrieval_query is what CLIP sees. It should be JUST the searchable concept —
+    either the topic (for non-visual queries), the visual_concept (for visual-only
+    queries), or both joined naturally (for visual+topic queries).
+  - judge_query is what the transcript-only judge grades. NEVER include the visual_concept
+    in judge_query — the visual is verified by CLIP, not by the transcript. judge_query
+    should be the TOPIC only. Set judge_query to null if no topic remains.
+  - is_visual_only = true iff judge_query is null AND visual_concept is set. When true,
+    the pipeline skips the judge entirely.
+
+Examples — (query | speaker | visual_concept | retrieval_query | judge_query | is_visual_only):
+
+  "Alex talking about pricing"
+    -> ("alex" | null              | "pricing"                     | "pricing"          | false)
+
+  "Sharran less than 3 weeks ago talking about real estate"
+    -> ("sharran" | null           | "real estate"                 | "real estate"      | false)
+       (plus max_age_days=21)
+
+  "dry erase board"
+    -> (null | "dry erase board"   | "dry erase board"             | null               | true)
+
+  "Alex on a whiteboard about scaling"
+    -> ("alex" | "whiteboard"      | "scaling on a whiteboard"     | "scaling"          | false)
+
+  "alex at a dry erase board"
+    -> ("alex" | "dry erase board" | "dry erase board"             | null               | true)
+       (no topic — the editor wants alex + the dry erase board visual)
+
+  "Leila in front of a whiteboard"
+    -> ("leila" | "whiteboard"     | "whiteboard"                  | null               | true)
+
+  "title cards from this year"
+    -> (null | "title cards"       | "title cards"                 | null               | true)
+       (plus max_age_days=365)
+
+  "B-roll of city skylines"
+    -> (null | "B-roll"            | "city skylines B-roll"        | "city skylines"    | false)
+       (city skylines is a content/visual ask; not just B-roll)
+
+  "Leila on hiring decisions"
+    -> ("leila" | null             | "hiring decisions"            | "hiring decisions" | false)
+
+  "alex hyped up about offers"
+    -> ("alex" | null              | "hyped up offers"             | "hyped up offers"  | false)
+
+  "podcast interview between Alex and Sharran about acquisition"
+    -> (null,req=[alex,sharran] | "podcast interview"
+                                   | "acquisition podcast interview" | "acquisition"    | false)
+
+  "any alex video where he draws on something"
+    -> ("alex" | "drawing on a board" | "drawing on a board"       | null               | true)
+       (loose phrasing — visual_concept can be a sensible normalization of the editor's
+        intent even if not literally in the query)
+
+KEY POINT: never include the speaker name in retrieval_query or judge_query. Speaker is
+already a structural filter — including the name would just embed noise into CLIP.
 
 reasoning:
   - One brief sentence stating what you pulled out. Example: "Sharran filter + last-30-day window; topic is real estate."
@@ -224,6 +296,11 @@ def _empty_parse(query: str) -> dict:
         "lessons_categories": None,
         "instructional_only": False,
         "visual_concept": None,
+        "retrieval_query": query,
+        "judge_query": query,
+        "is_visual_only": False,
+        # Backward-compat alias — old API code reads .clean_query as the retrieval query.
+        # Kept so any caller that hasn't updated still works.
         "clean_query": query,
         "reasoning": "",
     }
@@ -280,40 +357,29 @@ def _validate(raw: dict, original_query: str) -> dict:
     vc = raw.get("visual_concept")
     if isinstance(vc, str):
         vc = vc.strip()
-        # Only accept values that actually appear in the original query (case-insensitive),
-        # so the LLM can't fabricate a visual concept that wasn't there.
-        if vc and vc.lower() in original_query.lower():
+        # Visual concept must be reasonable — either literally in the query, or a short
+        # normalization (e.g. editor types "draws on something", LLM normalizes to
+        # "drawing on a board"). Cap at a sane length to prevent runaway hallucination.
+        if vc and len(vc) <= 60:
             out["visual_concept"] = vc
 
-    cq = raw.get("clean_query")
-    if isinstance(cq, str) and cq.strip():
-        out["clean_query"] = cq.strip()
+    # retrieval_query and judge_query are taken verbatim from the LLM. We trust the
+    # model — no regex post-processing. If the model gave us junk, the eval will
+    # catch it and we iterate on the prompt, not on filler-word lists.
+    rq = raw.get("retrieval_query")
+    if isinstance(rq, str) and rq.strip():
+        out["retrieval_query"] = rq.strip()
+        # Mirror to clean_query for any caller that still reads the old field name.
+        out["clean_query"] = rq.strip()
 
-    # Safety net: the LLM sometimes leaves the visual_concept and/or the verified
-    # speaker name inside clean_query despite the prompt. Strip them — the judge
-    # and the retrieval embedder should never see them.
-    if out["clean_query"]:
-        strip_phrases: list[str] = []
-        if out["visual_concept"]:
-            strip_phrases.append(out["visual_concept"])
-        # Verified speaker names + the "hormozi" surname (parser keyword for alex)
-        verified_speakers: list[str] = []
-        if out.get("speaker"):
-            verified_speakers.append(out["speaker"])
-        if out.get("required_speakers"):
-            verified_speakers.extend(out["required_speakers"])
-        for name in verified_speakers:
-            strip_phrases.append(name)
-            if name == "alex":
-                strip_phrases.append("hormozi")
-        if strip_phrases:
-            stripped = out["clean_query"]
-            # Longest first so multi-word concepts get cleared before their tokens.
-            for phrase in sorted(strip_phrases, key=len, reverse=True):
-                pattern = re.compile(rf"\b{re.escape(phrase)}\b", re.IGNORECASE)
-                stripped = pattern.sub("", stripped)
-            stripped = re.sub(r"\s+", " ", stripped).strip(" ,.;:-")
-            out["clean_query"] = stripped
+    jq = raw.get("judge_query")
+    if isinstance(jq, str) and jq.strip():
+        out["judge_query"] = jq.strip()
+    elif jq is None:
+        out["judge_query"] = None
+
+    if raw.get("is_visual_only") is True:
+        out["is_visual_only"] = True
 
     r = raw.get("reasoning")
     if isinstance(r, str) and r.strip():
