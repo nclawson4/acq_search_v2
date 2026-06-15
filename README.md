@@ -83,7 +83,7 @@ Parser extracts `required_speakers=[leila, sharran]` and `speakers_count=dialogu
 | Deepgram nova-3 transcription | ≈ $65 |
 | Visual classifier (gpt-4o-mini vision) | ≈ $3 |
 | CLIP frame embedding (CPU compute) | ≈ $6 |
-| Scene detection + speaker fingerprinting | ≈ $5 |
+| Scene detection | ≈ $2 |
 | Topic segment curation (LLM-generated) | ≈ $100 |
 | Storage (Vercel Blob, npz, transcripts) | < $1/mo |
 | **Total per TB (one-time cost)** | **≈ $180** |
@@ -95,13 +95,12 @@ Topic segmentation dominates. Everything else combined sits under $80 per TB.
 | Line item | Cost |
 |---|---|
 | Query parser (gpt-4o-mini) | ≈ $0.0002 |
-| Relevance judge (gpt-4o-mini, top-20) | ≈ $0.0008 |
 | Modal CPU (FastAPI backend, 2 vCPU) | ≈ $0.002 |
 | Vercel Functions (proxy) | < $0.0001 |
 | Vercel Blob frame serving | < $0.0001 |
-| **Total per query** | **≈ $0.003** |
+| **Total per query** | **≈ $0.002** |
 
-At 1,000 queries per day: about $3/day. At 10,000/day: about $30/day. OpenAI dominates after a few hundred queries per day; compute stays under $1/day on either profile.
+At 1,000 queries per day: about $2/day. At 10,000/day: about $20/day. Modal compute dominates; the parser call is rounding error.
 
 ### Editor time saved
 

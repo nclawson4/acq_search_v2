@@ -561,9 +561,9 @@ function CostOptimizationSection() {
               note="ViT-L-14 on Modal CPU; ~1s/scene × 30k scenes at $0.00018/sec"
             />
             <CostRow
-              label="Scene detection + speaker fingerprinting"
-              cost="≈ $5"
-              note="PySceneDetect + Resemblyzer; deterministic CPU, no API calls"
+              label="Scene detection"
+              cost="≈ $2"
+              note="PySceneDetect on CPU; deterministic, negligible at this scale"
             />
             <CostRow
               label="Topic segment curation (LLM-generated)"
@@ -602,11 +602,6 @@ function CostOptimizationSection() {
               note="~150 in + 200 out tokens at $0.15 / $0.60 per million"
             />
             <CostRow
-              label="Relevance judge (gpt-4o-mini, top-20)"
-              cost="≈ $0.0008"
-              note="~600 in + 300 out tokens per batched call; skipped for visual-only queries"
-            />
-            <CostRow
               label="Modal CPU (FastAPI backend, 2 vCPU)"
               cost="≈ $0.002"
               note="~5s active time × 2 CPU × $0.00018/sec; $0 while idle"
@@ -624,11 +619,11 @@ function CostOptimizationSection() {
           </ul>
           <div className="mt-4 flex items-baseline justify-between border-t border-zinc-200 dark:border-zinc-800 pt-3">
             <p className="font-semibold">Total per query</p>
-            <p className="text-xl font-semibold font-mono">≈ $0.003</p>
+            <p className="text-xl font-semibold font-mono">≈ $0.002</p>
           </div>
           <p className="text-[11px] text-zinc-500 mt-2 leading-snug">
-            At 1,000 queries/day: ~$3/day, ~$90/mo. At 10,000/day: ~$30/day, ~$900/mo. OpenAI
-            dominates after a few hundred queries/day; compute stays under $1/day on either profile.
+            At 1,000 queries/day: ~$2/day, ~$60/mo. At 10,000/day: ~$20/day, ~$600/mo. Modal compute
+            dominates; the parser call is rounding error.
           </p>
         </div>
       </div>
