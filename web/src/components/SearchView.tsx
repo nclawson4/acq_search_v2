@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export type SegmentInfo = {
   video_id: string;
@@ -71,6 +71,48 @@ const POSE_LABELS: Record<string, string> = {
 // disabled or model unavailable) are always shown.
 const DEFAULT_JUDGE_THRESHOLD = 0.4;
 
+// Example queries shown in the empty state. Clicking one populates the input
+// and immediately runs the search.
+const EXAMPLE_QUERIES = [
+  "Leila talking about leadership, talking head video",
+  "Alex talking about churn",
+  "Sharran less than 3 weeks ago talking about real estate",
+  "Animations talking about stress and anxiety",
+  "Alex writing on a whiteboard",
+];
+
+// Stages of a search request, in the order the editor sees them progress.
+// percentStart drives the "current stage" indicator so the chip and the
+// bar stay in sync.
+type SearchStage = { label: string; help: string; percentStart: number };
+const SEARCH_STAGES: SearchStage[] = [
+  { label: "Understanding query",  help: "GPT-4o-mini extracts speaker, topic, visual, time", percentStart: 0 },
+  { label: "Searching the index",  help: "CLIP visual + transcript BM25 + segment-text hybrid", percentStart: 25 },
+  { label: "Ranking results",      help: "GPT-4o-mini judges each candidate against the topic", percentStart: 60 },
+];
+
+// Search latency model used to animate the progress bar. A warm reranked
+// search typically takes 3-6 s; cold starts (Modal scale-from-zero) can
+// reach 25-30 s while the container boots. The bar advances through three
+// phases and asymptotes just under 100% so it never completes ahead of the
+// actual response.
+function progressForElapsed(ms: number): number {
+  const t = ms / 1000;
+  if (t < 0.8) return (t / 0.8) * 25;                  // parse phase
+  if (t < 2.3) return 25 + ((t - 0.8) / 1.5) * 35;     // CLIP + hybrid retrieval
+  if (t < 5.3) return 60 + ((t - 2.3) / 3.0) * 30;     // judge rerank
+  // After the typical warm window, creep slowly toward 95% so cold starts
+  // still look alive but never imply completion.
+  return Math.min(95, 90 + (1 - Math.exp(-(t - 5.3) / 8)) * 5);
+}
+
+function currentStageIndex(percent: number): number {
+  for (let i = SEARCH_STAGES.length - 1; i >= 0; i--) {
+    if (percent >= SEARCH_STAGES[i].percentStart) return i;
+  }
+  return 0;
+}
+
 type Mode = "default" | "debug";
 
 export function SearchView({ mode }: { mode: Mode }) {
@@ -78,10 +120,25 @@ export function SearchView({ mode }: { mode: Mode }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [data, setData] = useState<SearchResponse | null>(null);
+  const [progress, setProgress] = useState(0);
 
-  async function runSearch(e: React.FormEvent) {
-    e.preventDefault();
-    if (!query.trim()) return;
+  // Drive the progress bar while a search is in flight. Resets to 0 whenever
+  // loading goes false (success, error, or cancellation).
+  useEffect(() => {
+    if (!loading) {
+      setProgress(0);
+      return;
+    }
+    const start = Date.now();
+    setProgress(progressForElapsed(0));
+    const id = window.setInterval(() => {
+      setProgress(progressForElapsed(Date.now() - start));
+    }, 80);
+    return () => window.clearInterval(id);
+  }, [loading]);
+
+  async function doSearch(q: string) {
+    if (!q.trim()) return;
     setLoading(true);
     setError(null);
     setData(null);
@@ -89,7 +146,7 @@ export function SearchView({ mode }: { mode: Mode }) {
       const resp = await fetch("/api/search", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ query, k: 20 }),
+        body: JSON.stringify({ query: q, k: 20 }),
       });
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       const json: SearchResponse = await resp.json();
@@ -99,6 +156,16 @@ export function SearchView({ mode }: { mode: Mode }) {
     } finally {
       setLoading(false);
     }
+  }
+
+  function runSearch(e: React.FormEvent) {
+    e.preventDefault();
+    return doSearch(query);
+  }
+
+  function runExample(q: string) {
+    setQuery(q);
+    return doSearch(q);
   }
 
   const all = data?.results ?? [];
@@ -126,16 +193,19 @@ export function SearchView({ mode }: { mode: Mode }) {
 
         <header className="text-center mb-10">
           <h1 className="text-3xl font-semibold tracking-tight">
-            Search the ACQ media database (demo - past 6 months)
+            Search the ACQ media database
           </h1>
+          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+            Alex, Leila, and Sharran&apos;s long-form videos analyzed from the last 6 months
+          </p>
         </header>
 
-        <form onSubmit={runSearch} className="flex gap-2 mb-8">
+        <form onSubmit={runSearch} className="flex gap-2 mb-2">
           <input
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="e.g. Alex at the whiteboard talking about churn"
+            placeholder="describe a clip — speaker, topic, time, visual…"
             className="flex-1 rounded-full border border-zinc-300 dark:border-zinc-700 px-5 py-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white dark:bg-zinc-900"
             autoFocus
           />
@@ -147,6 +217,64 @@ export function SearchView({ mode }: { mode: Mode }) {
             {loading ? "searching..." : "search"}
           </button>
         </form>
+
+        {/* Progress bar + stage indicator — only while a search is in flight.
+            Reserves the row even when idle so the layout below doesn't jump on
+            every search. Stages name what's happening behind the scenes so
+            the editor can read the system. */}
+        <div className="mb-6 min-h-[2.75rem]" aria-hidden={!loading}>
+          {loading && (
+            <>
+              <div
+                role="progressbar"
+                aria-label="search progress"
+                aria-valuemin={0}
+                aria-valuemax={100}
+                aria-valuenow={Math.round(progress)}
+                className="h-1.5 w-full rounded-full bg-zinc-200/60 dark:bg-zinc-800/60 overflow-hidden"
+              >
+                <div
+                  className="h-full bg-blue-600 transition-[width] duration-200 ease-out"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
+              <ol className="mt-2 flex items-center justify-between gap-2 text-[11px]">
+                {SEARCH_STAGES.map((s, i) => {
+                  const stageIdx = currentStageIndex(progress);
+                  const done = i < stageIdx;
+                  const active = i === stageIdx;
+                  return (
+                    <li
+                      key={s.label}
+                      title={s.help}
+                      className={`flex items-center gap-1.5 ${
+                        active
+                          ? "text-blue-700 dark:text-blue-300 font-medium"
+                          : done
+                          ? "text-zinc-700 dark:text-zinc-300"
+                          : "text-zinc-400 dark:text-zinc-500"
+                      }`}
+                    >
+                      <span
+                        aria-hidden
+                        className={`inline-flex h-4 w-4 items-center justify-center rounded-full text-[10px] ${
+                          done
+                            ? "bg-blue-600 text-white"
+                            : active
+                            ? "bg-blue-600/20 text-blue-700 dark:text-blue-300 ring-2 ring-blue-600 animate-pulse"
+                            : "bg-zinc-200 dark:bg-zinc-800 text-zinc-500"
+                        }`}
+                      >
+                        {done ? "✓" : i + 1}
+                      </span>
+                      <span>{s.label}</span>
+                    </li>
+                  );
+                })}
+              </ol>
+            </>
+          )}
+        </div>
 
         {error && (
           <div className="rounded-lg bg-red-50 dark:bg-red-950 text-red-700 dark:text-red-300 p-4 mb-6 text-sm">
@@ -215,22 +343,20 @@ export function SearchView({ mode }: { mode: Mode }) {
         )}
 
         {!data && !loading && !error && (
-          <div className="text-center text-zinc-500 text-sm mt-12 space-y-3">
-            <p className="font-medium text-zinc-700 dark:text-zinc-300">try a search like:</p>
-            <ul className="space-y-1">
-              <li>&quot;Sharran in blue blazer with $100M books&quot;</li>
-              <li>&quot;Alex at the whiteboard talking about acquisition&quot;</li>
-              <li>&quot;yellow caption about two and a half million&quot;</li>
-              <li>&quot;Sharran on real estate from over 1 month ago&quot;</li>
-            </ul>
-            {mode === "default" && (
-              <p className="pt-3 text-xs text-zinc-400">
-                Default view hides results scored below {(DEFAULT_JUDGE_THRESHOLD * 100).toFixed(0)}% relevance by the judge.{" "}
-                <Link href="/debug-mode" className="underline">
-                  Show everything →
-                </Link>
-              </p>
-            )}
+          <div className="text-center mt-12 space-y-4">
+            <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">try a search like:</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {EXAMPLE_QUERIES.map((q) => (
+                <button
+                  key={q}
+                  type="button"
+                  onClick={() => runExample(q)}
+                  className="rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-700 dark:hover:bg-blue-950/50 dark:hover:text-blue-300 transition-colors"
+                >
+                  {q}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </main>
@@ -392,20 +518,40 @@ function SceneStrip({
   scenes: SegmentScene[] | null;
   currentSceneIdx: number;
 }) {
-  const stripRef = (el: HTMLDivElement | null) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const matchRef = useRef<HTMLAnchorElement | null>(null);
+
+  // Wheel-hijack: scroll the strip vertically when the cursor is over it,
+  // unless we're already at an edge (then let the page scroll past).
+  useEffect(() => {
+    const el = containerRef.current;
     if (!el) return;
-    // Reassign on every render — cheap and safe; ensures only one handler stays attached.
-    el.onwheel = (e: WheelEvent) => {
-      // Only hijack the wheel if the strip can actually scroll vertically.
+    const onWheel = (e: WheelEvent) => {
       const canScroll = el.scrollHeight > el.clientHeight + 1;
       if (!canScroll) return;
       const atTop = el.scrollTop <= 0 && e.deltaY < 0;
       const atBottom = el.scrollTop + el.clientHeight >= el.scrollHeight - 1 && e.deltaY > 0;
-      if (atTop || atBottom) return; // let the page scroll past once we're at an edge
+      if (atTop || atBottom) return;
       e.preventDefault();
       el.scrollTop += e.deltaY;
     };
-  };
+    el.addEventListener("wheel", onWheel, { passive: false });
+    return () => el.removeEventListener("wheel", onWheel);
+  }, [scenes]);
+
+  // Once scenes render, center the matching scene inside the strip so the
+  // editor doesn't have to hunt for it. Uses getBoundingClientRect math so
+  // we scroll ONLY the strip — not the page.
+  useEffect(() => {
+    const container = containerRef.current;
+    const match = matchRef.current;
+    if (!container || !match || !scenes || scenes.length === 0) return;
+    const cr = container.getBoundingClientRect();
+    const mr = match.getBoundingClientRect();
+    const matchTopInContainer = mr.top - cr.top + container.scrollTop;
+    const target = matchTopInContainer - container.clientHeight / 2 + match.offsetHeight / 2;
+    container.scrollTo({ top: Math.max(0, target), behavior: "smooth" });
+  }, [scenes, currentSceneIdx]);
 
   return (
     <div className="min-w-0 flex flex-col">
@@ -427,7 +573,7 @@ function SceneStrip({
         </div>
       ) : (
         <div
-          ref={stripRef}
+          ref={containerRef}
           className="grid grid-cols-2 gap-2 overflow-y-auto pr-2 rounded max-h-[360px]"
           style={{ scrollbarWidth: "thin" }}
         >
@@ -436,6 +582,7 @@ function SceneStrip({
             return (
               <a
                 key={s.scene_idx}
+                ref={isCurrent ? matchRef : undefined}
                 href={s.youtube_url}
                 target="_blank"
                 rel="noopener noreferrer"
