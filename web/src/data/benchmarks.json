@@ -63,22 +63,6 @@
       "alt_target": 0.90
     },
     {
-      "id": "speaker_id",
-      "name": "Speaker identification",
-      "what": "Maps each utterance to alex / leila / sharran / unknown via voice fingerprinting.",
-      "model": "Resemblyzer reference centroids, cosine floor 0.60, ≥1s spoken to count",
-      "metric_label": "corpus coverage",
-      "metric_value": "100% videos mapped",
-      "metric_extras": [
-        {"k": "alex appears in", "v": "75 videos"},
-        {"k": "leila appears in", "v": "45 videos"},
-        {"k": "sharran appears in", "v": "32 videos"}
-      ],
-      "source": "ingest/scripts/identify_speakers.py · ingest/scripts/compute_audio_tags.py",
-      "note": "No held-out P/R is computed. The mapping is anchored to reference voice samples for each speaker, and a 1-second activity threshold suppresses backchannel false-positives so dialogue scenes are detected even when the guest is unknown.",
-      "meets_target": true
-    },
-    {
       "id": "parser",
       "name": "Query parser (LLM end-to-end)",
       "what": "Reads the editor's natural-language query and produces a structured search plan (speaker, time, visual concept, retrieval string, judge string).",
