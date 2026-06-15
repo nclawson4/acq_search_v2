@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import HomeSections from "./HomeSections";
 
 export type SegmentInfo = {
   video_id: string;
@@ -359,6 +360,12 @@ export function SearchView({ mode }: { mode: Mode }) {
             </div>
           </div>
         )}
+
+        {/* Always-visible long-form sections that explain how the system works,
+            what it costs, and how we keep it honest. These appear under the hero
+            and the results area both — they're part of the page's narrative, not
+            a marketing afterthought. */}
+        <HomeSections />
       </main>
     </div>
   );

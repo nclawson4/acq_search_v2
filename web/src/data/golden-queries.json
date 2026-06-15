@@ -1,0 +1,1434 @@
+{
+  "generated_at": "2026-06-15T17:54:11.133Z",
+  "backend": "https://nclawson4--acq-search-v2-backend-fastapi-app.modal.run",
+  "queries": [
+    {
+      "q": "Leila talking about leadership, talking head video",
+      "latency_ms": 7681,
+      "response": {
+        "query": "Leila talking about leadership, talking head video",
+        "parsed": {
+          "speaker": "leila",
+          "required_speakers": null,
+          "speakers_count": "solo",
+          "is_animation": false,
+          "talking_head_pose": "front_view",
+          "max_age_days": null,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": "talking head video",
+          "retrieval_query": "leadership talking head video",
+          "judge_query": "leadership",
+          "is_visual_only": false,
+          "clean_query": "leadership talking head video",
+          "reasoning": "Leila is the speaker, and the visual concept is a talking head video about leadership.",
+          "_parsed_by": "llm",
+          "_ts": 1781546056
+        },
+        "parsed_reasoning": "Leila is the speaker, and the visual concept is a talking head video about leadership.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": "leila",
+          "required_speakers": null,
+          "speakers_count": "solo",
+          "is_animation": false,
+          "talking_head_pose": "front_view",
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": null,
+          "min_age_days": null,
+          "retrieval_query": "leadership talking head video"
+        },
+        "n": 5,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.6531228423118591,
+            "judge_score": 1,
+            "why": "speaker=leila (audio voice match verified). Leila discusses key aspects of leadership and the importance of making tough decisions.",
+            "judge_reason": "Leila discusses key aspects of leadership and the importance of making tough decisions.",
+            "structural_dims": [
+              "speaker=leila (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "talking_head_pose=front_view (visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"talking head video\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "ZC0RgDJ3J7Q",
+            "scene_idx": 87,
+            "start_s": 328.245,
+            "end_s": 331.498,
+            "frame_url": "/api/frames/ZC0RgDJ3J7Q/0087",
+            "youtube_url": "https://www.youtube.com/watch?v=ZC0RgDJ3J7Q&t=328s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "ZC0RgDJ3J7Q",
+              "segment_idx": 3,
+              "start_s": 321.2,
+              "end_s": 460.6,
+              "topic_title": "Mistake 3: avoid being the villain — being clear is kind",
+              "summary": "Leila on avoiding hard feedback. She tells how she now tells her husband when she thinks his idea won't get him to his long-term goal. Avoiding the villain role costs you high performers, builds resentment in relationships, drifts friendships. Being clear is kind.",
+              "lessons_categories": [
+                "leadership",
+                "personal_development"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "leadership",
+                "business_owners",
+                "personal_life_advice"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=ZC0RgDJ3J7Q&t=321s",
+            "recency_days": 147,
+            "upload_date": "2026-01-16",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "leila",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": "front_view",
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.6222449541091919,
+            "judge_score": 0.7,
+            "why": "speaker=leila (audio voice match verified). Talks about leading effectively and managing energy, relevant to leadership.",
+            "judge_reason": "Talks about leading effectively and managing energy, relevant to leadership.",
+            "structural_dims": [
+              "speaker=leila (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "talking_head_pose=front_view (visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"talking head video\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "LpNODHhn-60",
+            "scene_idx": 330,
+            "start_s": 1354,
+            "end_s": 1359.25,
+            "frame_url": "/api/frames/LpNODHhn-60/0330",
+            "youtube_url": "https://www.youtube.com/watch?v=LpNODHhn-60&t=1354s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "LpNODHhn-60",
+              "segment_idx": 8,
+              "start_s": 1346.3,
+              "end_s": 1365.4,
+              "topic_title": "Leila outro and tease next video",
+              "summary": "Leila wraps with the takeaway that strategic choice beats maximizing, and teases the next video on leading people when things get hard.",
+              "lessons_categories": [
+                "none"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "general_all"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=LpNODHhn-60&t=1346s",
+            "recency_days": 126,
+            "upload_date": "2026-02-06",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "leila",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": "front_view",
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.5892897248268127,
+            "judge_score": 0.7,
+            "why": "speaker=leila (audio voice match verified). Discusses misconceptions about leadership and personal growth in that role.",
+            "judge_reason": "Discusses misconceptions about leadership and personal growth in that role.",
+            "structural_dims": [
+              "speaker=leila (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "talking_head_pose=front_view (visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"talking head video\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "hT4ilfJVZeQ",
+            "scene_idx": 2,
+            "start_s": 5.583,
+            "end_s": 8.917,
+            "frame_url": "/api/frames/hT4ilfJVZeQ/0002",
+            "youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=6s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "hT4ilfJVZeQ",
+              "segment_idx": 0,
+              "start_s": 0,
+              "end_s": 63.5,
+              "topic_title": "Leila's hook: five rules of leadership at 100+ teammates",
+              "summary": "Leila opens with the Guinness World Record, second building, 100 teammates, $100M in three days year. Promises five most-underrated leadership skills she learned in ten years.",
+              "lessons_categories": [
+                "leadership"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "leadership",
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=hT4ilfJVZeQ&t=0s",
+            "recency_days": 133,
+            "upload_date": "2026-01-30",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "leila",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": "front_view",
+              "reranked": true
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.6588801145553589,
+            "judge_score": 0.4,
+            "why": "speaker=leila (audio voice match verified). Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
+            "judge_reason": "Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
+            "structural_dims": [
+              "speaker=leila (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "talking_head_pose=front_view (visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"talking head video\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 1,
+            "start_s": 4.588,
+            "end_s": 12.846,
+            "frame_url": "/api/frames/g3QTLRlmevc/0001",
+            "youtube_url": "https://www.youtube.com/watch?v=g3QTLRlmevc&t=5s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "g3QTLRlmevc",
+              "segment_idx": 0,
+              "start_s": 0.1,
+              "end_s": 64,
+              "topic_title": "Leila announces Sharran as CEO and her move to executive chair",
+              "summary": "Leila opens Build episode announcing Sharran became president nine months ago and now steps into CEO of acquisition.com while she becomes executive chairwoman. Frames the transition as growth not failure.",
+              "lessons_categories": [
+                "leadership",
+                "scaling"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "leadership",
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=g3QTLRlmevc&t=0s",
+            "recency_days": 88,
+            "upload_date": "2026-03-16",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "leila",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": "front_view",
+              "reranked": true
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.5713911056518555,
+            "judge_score": 0.4,
+            "why": "speaker=leila (audio voice match verified). Mentions leadership in context of energy management, but not directly about leadership principles.",
+            "judge_reason": "Mentions leadership in context of energy management, but not directly about leadership principles.",
+            "structural_dims": [
+              "speaker=leila (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "talking_head_pose=front_view (visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"talking head video\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "DmenYQ_MEEA",
+            "scene_idx": 152,
+            "start_s": 443.5,
+            "end_s": 451.083,
+            "frame_url": "/api/frames/DmenYQ_MEEA/0152",
+            "youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=444s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "DmenYQ_MEEA",
+              "segment_idx": 4,
+              "start_s": 418.5,
+              "end_s": 494.5,
+              "topic_title": "Rest as nonnegotiable — Leila on becoming optional",
+              "summary": "Leila reframes rest like elite athletes do: nonnegotiable. During injury recovery she deleted nice-to-have meetings, hit record revenue numbers, and watched her team step into leadership roles she didn't know they could fill.",
+              "lessons_categories": [
+                "leadership",
+                "operations",
+                "scaling"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners",
+                "leadership"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=DmenYQ_MEEA&t=418s",
+            "recency_days": 225,
+            "upload_date": "2025-10-30",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "leila",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": "front_view",
+              "reranked": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "q": "Sharran less than 3 weeks ago talking about real estate",
+      "latency_ms": 4143,
+      "response": {
+        "query": "Sharran less than 3 weeks ago talking about real estate",
+        "parsed": {
+          "speaker": "sharran",
+          "required_speakers": null,
+          "speakers_count": null,
+          "is_animation": false,
+          "talking_head_pose": null,
+          "max_age_days": 21,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": null,
+          "retrieval_query": "real estate",
+          "judge_query": "real estate",
+          "is_visual_only": false,
+          "clean_query": "real estate",
+          "reasoning": "Sharran filter + last-21-day window; topic is real estate.",
+          "_parsed_by": "llm",
+          "_ts": 1781546061
+        },
+        "parsed_reasoning": "Sharran filter + last-21-day window; topic is real estate.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": "sharran",
+          "required_speakers": null,
+          "speakers_count": null,
+          "is_animation": false,
+          "talking_head_pose": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": 21,
+          "min_age_days": null,
+          "retrieval_query": "real estate"
+        },
+        "n": 2,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.5763646364212036,
+            "judge_score": 1,
+            "why": "speaker=sharran (audio voice match verified). Sharran discusses acquiring REMAX, directly related to real estate.",
+            "judge_reason": "Sharran discusses acquiring REMAX, directly related to real estate.",
+            "structural_dims": [
+              "speaker=sharran (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "uploaded within the last month (verified)"
+            ],
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 71,
+            "start_s": 214.417,
+            "end_s": 216.333,
+            "frame_url": "/api/frames/vbcelc94VRQ/0071",
+            "youtube_url": "https://www.youtube.com/watch?v=vbcelc94VRQ&t=214s",
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "vbcelc94VRQ",
+              "segment_idx": 3,
+              "start_s": 211.1,
+              "end_s": 266.7,
+              "topic_title": "Sharran introduces the Acquisition Ladder framework",
+              "summary": "Sharran credentials himself ($2B companies, REMAX deal). Introduces the Acquisition Ladder: 1) research, 2) buy the asset, 3) build and reposition, 4) syndicate to new investors. Reframes Hunter's pitch: people want stake in Spirit 2.0, not the old Spirit.",
+              "lessons_categories": [
+                "finance",
+                "scaling",
+                "marketing"
+              ],
+              "industries": [
+                "finance",
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=vbcelc94VRQ&t=211s",
+            "recency_days": 21,
+            "upload_date": "2026-05-22",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "sharran",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.5743024945259094,
+            "judge_score": 0.4,
+            "why": "speaker=sharran (audio voice match verified). Mentions investments and wealth, but not specifically about real estate.",
+            "judge_reason": "Mentions investments and wealth, but not specifically about real estate.",
+            "structural_dims": [
+              "speaker=sharran (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "uploaded within the last month (verified)"
+            ],
+            "video_id": "Rccmhnt1ur4",
+            "scene_idx": 75,
+            "start_s": 387,
+            "end_s": 388.5,
+            "frame_url": "/api/frames/Rccmhnt1ur4/0075",
+            "youtube_url": "https://www.youtube.com/watch?v=Rccmhnt1ur4&t=387s",
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "Rccmhnt1ur4",
+              "segment_idx": 4,
+              "start_s": 360,
+              "end_s": 468.7,
+              "topic_title": "The Ronald Reed janitor story and wealth as income minus ego",
+              "summary": "Sharran tells the Ronald Reed story — Vermont janitor with $8M estate from blue chip dividends, gave it to library and hospital. He defines wealth as the gap between income and ego multiplied by time, and warns about chasing the next big stock without a filter.",
+              "lessons_categories": [
+                "finance",
+                "mindset"
+              ],
+              "industries": [
+                "finance",
+                "general_business"
+              ],
+              "audience": [
+                "personal_life_advice",
+                "business_owners",
+                "general_all"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=Rccmhnt1ur4&t=360s",
+            "recency_days": 9,
+            "upload_date": "2026-06-03",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "sharran",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "q": "Animations talking about stress and anxiety",
+      "latency_ms": 3221,
+      "response": {
+        "query": "Animations talking about stress and anxiety",
+        "parsed": {
+          "speaker": null,
+          "required_speakers": null,
+          "speakers_count": null,
+          "is_animation": true,
+          "talking_head_pose": null,
+          "max_age_days": null,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": "Animations",
+          "retrieval_query": "stress anxiety Animations",
+          "judge_query": null,
+          "is_visual_only": true,
+          "clean_query": "stress anxiety Animations",
+          "reasoning": "The query specifies animations as the visual concept, with a focus on stress and anxiety.",
+          "_parsed_by": "llm",
+          "_ts": 1781546065
+        },
+        "parsed_reasoning": "The query specifies animations as the visual concept, with a focus on stress and anxiety.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": null,
+          "required_speakers": null,
+          "speakers_count": null,
+          "is_animation": true,
+          "talking_head_pose": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": null,
+          "min_age_days": null,
+          "retrieval_query": "stress anxiety Animations"
+        },
+        "n": 5,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.7037400603294373,
+            "judge_score": 1,
+            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
+            "judge_reason": "Matched on \"Animations\" visually.",
+            "structural_dims": [
+              "is_animation=true (visual classifier verified)",
+              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 17,
+            "start_s": 49.333,
+            "end_s": 55.333,
+            "frame_url": "/api/frames/4vxWJUx32Rw/0017",
+            "youtube_url": "https://www.youtube.com/watch?v=4vxWJUx32Rw&t=49s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "4vxWJUx32Rw",
+              "segment_idx": 0,
+              "start_s": 0.2,
+              "end_s": 59.6,
+              "topic_title": "Cold open: Nervous system mastery and her breath skepticism",
+              "summary": "Leila opens by saying winning entrepreneurs aren't the smartest, they stay grounded. She admits she used to scoff at 'just breathe' advice until she tried it - now breathwork is her main reset tool.",
+              "lessons_categories": [
+                "mindset",
+                "personal_development"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners",
+                "personal_life_advice"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=4vxWJUx32Rw&t=0s",
+            "recency_days": 154,
+            "upload_date": "2026-01-09",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": true,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.6675573587417603,
+            "judge_score": 1,
+            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
+            "judge_reason": "Matched on \"Animations\" visually.",
+            "structural_dims": [
+              "is_animation=true (visual classifier verified)",
+              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "7FiKGWYA65g",
+            "scene_idx": 104,
+            "start_s": 408.833,
+            "end_s": 416.917,
+            "frame_url": "/api/frames/7FiKGWYA65g/0104",
+            "youtube_url": "https://www.youtube.com/watch?v=7FiKGWYA65g&t=409s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "7FiKGWYA65g",
+              "segment_idx": 3,
+              "start_s": 296.8,
+              "end_s": 484.8,
+              "topic_title": "Skill 3: Speak from the system not the individual perspective",
+              "summary": "Leila tells the 100-person all-hands story where 15 leaders Slack-messaged her about confused departments. CEOs constantly translate through multiple lenses. Her tactic: send presentations to 4 random people across departments before going wide.",
+              "lessons_categories": [
+                "leadership",
+                "operations"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "leadership",
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=7FiKGWYA65g&t=297s",
+            "recency_days": 91,
+            "upload_date": "2026-03-13",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": true,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.6540299654006958,
+            "judge_score": 1,
+            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
+            "judge_reason": "Matched on \"Animations\" visually.",
+            "structural_dims": [
+              "is_animation=true (visual classifier verified)",
+              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "PRFzRtzhZrw",
+            "scene_idx": 165,
+            "start_s": 587,
+            "end_s": 596.083,
+            "frame_url": "/api/frames/PRFzRtzhZrw/0165",
+            "youtube_url": "https://www.youtube.com/watch?v=PRFzRtzhZrw&t=587s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "PRFzRtzhZrw",
+              "segment_idx": 4,
+              "start_s": 503.9,
+              "end_s": 661,
+              "topic_title": "24-hour rule: mentor lost $2M then made $40M month later",
+              "summary": "Leila's real estate mentor lost $2M in 48 hours, then said I'll spend 24 hours processing then move on. A month later he made $40M on the next deal. The 24-hour processing timer she now sets on her phone for any failure, regardless of size.",
+              "lessons_categories": [
+                "mindset",
+                "leadership",
+                "personal_development"
+              ],
+              "industries": [
+                "general_business",
+                "real_estate"
+              ],
+              "audience": [
+                "business_owners",
+                "leadership"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=PRFzRtzhZrw&t=504s",
+            "recency_days": 239,
+            "upload_date": "2025-10-16",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": true,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.6464765071868896,
+            "judge_score": 1,
+            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
+            "judge_reason": "Matched on \"Animations\" visually.",
+            "structural_dims": [
+              "is_animation=true (visual classifier verified)",
+              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "R23CiC80t7c",
+            "scene_idx": 142,
+            "start_s": 624.874,
+            "end_s": 639.889,
+            "frame_url": "/api/frames/R23CiC80t7c/0142",
+            "youtube_url": "https://www.youtube.com/watch?v=R23CiC80t7c&t=625s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "R23CiC80t7c",
+              "segment_idx": 5,
+              "start_s": 539.3,
+              "end_s": 638.4,
+              "topic_title": "Principle 5: the five-minute rule for killing hesitation",
+              "summary": "Leila's first mentor told her: if it takes less than five minutes and you have five minutes, do it now. She frames hesitation as compound interest on procrastination — clarity comes from doing, not thinking harder.",
+              "lessons_categories": [
+                "mindset",
+                "personal_development"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners",
+                "general_all"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=R23CiC80t7c&t=539s",
+            "recency_days": 232,
+            "upload_date": "2025-10-23",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": true,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.6433759927749634,
+            "judge_score": 1,
+            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
+            "judge_reason": "Matched on \"Animations\" visually.",
+            "structural_dims": [
+              "is_animation=true (visual classifier verified)",
+              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "0iDZ8UDvlWU",
+            "scene_idx": 177,
+            "start_s": 541.333,
+            "end_s": 548.583,
+            "frame_url": "/api/frames/0iDZ8UDvlWU/0177",
+            "youtube_url": "https://www.youtube.com/watch?v=0iDZ8UDvlWU&t=541s",
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "0iDZ8UDvlWU",
+              "segment_idx": 4,
+              "start_s": 474.6,
+              "end_s": 594.4,
+              "topic_title": "Lesson 4: Regulate then relate - the 3-minute hug hack",
+              "summary": "Leila says the unproductive fights were always when one of them was tired, hungry, or emotional. Her hack: hug for three minutes and breathe together to drop stress hormones before talking. Most fights aren't about the topic - they're about emotional regulation.",
+              "lessons_categories": [
+                "personal_development",
+                "mindset"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "personal_life_advice"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=0iDZ8UDvlWU&t=475s",
+            "recency_days": 217,
+            "upload_date": "2025-11-07",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": null,
+              "is_animation_filter": true,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "q": "Alex talking with another person about their offer",
+      "latency_ms": 4920,
+      "response": {
+        "query": "Alex talking with another person about their offer",
+        "parsed": {
+          "speaker": "alex",
+          "required_speakers": null,
+          "speakers_count": "dialogue",
+          "is_animation": false,
+          "talking_head_pose": null,
+          "max_age_days": null,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": null,
+          "retrieval_query": "offer",
+          "judge_query": "offer",
+          "is_visual_only": false,
+          "clean_query": "offer",
+          "reasoning": "Alex is speaking with another person; topic is offers.",
+          "_parsed_by": "llm",
+          "_ts": 1781546068
+        },
+        "parsed_reasoning": "Alex is speaking with another person; topic is offers.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": "alex",
+          "required_speakers": null,
+          "speakers_count": "dialogue",
+          "is_animation": false,
+          "talking_head_pose": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": null,
+          "min_age_days": null,
+          "retrieval_query": "offer"
+        },
+        "n": 5,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.4128366708755493,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Alex discusses donating books as an offer for new entrepreneurs.",
+            "judge_reason": "Alex discusses donating books as an offer for new entrepreneurs.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "Q8xXSMe8E4Q",
+            "scene_idx": 5,
+            "start_s": 365.031,
+            "end_s": 397.397,
+            "frame_url": "/api/frames/Q8xXSMe8E4Q/0005",
+            "youtube_url": "https://www.youtube.com/watch?v=Q8xXSMe8E4Q&t=365s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "Q8xXSMe8E4Q",
+              "segment_idx": 6,
+              "start_s": 352.8,
+              "end_s": 397.5,
+              "topic_title": "Outro: Skool Backpack book donation pitch",
+              "summary": "Alex pitches the $16 ultimate business backpack: three books donated from 3.6M total launch copies, plus 30 days of Skool free. He notes he loses money on it.",
+              "lessons_categories": [
+                "none"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=Q8xXSMe8E4Q&t=353s",
+            "recency_days": 64,
+            "upload_date": "2026-04-09",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.6061595678329468,
+            "judge_score": 0.4,
+            "why": "speaker=alex (audio voice match verified). Mentions offers related to coaching but not specifically about the offer itself.",
+            "judge_reason": "Mentions offers related to coaching but not specifically about the offer itself.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "N5MExtki_VI",
+            "scene_idx": 72,
+            "start_s": 245.912,
+            "end_s": 266.85,
+            "frame_url": "/api/frames/N5MExtki_VI/0072",
+            "youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=246s",
+            "voice": "alex",
+            "voices_present": [
+              "alex",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "N5MExtki_VI",
+              "segment_idx": 1,
+              "start_s": 134.5,
+              "end_s": 301.6,
+              "topic_title": "Built a second product when they should have fixed supply",
+              "summary": "Alex diagnoses the mistake of building a low-touch product when the real problem was supply constraint. CAC was same for both tiers so economics broke. Always ask: what problem are we solving and can we solve it without a new product?",
+              "lessons_categories": [
+                "operations",
+                "pricing",
+                "scaling"
+              ],
+              "industries": [
+                "services",
+                "education"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=134s",
+            "recency_days": 133,
+            "upload_date": "2026-01-30",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.45635178685188293,
+            "judge_score": 0.4,
+            "why": "speaker=alex (audio voice match verified). Talks about sales calls and offers but lacks direct relevance to the query.",
+            "judge_reason": "Talks about sales calls and offers but lacks direct relevance to the query.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "MH-IMJxbUY4",
+            "scene_idx": 243,
+            "start_s": 1178.094,
+            "end_s": 1180.596,
+            "frame_url": "/api/frames/MH-IMJxbUY4/0243",
+            "youtube_url": "https://www.youtube.com/watch?v=MH-IMJxbUY4&t=1178s",
+            "voice": "alex",
+            "voices_present": [
+              "alex",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "MH-IMJxbUY4",
+              "segment_idx": 7,
+              "start_s": 1072.9,
+              "end_s": 1275.2,
+              "topic_title": "Damaging admissions sales technique",
+              "summary": "Alex tells Joel to front-load damaging admissions on sales calls: list all the reasons it won't work before the benefits. Lets prospects self-qualify and makes the good claims more believable. Use age 53 as a no-AI proof.",
+              "lessons_categories": [
+                "sales"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=MH-IMJxbUY4&t=1073s",
+            "recency_days": 104,
+            "upload_date": "2026-02-28",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.48288828134536743,
+            "judge_score": 0,
+            "why": "speaker=alex (audio voice match verified). Content discusses business growth strategies, not offers.",
+            "judge_reason": "Content discusses business growth strategies, not offers.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "OQf2Ba-Lp_4",
+            "scene_idx": 473,
+            "start_s": 2043.041,
+            "end_s": 2063.228,
+            "frame_url": "/api/frames/OQf2Ba-Lp_4/0473",
+            "youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=2043s",
+            "voice": "alex",
+            "voices_present": [
+              "alex",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "OQf2Ba-Lp_4",
+              "segment_idx": 9,
+              "start_s": 1843.7,
+              "end_s": 2080.7,
+              "topic_title": "Prioritized recap: six moves projected to double the business",
+              "summary": "Alex stack-ranks fixes: 1) 10% price raise, 2) pay off debt, 3) new landing page, 4) better ads, 5) email reactivation, 6) own search terms, 7) HOA outbound. Estimates 2-3x lift from page-and-ads alone, 10-20% from retargeting, uncapped from outbound.",
+              "lessons_categories": [
+                "scaling",
+                "marketing",
+                "pricing"
+              ],
+              "industries": [
+                "services"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=1844s",
+            "recency_days": 35,
+            "upload_date": "2026-05-08",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.44389790296554565,
+            "judge_score": 0,
+            "why": "speaker=alex (audio voice match verified). Focuses on a Guinness World Record event, unrelated to offers.",
+            "judge_reason": "Focuses on a Guinness World Record event, unrelated to offers.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=dialogue (audio diarization verified)"
+            ],
+            "video_id": "u3H7CfpfwHQ",
+            "scene_idx": 499,
+            "start_s": 1521.103,
+            "end_s": 1531.196,
+            "frame_url": "/api/frames/u3H7CfpfwHQ/0499",
+            "youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=1521s",
+            "voice": "alex",
+            "voices_present": [
+              "alex",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "segment": {
+              "video_id": "u3H7CfpfwHQ",
+              "segment_idx": 9,
+              "start_s": 1450,
+              "end_s": 1602,
+              "topic_title": "Closing — Layla and Alex on impact, history made",
+              "summary": "Layla on the impact angle — never before in history has someone donated books to beat a world record. Alex with the Aussies shoey ('this is for my Aussies'). 30 minutes left to push for final tally.",
+              "lessons_categories": [
+                "branding",
+                "content",
+                "mindset"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=1450s",
+            "recency_days": 161,
+            "upload_date": "2026-01-02",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "q": "Alex writing on a whiteboard",
+      "latency_ms": 2910,
+      "response": {
+        "query": "Alex writing on a whiteboard",
+        "parsed": {
+          "speaker": "alex",
+          "required_speakers": null,
+          "speakers_count": "solo",
+          "is_animation": false,
+          "talking_head_pose": null,
+          "max_age_days": null,
+          "min_age_days": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "visual_concept": "whiteboard",
+          "retrieval_query": "writing on a whiteboard",
+          "judge_query": null,
+          "is_visual_only": true,
+          "clean_query": "writing on a whiteboard",
+          "reasoning": "Alex is writing on a whiteboard; visual concept is whiteboard.",
+          "_parsed_by": "llm",
+          "_ts": 1781546073
+        },
+        "parsed_reasoning": "Alex is writing on a whiteboard; visual concept is whiteboard.",
+        "parsed_by": "llm",
+        "filters_applied": {
+          "speaker": "alex",
+          "required_speakers": null,
+          "speakers_count": "solo",
+          "is_animation": false,
+          "talking_head_pose": null,
+          "industries": null,
+          "audience": null,
+          "age_group": null,
+          "lessons_categories": null,
+          "instructional_only": false,
+          "max_age_days": null,
+          "min_age_days": null,
+          "retrieval_query": "writing on a whiteboard"
+        },
+        "n": 5,
+        "results": [
+          {
+            "rank": 1,
+            "score": 0.777448832988739,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Matched on \"whiteboard\" visually.",
+            "judge_reason": "Matched on \"whiteboard\" visually.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"whiteboard\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "hHkdbr6_JJs",
+            "scene_idx": 10,
+            "start_s": 103.854,
+            "end_s": 146.063,
+            "frame_url": "/api/frames/hHkdbr6_JJs/0010",
+            "youtube_url": "https://www.youtube.com/watch?v=hHkdbr6_JJs&t=104s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "hHkdbr6_JJs",
+              "segment_idx": 1,
+              "start_s": 61.5,
+              "end_s": 192.4,
+              "topic_title": "Alex on top-of-funnel: eyeballs, content, books, school, Mosey Minute",
+              "summary": "Alex maps the top of funnel: business owner and wantrepreneur eyeballs, then converting via Mosey Minute newsletter, school communities (Skool portfolio), and books — all small or free conversions.",
+              "lessons_categories": [
+                "marketing",
+                "customer_acquisition",
+                "content"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners",
+                "leadership"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=hHkdbr6_JJs&t=62s",
+            "recency_days": 56,
+            "upload_date": "2026-04-17",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.7728182077407837,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Matched on \"whiteboard\" visually.",
+            "judge_reason": "Matched on \"whiteboard\" visually.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"whiteboard\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "Jmkq5RLjm0U",
+            "scene_idx": 1358,
+            "start_s": 7693.185,
+            "end_s": 7757.166,
+            "frame_url": "/api/frames/Jmkq5RLjm0U/1358",
+            "youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=7693s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "Jmkq5RLjm0U",
+              "segment_idx": 20,
+              "start_s": 7335,
+              "end_s": 7888,
+              "topic_title": "White-listing and equity partnerships — structuring influencer deals",
+              "summary": "Alex breaks down white-listing (brand runs influencer's content as ads), then partnerships with vesting equity tied to performance and time. Covers all the W's of deal structure for influencers and business owners alike.",
+              "lessons_categories": [
+                "partnerships",
+                "finance",
+                "marketing",
+                "branding"
+              ],
+              "industries": [
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=7335s",
+            "recency_days": 90,
+            "upload_date": "2026-03-14",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.7678643465042114,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Matched on \"whiteboard\" visually.",
+            "judge_reason": "Matched on \"whiteboard\" visually.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"whiteboard\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "OQf2Ba-Lp_4",
+            "scene_idx": 339,
+            "start_s": 1380.379,
+            "end_s": 1394.143,
+            "frame_url": "/api/frames/OQf2Ba-Lp_4/0339",
+            "youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=1380s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "OQf2Ba-Lp_4",
+              "segment_idx": 7,
+              "start_s": 1351.6,
+              "end_s": 1583.3,
+              "topic_title": "Reactivation mini-campaigns and three-angle sequence",
+              "summary": "Alex sketches reactivation as three mini-campaigns: I-owe-you-money, allergy/mildew, savings, each with case study follow-up. Predicts 20-30% revenue lift from this alone, all profit since list is already there.",
+              "lessons_categories": [
+                "marketing",
+                "sales"
+              ],
+              "industries": [
+                "services"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=1352s",
+            "recency_days": 35,
+            "upload_date": "2026-05-08",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 4,
+            "score": 0.7607132196426392,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Matched on \"whiteboard\" visually.",
+            "judge_reason": "Matched on \"whiteboard\" visually.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"whiteboard\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "XsWSvz-aewA",
+            "scene_idx": 17,
+            "start_s": 114.314,
+            "end_s": 116.717,
+            "frame_url": "/api/frames/XsWSvz-aewA/0017",
+            "youtube_url": "https://www.youtube.com/watch?v=XsWSvz-aewA&t=114s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "XsWSvz-aewA",
+              "segment_idx": 1,
+              "start_s": 35.9,
+              "end_s": 171.1,
+              "topic_title": "Entertainers and B2C educators — the Huda Beauty low-risk tier",
+              "summary": "Alex defines entertainers (memes, standup) as self-contained — value delivered on consumption. Then B2C educators: hair tutorials, makeup, diet advice. Lower-stakes, can be disrupted by AI avatars. He uses Huda Beauty as a credibility-via-demonstration example.",
+              "lessons_categories": [
+                "content",
+                "marketing",
+                "branding"
+              ],
+              "industries": [
+                "general_business",
+                "ecommerce"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=XsWSvz-aewA&t=36s",
+            "recency_days": 17,
+            "upload_date": "2026-05-26",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 5,
+            "score": 0.7606509923934937,
+            "judge_score": 1,
+            "why": "speaker=alex (audio voice match verified). Matched on \"whiteboard\" visually.",
+            "judge_reason": "Matched on \"whiteboard\" visually.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "is_animation=false (live-footage frame, visual classifier verified)",
+              "speakers_count=solo (audio diarization verified)",
+              "visual: \"whiteboard\" (CLIP visual retrieval matched this)"
+            ],
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 201,
+            "start_s": 1262.595,
+            "end_s": 1277.026,
+            "frame_url": "/api/frames/HGZOxBfnF-E/0201",
+            "youtube_url": "https://www.youtube.com/watch?v=HGZOxBfnF-E&t=1263s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "HGZOxBfnF-E",
+              "segment_idx": 6,
+              "start_s": 1196.7,
+              "end_s": 1447.1,
+              "topic_title": "Custom flow on every listing — site changes and execution order",
+              "summary": "Alex makes Luis put the custom-order CTA on every railing listing, adds a sticky 'custom designs available' banner across the top, and gives execution order: build system first, then drive traffic.",
+              "lessons_categories": [
+                "sales",
+                "operations",
+                "marketing"
+              ],
+              "industries": [
+                "ecommerce",
+                "general_business"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=HGZOxBfnF-E&t=1197s",
+            "recency_days": 59,
+            "upload_date": "2026-04-14",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": false,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
