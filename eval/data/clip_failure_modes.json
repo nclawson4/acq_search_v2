@@ -1,0 +1,306 @@
+[
+  {
+    "category": "generic",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0153.jpg",
+    "scene_idx": 153,
+    "is_intra": false,
+    "description": "Sharran in blue blazer sitting in armchair on his podcast",
+    "notes": "kinda-generic — names speaker + format but no distinctive detail"
+  },
+  {
+    "category": "generic",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0015.jpg",
+    "scene_idx": 15,
+    "is_intra": false,
+    "description": "podcast split-screen video call between two guys",
+    "notes": "kinda-generic — common podcast format"
+  },
+  {
+    "category": "generic",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0202.jpg",
+    "scene_idx": 202,
+    "is_intra": false,
+    "description": "Alex and guest writing notes on white paper at podcast desk",
+    "notes": "kinda-generic — names speaker + action but doesn't specify content"
+  },
+  {
+    "category": "generic",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0047.jpg",
+    "scene_idx": 47,
+    "is_intra": false,
+    "description": "Alex Hormozi alone at his podcast desk in casual shirt",
+    "notes": "kinda-generic — names speaker but many on-set frames qualify"
+  },
+  {
+    "category": "generic",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0181.jpg",
+    "scene_idx": 181,
+    "is_intra": false,
+    "description": "cinematic movie B-roll insert two men in suits",
+    "notes": "kinda-generic — describes format but not which film"
+  },
+
+  {
+    "category": "watermark",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0002.jpg",
+    "scene_idx": 2,
+    "is_intra": false,
+    "description": "yellow caption about doing two and a half million in revenue on B-roll guy in tank top",
+    "notes": "editor remembers gist of caption, not verbatim text"
+  },
+  {
+    "category": "watermark",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0245.jpg",
+    "scene_idx": 245,
+    "is_intra": false,
+    "description": "purple text overlay about a one year transformation over Alex closeup",
+    "notes": "editor recalls topic of overlay but not exact wording"
+  },
+  {
+    "category": "watermark",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0125.jpg",
+    "scene_idx": 125,
+    "is_intra": false,
+    "description": "title card about scaling roadmap to 100 million with chart panels",
+    "notes": "editor remembers concept of title card"
+  },
+  {
+    "category": "watermark",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0262.jpg",
+    "scene_idx": 262,
+    "is_intra": false,
+    "description": "animated yellow square with the number 7 on white background",
+    "notes": "editor recalls the numeral and color"
+  },
+  {
+    "category": "watermark",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0001.jpg",
+    "scene_idx": 1,
+    "is_intra": false,
+    "description": "intro graphic with creator headshots collage and hundreds of hours text",
+    "notes": "editor recalls intro graphic vibe"
+  },
+
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0123.jpg",
+    "scene_idx": 123,
+    "is_intra": false,
+    "description": "Elon clip with purple lighting",
+    "notes": "paraphrase of variety v33 — much shorter casual editor phrasing"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0069.jpg",
+    "scene_idx": 69,
+    "is_intra": false,
+    "description": "big concert crowd at night with fireworks",
+    "notes": "paraphrase of v35 — drops 'huge'/specifics"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0269.jpg",
+    "scene_idx": 269,
+    "is_intra": false,
+    "description": "Sharran and a friend in a selfie with a book",
+    "notes": "paraphrase of v39 — casual"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0078.jpg",
+    "scene_idx": 78,
+    "is_intra": false,
+    "description": "blue band sticker close up",
+    "notes": "paraphrase of v41 — minimal detail"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0213.jpg",
+    "scene_idx": 213,
+    "is_intra": false,
+    "description": "someone typing on a keyboard",
+    "notes": "paraphrase of v43 — minimal"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0117.jpg",
+    "scene_idx": 117,
+    "is_intra": false,
+    "description": "Sharran gesturing in front of his book collection",
+    "notes": "paraphrase of v38 — drops blazer/glasses detail"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0181.jpg",
+    "scene_idx": 181,
+    "is_intra": false,
+    "description": "Wall Street movie scene in an office",
+    "notes": "paraphrase of v31 — names the film not the visual"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0144.jpg",
+    "scene_idx": 144,
+    "is_intra": false,
+    "description": "Alex's guest writing on the paper while Alex watches",
+    "notes": "paraphrase of variety v9 — natural editor speak"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0239.jpg",
+    "scene_idx": 239,
+    "is_intra": false,
+    "description": "Alex with picture-in-picture of his guest at a desk",
+    "notes": "paraphrase of v2 — casual"
+  },
+  {
+    "category": "paraphrase",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0131.jpg",
+    "scene_idx": 131,
+    "is_intra": false,
+    "description": "Sharran gesturing with his right hand mid sentence",
+    "notes": "paraphrase of v34 — drops blazer/glasses/armchair"
+  },
+
+  {
+    "category": "text_in_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0021.jpg",
+    "scene_idx": 21,
+    "is_intra": false,
+    "description": "lower-third caption Sharran President of Acquisition.com",
+    "notes": "verbatim overlay text — CLIP reads it"
+  },
+  {
+    "category": "text_in_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0147.jpg",
+    "scene_idx": 147,
+    "is_intra": false,
+    "description": "text overlay 'If you were me, what would you do' above Elon Musk clip",
+    "notes": "text + image"
+  },
+  {
+    "category": "text_in_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0243.jpg",
+    "scene_idx": 243,
+    "is_intra": false,
+    "description": "audio waveform with The Client title",
+    "notes": "stylized graphic text"
+  },
+  {
+    "category": "text_in_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0188.jpg",
+    "scene_idx": 188,
+    "is_intra": false,
+    "description": "yellow card with number 5 and 'Outworking Everyone' text",
+    "notes": "stylized numbered list"
+  },
+
+  {
+    "category": "dark_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0179.jpg",
+    "scene_idx": 179,
+    "is_intra": false,
+    "description": "dark cinematic shot of a shirtless man in a bathroom",
+    "notes": "dark / low-light"
+  },
+  {
+    "category": "dark_frame",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0178.jpg",
+    "scene_idx": 178,
+    "is_intra": false,
+    "description": "muscular boxers in dim boxing ring",
+    "notes": "dark cinematic"
+  },
+
+  {
+    "category": "abstract",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0024.jpg",
+    "scene_idx": 24,
+    "is_intra": false,
+    "description": "abstract illustration of social hierarchy",
+    "notes": "abstract concept — India's system seesaw graphic"
+  },
+  {
+    "category": "abstract",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0315.jpg",
+    "scene_idx": 315,
+    "is_intra": false,
+    "description": "calendar showing a date range",
+    "notes": "abstract — calendar graphic"
+  },
+
+  {
+    "category": "PiP",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0239.jpg",
+    "scene_idx": 239,
+    "is_intra": false,
+    "description": "picture-in-picture with smaller insert window of a second person",
+    "notes": "PiP layout"
+  },
+  {
+    "category": "PiP",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0015.jpg",
+    "scene_idx": 15,
+    "is_intra": false,
+    "description": "side-by-side video call layout with two podcast guests",
+    "notes": "split-screen — same layout family as PiP"
+  },
+
+  {
+    "category": "speaker_query",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0117.jpg",
+    "scene_idx": 117,
+    "is_intra": false,
+    "description": "Sharran gesturing energetically in front of his $100M books",
+    "notes": "speaker identity in query"
+  },
+  {
+    "category": "speaker_query",
+    "video_id": "HGZOxBfnF-E",
+    "frame_path": "ingest/frames/HGZOxBfnF-E/scene_0047.jpg",
+    "scene_idx": 47,
+    "is_intra": false,
+    "description": "Alex Hormozi sitting alone at his podcast desk in a plaid shirt",
+    "notes": "speaker identity in query"
+  },
+  {
+    "category": "speaker_query",
+    "video_id": "BZrgkgCF79g",
+    "frame_path": "ingest/frames/BZrgkgCF79g/scene_0131.jpg",
+    "scene_idx": 131,
+    "is_intra": false,
+    "description": "Sharran in armchair talking with hand gesture",
+    "notes": "speaker name + light context"
+  }
+]

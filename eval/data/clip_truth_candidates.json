@@ -1,0 +1,1682 @@
+[
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0008.jpg",
+    "scene_idx": 8,
+    "is_intra": false,
+    "description": "glowing yellow briefcase icon centered, surrounded by six smaller white briefcase icons with dots on dark navy background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0092.jpg",
+    "scene_idx": 92,
+    "is_intra": false,
+    "description": "Leila in gray blazer with bullet text overlay asking what behaviors will this create and what would the public think",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0270.jpg",
+    "scene_idx": 270,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised palms forward in a stop gesture",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0035_intra.jpg",
+    "scene_idx": 35,
+    "is_intra": true,
+    "description": "man in blue plaid shirt and backwards cap with arms crossed and eyes closed, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0018.jpg",
+    "scene_idx": 18,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with one finger raised making a point",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0069.jpg",
+    "scene_idx": 69,
+    "is_intra": false,
+    "description": "Leila in black blouse looking off to the side with hand resting near her body, serious expression",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0128.jpg",
+    "scene_idx": 128,
+    "is_intra": false,
+    "description": "Leila in gray blazer leaning back on cream couch looking up to the right",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0051.jpg",
+    "scene_idx": 51,
+    "is_intra": false,
+    "description": "two line graphs comparing margins to revenue with growing curves and yellow bottom text saying you make the same money at the end",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0052.jpg",
+    "scene_idx": 52,
+    "is_intra": false,
+    "description": "man in plaid shirt on right side with text bullet overlay yes you can achieve financial freedom if you live under your means",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0210.jpg",
+    "scene_idx": 210,
+    "is_intra": false,
+    "description": "Leila gesturing with both hands with white text overlay how you think about the person leading you",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0022.jpg",
+    "scene_idx": 22,
+    "is_intra": false,
+    "description": "title card 100M scaling roadmap with ACQUISITION COM logo and five small chart panels in purple below",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0200.jpg",
+    "scene_idx": 200,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse seated on couch with one hand near her chest looking forward",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0074_intra.jpg",
+    "scene_idx": 74,
+    "is_intra": true,
+    "description": "Leila in olive green blouse seated with both hands raised gesturing in beige room with vertical recessed wall lights",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0140.jpg",
+    "scene_idx": 140,
+    "is_intra": false,
+    "description": "line drawing of two men in suits shaking hands across a desk with a laptop, text says until I know why it matters to me",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0064.jpg",
+    "scene_idx": 64,
+    "is_intra": false,
+    "description": "Leila in gray blazer with hand extended palm up looking up to the side, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0023_intra.jpg",
+    "scene_idx": 23,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap with hands clasped together looking down, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0060_intra.jpg",
+    "scene_idx": 60,
+    "is_intra": true,
+    "description": "navy graphic with factory icon labeled GROWING and arrow to briefcase labeled BUSINESS connected to MARKETING and DISTRIBUTION below",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0108.jpg",
+    "scene_idx": 108,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands raised to chest holding fingers together, plants in background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0008_intra.jpg",
+    "scene_idx": 8,
+    "is_intra": true,
+    "description": "central yellow glowing briefcase with greater-than symbol then white briefcase inside dark circle, surrounded by six smaller white briefcases",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0029.jpg",
+    "scene_idx": 29,
+    "is_intra": false,
+    "description": "minimalist line drawing of woman pointing at man covering his ears with caption if someone cannot handle the truth above",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0083_intra.jpg",
+    "scene_idx": 83,
+    "is_intra": true,
+    "description": "Leila in black blouse on couch looking sideways with arm extended toward right side, fiddle leaf plant visible",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0192_intra.jpg",
+    "scene_idx": 192,
+    "is_intra": true,
+    "description": "Leila in olive green blouse seated with both hands raised palms up in gesture, beige wall with vertical recessed lights",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0196.jpg",
+    "scene_idx": 196,
+    "is_intra": false,
+    "description": "Leila in gray blazer gesturing with right hand pointing forward on cream chair, dark cabinet on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0104_intra.jpg",
+    "scene_idx": 104,
+    "is_intra": true,
+    "description": "circular diagram with two callout circles BACKFILL THE REST and RETENTION around central briefcase icon on dark navy background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0055.jpg",
+    "scene_idx": 55,
+    "is_intra": false,
+    "description": "vintage filtered home office B roll with bearded man in white tank top at desk and woman across from him in front of multiple monitors and a lamp",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0024.jpg",
+    "scene_idx": 24,
+    "is_intra": false,
+    "description": "woman with dark hair in black blouse on cream couch holding her hand near her chest, beige room with potted plant and lamp visible",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0027.jpg",
+    "scene_idx": 27,
+    "is_intra": false,
+    "description": "minimalist graphic with single person silhouette icon and dollar amount 4925 displayed on dark navy background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0139_intra.jpg",
+    "scene_idx": 139,
+    "is_intra": true,
+    "description": "animated graphic comparing SOLVING TODAYS PROBLEMS with cluster of red dots on left versus BUILDING THE TEAMS ABILITY TO SOLVE PROBLEMS with cluster of gray dots on right",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0005.jpg",
+    "scene_idx": 5,
+    "is_intra": false,
+    "description": "live event with audience seated in foreground watching woman in dark blue clothing on a stage seated in directors chair with subtitle YEARS OF BUILDING BUSINESSES",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0091_intra.jpg",
+    "scene_idx": 91,
+    "is_intra": true,
+    "description": "Leila in gray blazer with single text overlay WHAT BEHAVIORS WILL THIS CREATE on left side of frame",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0039_intra.jpg",
+    "scene_idx": 39,
+    "is_intra": true,
+    "description": "bearded man in plaid shirt and backwards cap with ACQUISITION logo on white shirt seated at white table with purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0215.jpg",
+    "scene_idx": 215,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with both arms extended wide in dramatic gesture, dark cabinet on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0076.jpg",
+    "scene_idx": 76,
+    "is_intra": false,
+    "description": "man in blue plaid shirt and backwards cap with hand on his beard in thinking pose with arms partly crossed at white table, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0183.jpg",
+    "scene_idx": 183,
+    "is_intra": false,
+    "description": "behind the scenes vintage filter shot of woman in red blazer with back to camera in front of green screen studio with cameraman",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0195.jpg",
+    "scene_idx": 195,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on couch with both hands raised gesturing, small Copyright Acquisition.com 2025 disclaimer text at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0071.jpg",
+    "scene_idx": 71,
+    "is_intra": false,
+    "description": "navy graphic with yellow highlighted LOW CAPEX capital expenditure text in box and instruction text about number of variables you need to actively manage to expand production above",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0034.jpg",
+    "scene_idx": 34,
+    "is_intra": false,
+    "description": "graphic with grayscale brain illustration and YOUR NEW STRATEGY title with first bullet INCREASE YOUR INCOME visible and remaining items encrypted or blurred",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0116_intra.jpg",
+    "scene_idx": 116,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair looking off to the side in profile, dark cabinet on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0026_intra.jpg",
+    "scene_idx": 26,
+    "is_intra": true,
+    "description": "whiteboard with handwritten blue marker showing math grid with rows A and B columns YR 1 2 3 with numbers 100 200 300 600 and 100s",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0092.jpg",
+    "scene_idx": 92,
+    "is_intra": false,
+    "description": "whiteboard top down view with two hands holding red markers writing FREE colon SKOOL text in red marker",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0000.jpg",
+    "scene_idx": 0,
+    "is_intra": false,
+    "description": "bearded man in plaid shirt and backwards cap looking down at his phone with giant yellow text overlay showing 22 million 265 thousand number",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0159.jpg",
+    "scene_idx": 159,
+    "is_intra": false,
+    "description": "minimalist line drawing of woman doing dumbbell lunge with red text TRAINING IN SILENCE TURNS A PHYSICAL WORKOUT",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0018_intra.jpg",
+    "scene_idx": 18,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt with backwards cap one hand near his chest gesturing, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0208.jpg",
+    "scene_idx": 208,
+    "is_intra": false,
+    "description": "Leila in black blouse on couch with hand holding her dark hair near her chest with ring visible, beige wall with vertical recessed lights",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0078.jpg",
+    "scene_idx": 78,
+    "is_intra": false,
+    "description": "bearded man in plaid shirt with arms crossed looking up to the ceiling at white table with purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0006.jpg",
+    "scene_idx": 6,
+    "is_intra": false,
+    "description": "live event scene with bearded man arm raised on stage in front of huge wall of attendee video feeds with yellow text 250,000,000 in revenue last year",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0045.jpg",
+    "scene_idx": 45,
+    "is_intra": false,
+    "description": "man in blue and white plaid shirt and backwards cap pointing his right index finger upward, with white acquisition shirt visible, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0033.jpg",
+    "scene_idx": 33,
+    "is_intra": false,
+    "description": "man in blue plaid shirt and backwards cap leaning forward with both hands resting on white table palms slightly raised, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0014.jpg",
+    "scene_idx": 14,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt and dark backwards cap with eyes closed and both hands extended forward gesturing, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0232_intra.jpg",
+    "scene_idx": 232,
+    "is_intra": true,
+    "description": "Leila in black blouse seated with both hands raised at chest in praise gesture and white text overlay THE TRIANGLE OFFENSE at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0271.jpg",
+    "scene_idx": 271,
+    "is_intra": false,
+    "description": "Leila in black blouse with hand raised gesturing and white text overlay HOW DO I CREATE on right side of frame",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0140.jpg",
+    "scene_idx": 140,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with one arm raised high to her left side in a dramatic upward gesture, beige wall with vertical recessed lights",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0100.jpg",
+    "scene_idx": 100,
+    "is_intra": false,
+    "description": "Leila in black blouse with hand at her face creating slight motion blur, fiddle leaf plant in right background",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0110.jpg",
+    "scene_idx": 110,
+    "is_intra": false,
+    "description": "bearded man in white tank top sitting on stationary exercise bike at home office desk with multiple monitors and yellow text overlay I DO 4 5 OR 6 HOURS OF WORK",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0157_intra.jpg",
+    "scene_idx": 157,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream couch in beige room with pampas grass decoration on left and one hand gesturing, white pillow textures",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0231.jpg",
+    "scene_idx": 231,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with hand near her chin in side view profile, white pillow textures visible",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0071_intra.jpg",
+    "scene_idx": 71,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair with both hands open palms down at chest height while looking up to the side, beige walls",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0031.jpg",
+    "scene_idx": 31,
+    "is_intra": false,
+    "description": "bearded man in white acquisition.com tank top holding white poster with purple grid showing scaling roadmap with yellow text overlay ACQUISITION.COM/ROADMAP at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0162.jpg",
+    "scene_idx": 162,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with both hands together in praise or begging gesture in front of chest, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0032.jpg",
+    "scene_idx": 32,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised at chest and white text overlay with partial words BECAUSE THEN YOU and TIONSHIPS visible at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0247.jpg",
+    "scene_idx": 247,
+    "is_intra": false,
+    "description": "Leila in black blouse with hands gesturing and white text BEING overlay on right side, fiddle leaf plant visible",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0060_intra.jpg",
+    "scene_idx": 60,
+    "is_intra": true,
+    "description": "man in blue plaid shirt and backwards cap with both hands clasped together on white table looking forward, blue vertical light bars",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0004.jpg",
+    "scene_idx": 4,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt and backwards cap with white acquisition shirt and arm extended palm up gesture, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0199.jpg",
+    "scene_idx": 199,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with hand near her hair, sunlit recessed wall lights creating shadow patterns",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0020.jpg",
+    "scene_idx": 20,
+    "is_intra": false,
+    "description": "bearded man in white acquisition.com tank top sitting at table with white scaling roadmap chart paper, purple and blue stage lighting",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0029_intra.jpg",
+    "scene_idx": 29,
+    "is_intra": true,
+    "description": "minimalist line drawing of woman pointing finger at man covering his ears with red text THEN THEY CANT HANDLE BEING IN A RELATIONSHIP",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0105.jpg",
+    "scene_idx": 105,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch looking to the right with both hands lowered to her lap, beige wall vertical lights",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0061.jpg",
+    "scene_idx": 61,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt and backwards cap with one hand raised near his face thinking pose, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0000.jpg",
+    "scene_idx": 0,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands in praise gesture and white text overlay THAT CAN STAY at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0030.jpg",
+    "scene_idx": 30,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands together in prayer gesture in front of chest, pampas grass decoration on left",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0102.jpg",
+    "scene_idx": 102,
+    "is_intra": false,
+    "description": "whiteboard with blue marker handwritten numbers 900 and 600 on left side and numbered list 1 STICKY 2 EXPENSIVE 3 EXPANDING 4 AIR 5 UNIQ",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0099.jpg",
+    "scene_idx": 99,
+    "is_intra": false,
+    "description": "whiteboard top down view of two hands writing in red marker showing dollar 10 to 700 per month and FREE colon SKOOL FORUMS list",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0070_intra.jpg",
+    "scene_idx": 70,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with both hands together in front of him gesturing forward, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0188.jpg",
+    "scene_idx": 188,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised palms facing forward in defensive gesture, pampas grass decoration on left",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0177.jpg",
+    "scene_idx": 177,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with one hand at her side palm up in shrug gesture, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0101_intra.jpg",
+    "scene_idx": 101,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair with one hand at chest holding dark sunglasses, dark cabinet on right with pampas grass decor",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0196.jpg",
+    "scene_idx": 196,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised in animated gesture creating motion blur, pampas grass decor on left",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0074_intra.jpg",
+    "scene_idx": 74,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair with one hand near her face in neutral pose, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0160_intra.jpg",
+    "scene_idx": 160,
+    "is_intra": true,
+    "description": "Leila in dark olive green blouse with four bullet text overlay listing YOUR BODY ABILITY TO FOCUS ABILITY TO BE PRESENT ABILITY TO STAY CALM UNDER PRESSURE",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0086_intra.jpg",
+    "scene_idx": 86,
+    "is_intra": true,
+    "description": "title card with red circled number 3 and red text SPEAKING FROM A PERSPECTIVE OF THE SYSTEM on light textured background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0119.jpg",
+    "scene_idx": 119,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands resting at chest area looking down, pampas grass on left",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0089.jpg",
+    "scene_idx": 89,
+    "is_intra": false,
+    "description": "Leila in black blouse with finger pointed gesture and white text overlay I WAS ALWAYS SAVING THE DAY at bottom, fiddle leaf plant visible",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0047_intra.jpg",
+    "scene_idx": 47,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream couch in side view with both hands together resting on her lap looking down, beige wall",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0073.jpg",
+    "scene_idx": 73,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with arms crossed in applauding gesture, white director chair visible in background, purple gradient",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0094.jpg",
+    "scene_idx": 94,
+    "is_intra": false,
+    "description": "YouTube channel page screenshot of Alex Hormozi with multiple video thumbnails including how to win in business, Insanity, SALES titles",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0081.jpg",
+    "scene_idx": 81,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with hand near her hair looking down to side, olive tree visible on left side background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0017_intra.jpg",
+    "scene_idx": 17,
+    "is_intra": true,
+    "description": "minimalist line drawing of person with anxious scribbled hair and red text MOST PEOPLE WAIT UNTIL THEYRE ANXIOUS TO START BREATHING EXERCISES YOUR SYSTEM IS ALREADY HIJACKED",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0130_intra.jpg",
+    "scene_idx": 130,
+    "is_intra": true,
+    "description": "Leila in dark olive green blouse with white and red text overlay WHEN YOURE READY TO CHECK IT on left side of frame, pampas grass on right",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0119.jpg",
+    "scene_idx": 119,
+    "is_intra": false,
+    "description": "man in plaid blue and white shirt and backwards cap holding the purple ACQUISITION.COM scaling roadmap chart poster, blue vertical light bars",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0038.jpg",
+    "scene_idx": 38,
+    "is_intra": false,
+    "description": "bearded man in white tank top holding the full purple scaling roadmap chart poster with ten panels in two rows, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0073.jpg",
+    "scene_idx": 73,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt with ACQUISITION logo shirt and hand extended palm up gesture, 100M PLAYBOOKS director chair visible behind him, purple lighting",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0054_intra.jpg",
+    "scene_idx": 54,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with both hands raised palms facing forward gesture, white acquisition shirt visible, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0072.jpg",
+    "scene_idx": 72,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with both hands at her chest area gesturing forward, dark cabinet on right pampas grass on left",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0051_intra.jpg",
+    "scene_idx": 51,
+    "is_intra": true,
+    "description": "man in blue plaid shirt and backwards cap with finger pointing at his own opposite forearm in cross arm gesture, blue vertical light bars",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0010.jpg",
+    "scene_idx": 10,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with both fists clenched in front of him in determined gesture, white acquisition shirt, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0076.jpg",
+    "scene_idx": 76,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with both hands raised palms up at face level in animated counting gesture, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0176.jpg",
+    "scene_idx": 176,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream chair smiling with one hand raised to her side, fiddle leaf plant on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0148.jpg",
+    "scene_idx": 148,
+    "is_intra": false,
+    "description": "Leila in gray blazer with three bullet text overlay listing THIS WILL SAVE YOU TIME THIS WILL GREATLY REDUCE CONFUSION THIS WILL MAKE YOU A LOT OF MONEY",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0053.jpg",
+    "scene_idx": 53,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt and backwards cap with one hand raised near his chest in neutral talking pose, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0051.jpg",
+    "scene_idx": 51,
+    "is_intra": false,
+    "description": "vintage filter B-roll of empty commercial gym with various weight training machines and equipment, dark gray flooring fluorescent lighting",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0205.jpg",
+    "scene_idx": 205,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with one hand near her chest holding a lock of her dark hair, beige room with plants",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0114.jpg",
+    "scene_idx": 114,
+    "is_intra": false,
+    "description": "Leila in black blouse with finger pointed in gesture and white text overlay YOU CAN TAKE IT TOO FAR at bottom of frame",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0046.jpg",
+    "scene_idx": 46,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt sitting at white table in neutral relaxed pose with hand resting, white director chair behind, purple lighting",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0017.jpg",
+    "scene_idx": 17,
+    "is_intra": false,
+    "description": "minimalist graphic on dark navy with stack of three person silhouettes by red filling rectangle on left and another stack with smaller red rectangle on right",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0111.jpg",
+    "scene_idx": 111,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch holding phone in one hand with white text overlay THREE PRIORITIES FOR THE DAY on left side of frame",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0015.jpg",
+    "scene_idx": 15,
+    "is_intra": false,
+    "description": "night exterior of ACQUISITION.COM modern office building with lit white text signage and palm trees, with yellow text overlay INTO A 250M PORTFOLIO at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0119.jpg",
+    "scene_idx": 119,
+    "is_intra": false,
+    "description": "minimalist textured paper graphic with two small red dots and red text YOU HAVE beginning to appear on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0069.jpg",
+    "scene_idx": 69,
+    "is_intra": false,
+    "description": "navy graphic with three stacked rounded rectangle text boxes containing yellow text OPERATIONAL SCALE LOW OPERATIONAL COMPLEXITY LOW CAPEX",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0028.jpg",
+    "scene_idx": 28,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with one hand raised palm up gesturing, dark cabinet on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0036.jpg",
+    "scene_idx": 36,
+    "is_intra": false,
+    "description": "Leila in black blouse with both hands raised in peace sign or victory gesture with plants visible in background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0135.jpg",
+    "scene_idx": 135,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands lowered slightly forward gesturing, pampas grass on left",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0045_intra.jpg",
+    "scene_idx": 45,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with hands lowered resting on white table in neutral pose, white acquisition shirt purple background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0039.jpg",
+    "scene_idx": 39,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands at her chest and white text overlay AND FIND A TIME PLACE OR PRACTICE at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0057_intra.jpg",
+    "scene_idx": 57,
+    "is_intra": true,
+    "description": "graphic with Charlie Munger photo on dark navy background and white quote text IF PEOPLE WERENT WRONG SO MUCH WE WOULDNT BE SO RICH at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0183_intra.jpg",
+    "scene_idx": 183,
+    "is_intra": true,
+    "description": "minimalist line drawing of person in yoga downward facing dog pose with red text AND THEN I STRETCH on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0193.jpg",
+    "scene_idx": 193,
+    "is_intra": false,
+    "description": "Leila in black blouse with one hand raised pointing and white text overlay INSTEAD OF RESENTING THEM on right side of frame",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0031.jpg",
+    "scene_idx": 31,
+    "is_intra": false,
+    "description": "man in blue plaid shirt and backwards cap with both hands lowered at white table in mid talking gesture, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0078.jpg",
+    "scene_idx": 78,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with one hand on her chest and white text overlay WHOS IN on left side",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0105_intra.jpg",
+    "scene_idx": 105,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap with hands lowered to white table looking down with concentration, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0209_intra.jpg",
+    "scene_idx": 209,
+    "is_intra": true,
+    "description": "minimalist line drawing of couple embracing inside red wreath circle frame with red text EVERY FAILED REPAIR LEAVES A CRACK WHERE IT FEELS WEAK",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0163.jpg",
+    "scene_idx": 163,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with both hands lowered gesturing forward in a presenting motion, dark cabinet on right pampas grass",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0043_intra.jpg",
+    "scene_idx": 43,
+    "is_intra": true,
+    "description": "bearded man in white acquisition tank top holding the purple scaling roadmap chart poster with yellow text overlay ACQUISITION.COM/ROADMAP at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0112_intra.jpg",
+    "scene_idx": 112,
+    "is_intra": true,
+    "description": "orange film strip graphic with line drawings of couples on left and red text THE GOAL IS TO LEARN TOGETHER WORK ON SOMETHING TOGETHER AND BUILD A LIFE WHERE EVERY IMPROVEMENT IN ONE PERSON ALSO BENEFITS THE OTHER PERSON",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0234.jpg",
+    "scene_idx": 234,
+    "is_intra": false,
+    "description": "Leila in black blouse with one hand raised gesturing to side with fiddle leaf plant on right",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0137.jpg",
+    "scene_idx": 137,
+    "is_intra": false,
+    "description": "Leila in black blouse with finger pointed sideways and large ring visible on her hand, beige room with pampas",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0167.jpg",
+    "scene_idx": 167,
+    "is_intra": false,
+    "description": "Leila in black blouse with both hands at chest creating slight motion blur, fiddle leaf plant on right",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0019.jpg",
+    "scene_idx": 19,
+    "is_intra": false,
+    "description": "Leila in black blouse with both hands raised in animated gesture, hand visible in motion blur",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0113.jpg",
+    "scene_idx": 113,
+    "is_intra": false,
+    "description": "Leila in black blouse with one hand raised palm extended forward in mid gesture, beige room",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0147.jpg",
+    "scene_idx": 147,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with hand motion blur and white text overlay I DO NOT PLAY ANY MUSIC at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0062_intra.jpg",
+    "scene_idx": 62,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap with hands together holding small object in front of him, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0074.jpg",
+    "scene_idx": 74,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt and backwards cap with marker held in front gesturing toward camera, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0269_intra.jpg",
+    "scene_idx": 269,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream chair with one hand raised gesturing with fiddle leaf plant on right",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0077_intra.jpg",
+    "scene_idx": 77,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair in side view leaning back relaxed pose, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0085_intra.jpg",
+    "scene_idx": 85,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair with one hand close to her chest gesturing inward, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0058.jpg",
+    "scene_idx": 58,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with both hands raised in counting gesture thumb and fingers extended, purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0062.jpg",
+    "scene_idx": 62,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised at chest height in animated gesture, in side angle",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0239.jpg",
+    "scene_idx": 239,
+    "is_intra": false,
+    "description": "Leila in black blouse with both hands raised in animated gesture, fiddle leaf plant on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0211.jpg",
+    "scene_idx": 211,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with both hands clasped on her lap in neutral seated pose, dark cabinet on right pampas grass",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0077_intra.jpg",
+    "scene_idx": 77,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap with hand at chest and yellow PRO TIP text overlay at bottom, dark background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0036_intra.jpg",
+    "scene_idx": 36,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with hands lowered on table in side view, white director chair visible in background, purple gradient",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0219.jpg",
+    "scene_idx": 219,
+    "is_intra": false,
+    "description": "Leila in black blouse with one hand raised palm forward in stop gesture, plants visible",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0139.jpg",
+    "scene_idx": 139,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands in her hair, side view with vertical recessed lights on wall",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0027.jpg",
+    "scene_idx": 27,
+    "is_intra": false,
+    "description": "Leila in black blouse with both hands raised in stop or defensive gesture, fiddle leaf plant on right",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0046.jpg",
+    "scene_idx": 46,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt at whiteboard writing with marker, hand over white chart paper, dark studio background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0178.jpg",
+    "scene_idx": 178,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands at her chest gesturing forward",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0097.jpg",
+    "scene_idx": 97,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with one hand mid-gesture sideways, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0158.jpg",
+    "scene_idx": 158,
+    "is_intra": false,
+    "description": "Leila in black blouse with one hand mid gesture extended, fiddle leaf plant on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0018.jpg",
+    "scene_idx": 18,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with hand near his beard in thinking pose, white acquisition shirt purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0040.jpg",
+    "scene_idx": 40,
+    "is_intra": false,
+    "description": "Leila in gray blazer in side view with one finger raised making a point, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0183.jpg",
+    "scene_idx": 183,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands wide in gesture, beige wall with vertical recessed lights",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0045.jpg",
+    "scene_idx": 45,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with both hands raised gesturing with rings visible, beige wall vertical recessed lights",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0012.jpg",
+    "scene_idx": 12,
+    "is_intra": false,
+    "description": "graphic of grayscale brain in purple jar surrounded by three circles labeled THE PROBLEM YOUR NEW GOAL YOUR NEW STRATEGY in pixelated text",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0118_intra.jpg",
+    "scene_idx": 118,
+    "is_intra": true,
+    "description": "Leila in gray blazer on cream chair in side view looking up to side, dark cabinet on right",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0017_intra.jpg",
+    "scene_idx": 17,
+    "is_intra": true,
+    "description": "minimalist graphic on dark navy with stack of three person silhouettes next to empty rectangle on left and another stack with empty rectangle on right",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0142.jpg",
+    "scene_idx": 142,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with one hand at her chest neutral pose with pampas grass behind",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0037_intra.jpg",
+    "scene_idx": 37,
+    "is_intra": true,
+    "description": "Leila in dark olive green blouse on cream couch with one hand at her chest with rings visible on fingers, beige wall",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0068.jpg",
+    "scene_idx": 68,
+    "is_intra": false,
+    "description": "navy graphic with numbered list rows 2 EXPENSIVE and 3 EXPANSION visible as filled rows with rows 4 and 5 empty",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0012.jpg",
+    "scene_idx": 12,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with one finger raised in number 1 gesture, white acquisition shirt purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0073.jpg",
+    "scene_idx": 73,
+    "is_intra": false,
+    "description": "whiteboard top down view with hands drawing red stick figures with multiple dollar signs and dashed line connecting them",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0108_intra.jpg",
+    "scene_idx": 108,
+    "is_intra": true,
+    "description": "Leila in dark olive green blouse on cream couch with both hands together at her chest holding fingers, rings visible",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0095.jpg",
+    "scene_idx": 95,
+    "is_intra": false,
+    "description": "man in blue plaid shirt and backwards cap holding red marker in hand with hand by his side in neutral pose, blue light bars",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0063.jpg",
+    "scene_idx": 63,
+    "is_intra": false,
+    "description": "whiteboard top down view with hands drawing two red stick figures connected by long red dashed line arc",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0101_intra.jpg",
+    "scene_idx": 101,
+    "is_intra": true,
+    "description": "whiteboard top down view with hand writing red marker price list 35K IN PERSON EDU FEEDBACK DIY FEEDBACK 10 to 700 per month SKOOL PROGRAMS FREE SKOOL FORUMS",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0086_intra.jpg",
+    "scene_idx": 86,
+    "is_intra": true,
+    "description": "man in blue plaid shirt and backwards cap with one hand raised in partial gesture, white acquisition shirt blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0034_intra.jpg",
+    "scene_idx": 34,
+    "is_intra": true,
+    "description": "calendar grid view of 12 months January through December with yellow text annotations 20 percent HIGHEST CHURN 10 percent 2 percent at top",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0207.jpg",
+    "scene_idx": 207,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised in animated gesture, beige wall with table",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0107.jpg",
+    "scene_idx": 107,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream chair looking up to side, fiddle leaf plant on right and gray curtain backdrop",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0026.jpg",
+    "scene_idx": 26,
+    "is_intra": false,
+    "description": "whiteboard with handwritten blue marker math grid showing rows A and B with columns YR 1 2 3 and numbers 100 200 300 and negative numbers",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0060_intra.jpg",
+    "scene_idx": 60,
+    "is_intra": true,
+    "description": "Leila in black blouse with two bullet text overlay MAKE THEM LIKE ME LESS and SOUNDS PASSIVE AGGRESSIVE on left side",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0092_intra.jpg",
+    "scene_idx": 92,
+    "is_intra": true,
+    "description": "whiteboard top down view with hand writing in red marker FREE colon SKOOL FORUMS Youtube list at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0187.jpg",
+    "scene_idx": 187,
+    "is_intra": false,
+    "description": "graphic with red circle FIX YOUR SHT FAST and three red diagonal lines diverging from center on textured paper background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0098.jpg",
+    "scene_idx": 98,
+    "is_intra": false,
+    "description": "whiteboard with handwritten blue marker numbers 900 600 and 300 on left and numbered list 1 STICKY 2 EXPENSIVE 3 EXPANDING 4 AIR 5 UNIQUE on right",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0054_intra.jpg",
+    "scene_idx": 54,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream couch with hand at chest and white text overlay EMOTIONAL VOMIT on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0040.jpg",
+    "scene_idx": 40,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt with both hands extended palms out in stop gesture, white director chair background purple gradient",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0032_intra.jpg",
+    "scene_idx": 32,
+    "is_intra": true,
+    "description": "purple circle graphic with number 3 in yellow and white text Churn drops over time surrounded by white dotted progress circle on dark navy",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0229.jpg",
+    "scene_idx": 229,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands raised in surrender or animated gesture, table with object visible",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0162.jpg",
+    "scene_idx": 162,
+    "is_intra": false,
+    "description": "minimalist line drawing of person in seated meditation lotus pose with red text BEING PRESENT AND FOCUSED AT THE SAME TIME on left",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0106.jpg",
+    "scene_idx": 106,
+    "is_intra": false,
+    "description": "dark navy text only graphic with white glowing text IF ANOTHER HUMAN CAN DO SOMETHING on center",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0001.jpg",
+    "scene_idx": 1,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream chair with finger pointed and white text overlay DONT RESPECT YOU on right side, fiddle leaf plant",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0081_intra.jpg",
+    "scene_idx": 81,
+    "is_intra": true,
+    "description": "bearded man in white acquisition tank top with yellow text overlay COMPETITIVE MOAT EXAMPLE colon SMMA SOCIAL MEDIA MARKETING AGENCY on left side",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0016.jpg",
+    "scene_idx": 16,
+    "is_intra": false,
+    "description": "graphic with grayscale illustrated brain in purple jar with white text YOUR NEW GOAL at top and purple circle icons around the brain",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0084_intra.jpg",
+    "scene_idx": 84,
+    "is_intra": true,
+    "description": "Leila in gray blazer with both hands raised gesturing and white text overlay OR LIKENESS FROM EVERYBODY AROUND THEM at bottom",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0094.jpg",
+    "scene_idx": 94,
+    "is_intra": false,
+    "description": "Leila in black with vintage filter framing looking up with hand at her face, dark cabinet background lamp visible",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0041.jpg",
+    "scene_idx": 41,
+    "is_intra": false,
+    "description": "Leila in black on cream couch with hand at face and white text overlay SILENT RESENTMENT on right side",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0167_intra.jpg",
+    "scene_idx": 167,
+    "is_intra": true,
+    "description": "minimalist line drawing of person shrugging with two speech bubbles and question mark with text THAN IT IS TO SPEAK CONFUSE PEOPLE",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0036.jpg",
+    "scene_idx": 36,
+    "is_intra": false,
+    "description": "bearded man in gray plaid shirt at white table in neutral relaxed pose, white director chair visible in background, purple gradient",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0026_intra.jpg",
+    "scene_idx": 26,
+    "is_intra": true,
+    "description": "bearded man in white acquisition tank top holding the full purple scaling roadmap chart poster with ACQUISITION.COM logo visible at top, blue stage lighting",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0072.jpg",
+    "scene_idx": 72,
+    "is_intra": false,
+    "description": "Leila in black blouse with arm raised gesture and white text overlay THEYRE OPERATING FROM COMPLETELY DIFFERENT LEVELS on left side",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0042_intra.jpg",
+    "scene_idx": 42,
+    "is_intra": true,
+    "description": "navy graphic with cancellation form text message bubble at top and grid table showing reasons PRICE 6 OVERWHELM 2 NOT USING 5 MISSING A FEATURE 4 NOT WHAT I EXPECTED 3 TOTAL 20",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0089.jpg",
+    "scene_idx": 89,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt and backwards cap with both hands raised palms forward in stop gesture, dark background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0093_intra.jpg",
+    "scene_idx": 93,
+    "is_intra": true,
+    "description": "Leila in dark olive green blouse on cream couch with both hands at her chest with rings visible looking neutral, pampas grass on right",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0041.jpg",
+    "scene_idx": 41,
+    "is_intra": false,
+    "description": "Leila in black blouse with hand gesturing and white text overlay COACHING REQUIRES PATIENCE DELEGATION on right side, fiddle leaf plant",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0029.jpg",
+    "scene_idx": 29,
+    "is_intra": false,
+    "description": "man in checkered plaid shirt and backwards cap with marker held in hand near his chest in talking pose, dark background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0086.jpg",
+    "scene_idx": 86,
+    "is_intra": false,
+    "description": "graphic with two business person icons connected by dashed line with yellow handshake icon in middle on dark navy background",
+    "notes": ""
+  },
+  {
+    "video_id": "0iDZ8UDvlWU",
+    "frame_path": "ingest/frames/0iDZ8UDvlWU/scene_0166.jpg",
+    "scene_idx": 166,
+    "is_intra": false,
+    "description": "Leila in black blouse on cream couch with both hands at her chest and three bullet text overlay WE WERE CALM WE WERE NOT HUNGRY WE WERE NOT TI visible on right",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0100_intra.jpg",
+    "scene_idx": 100,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap writing with red marker on white table looking down, blue vertical light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0082_intra.jpg",
+    "scene_idx": 82,
+    "is_intra": true,
+    "description": "man in checkered plaid shirt and backwards cap with one hand near his chin in talking pose, dark background",
+    "notes": ""
+  },
+  {
+    "video_id": "3fsJFUvA6Ts",
+    "frame_path": "ingest/frames/3fsJFUvA6Ts/scene_0071_intra.jpg",
+    "scene_idx": 71,
+    "is_intra": true,
+    "description": "navy graphic with yellow highlighted LOW CAPEX capital expenditure text in box and instruction text How much money you got to spend to get business to keep growing",
+    "notes": ""
+  },
+  {
+    "video_id": "7FiKGWYA65g",
+    "frame_path": "ingest/frames/7FiKGWYA65g/scene_0129.jpg",
+    "scene_idx": 129,
+    "is_intra": false,
+    "description": "Leila in gray blazer on cream chair with one hand gesturing forward, dark cabinet on right pampas grass on left",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0091_intra.jpg",
+    "scene_idx": 91,
+    "is_intra": true,
+    "description": "minimalist line drawing of person sitting at laptop with coffee mug and red text I COMPLETE MY OWN WORK on left BEFORE I STEP INTO OTHER PEOPLES WORK on right",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0196.jpg",
+    "scene_idx": 196,
+    "is_intra": false,
+    "description": "minimalist line drawing of person stretching standing with red and dark text STAND STRETCH REFILL YOUR WATER and MOVE FOR AT LEAST 1 MINUTE below",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0075_intra.jpg",
+    "scene_idx": 75,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with arms crossed in neutral pose looking off camera, white director chair visible in background, purple gradient",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0223_intra.jpg",
+    "scene_idx": 223,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream chair with one hand raised in animated gesture, plants visible on both sides",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0025.jpg",
+    "scene_idx": 25,
+    "is_intra": false,
+    "description": "graphic with grayscale illustrated brain in purple jar and white text YOUR NEW STRATEGY with first bullet INCREASE YOUR INCOME visible and remaining items blurred or encrypted",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0008.jpg",
+    "scene_idx": 8,
+    "is_intra": false,
+    "description": "purple circle graphic with yellow number 1 and white text Churn is a on dark navy background with white dotted progress circle around",
+    "notes": ""
+  },
+  {
+    "video_id": "6by3XnwdsMQ",
+    "frame_path": "ingest/frames/6by3XnwdsMQ/scene_0302_intra.jpg",
+    "scene_idx": 302,
+    "is_intra": true,
+    "description": "Leila in black blouse on cream chair with both index fingers raised pointing up in dual gesture, plants on both sides",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0034.jpg",
+    "scene_idx": 34,
+    "is_intra": false,
+    "description": "calendar grid view of 12 months January through December with yellow text annotations 20 percent HIGHEST CHURN 10 percent at top and one yellow dot on April",
+    "notes": ""
+  },
+  {
+    "video_id": "6BQ3whjWG3M",
+    "frame_path": "ingest/frames/6BQ3whjWG3M/scene_0019.jpg",
+    "scene_idx": 19,
+    "is_intra": false,
+    "description": "man in blue plaid shirt and backwards cap with both hands lowered at white table in mid talking pose, blue light bars background",
+    "notes": ""
+  },
+  {
+    "video_id": "-j8_YCWZ05Q",
+    "frame_path": "ingest/frames/-j8_YCWZ05Q/scene_0033_intra.jpg",
+    "scene_idx": 33,
+    "is_intra": true,
+    "description": "bearded man in gray plaid shirt with both hands raised palms forward open in animated gesture, white acquisition shirt purple gradient background",
+    "notes": ""
+  },
+  {
+    "video_id": "4vxWJUx32Rw",
+    "frame_path": "ingest/frames/4vxWJUx32Rw/scene_0126.jpg",
+    "scene_idx": 126,
+    "is_intra": false,
+    "description": "Leila in dark olive green blouse on cream couch with hand on top of other hand in neutral pose, beige wall with vertical recessed lights",
+    "notes": ""
+  }
+]

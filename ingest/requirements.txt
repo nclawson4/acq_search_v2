@@ -1,0 +1,36 @@
+# Minimal deps actually used by the scripts in scripts/.
+# Pure copy from v1's requirements.txt is intentionally avoided — v2 should
+# install only what its own code needs. Add more here as v2 grows.
+
+python-dotenv>=1.0.1
+
+# Download
+yt-dlp>=2024.11.4
+
+# Transcription
+httpx>=0.27.0
+
+# Speaker identification
+numpy>=1.26.0
+librosa>=0.10.2
+soundfile>=0.12.1
+Resemblyzer>=0.1.4
+
+# Scene detection + keyframe extraction
+scenedetect[opencv]>=0.6.4
+Pillow>=10.4.0
+ffmpeg-python>=0.2.0
+
+# CLIP image + text embeddings
+open-clip-torch>=2.30.0
+
+# Vector store
+qdrant-client>=1.12.0
+
+# API service (serves /search to the Next.js frontend + MCP route)
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+
+# Vision LLM for scene classification (format / shot_type / who / has_text)
+openai>=1.40.0

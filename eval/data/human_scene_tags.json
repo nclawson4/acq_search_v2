@@ -1,0 +1,804 @@
+{
+  "labels": {
+    "frames/u3H7CfpfwHQ/scene_0166.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 166,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/HGZOxBfnF-E/scene_0008.jpg": {
+      "video_id": "HGZOxBfnF-E",
+      "scene_idx": 8,
+      "has_text": true,
+      "format": "mozi_tank",
+      "shot_type": "medium",
+      "who": "alex"
+    },
+    "frames/CqtFlzNivuI/scene_0012.jpg": {
+      "video_id": "CqtFlzNivuI",
+      "scene_idx": 12,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/hT4ilfJVZeQ/scene_0000.jpg": {
+      "video_id": "hT4ilfJVZeQ",
+      "scene_idx": 0,
+      "has_text": true,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila"
+    },
+    "frames/PRFzRtzhZrw/scene_0043.jpg": {
+      "video_id": "PRFzRtzhZrw",
+      "scene_idx": 43,
+      "who": "leila",
+      "has_text": false,
+      "format": "talking_head",
+      "shot_type": "medium"
+    },
+    "frames/CqtFlzNivuI/scene_0075.jpg": {
+      "video_id": "CqtFlzNivuI",
+      "scene_idx": 75,
+      "format": "talking_head",
+      "shot_type": "b_roll",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/OWorFLIbRoo/scene_0005.jpg": {
+      "video_id": "OWorFLIbRoo",
+      "scene_idx": 5,
+      "has_text": true,
+      "who": "sharran",
+      "format": "talking_head",
+      "shot_type": "medium"
+    },
+    "frames/j64UB9hU6BM/scene_0039.jpg": {
+      "video_id": "j64UB9hU6BM",
+      "scene_idx": 39,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/6by3XnwdsMQ/scene_0052.jpg": {
+      "video_id": "6by3XnwdsMQ",
+      "scene_idx": 52,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/OcH0864CLPs/scene_0135.jpg": {
+      "video_id": "OcH0864CLPs",
+      "scene_idx": 135,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/LCc-wecNPKg/scene_0194.jpg": {
+      "video_id": "LCc-wecNPKg",
+      "scene_idx": 194,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/BZrgkgCF79g/scene_0026.jpg": {
+      "video_id": "BZrgkgCF79g",
+      "scene_idx": 26,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0323.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 323,
+      "format": "low_production",
+      "shot_type": "close",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/4vxWJUx32Rw/scene_0174.jpg": {
+      "video_id": "4vxWJUx32Rw",
+      "scene_idx": 174,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none"
+    },
+    "frames/Q8xXSMe8E4Q/scene_0002.jpg": {
+      "video_id": "Q8xXSMe8E4Q",
+      "scene_idx": 2,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/qsXxckCbci0/scene_0048.jpg": {
+      "video_id": "qsXxckCbci0",
+      "scene_idx": 48,
+      "format": "whiteboard",
+      "shot_type": "medium",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/yb2cLMMuMdQ/scene_0034.jpg": {
+      "video_id": "yb2cLMMuMdQ",
+      "scene_idx": 34,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/-j8_YCWZ05Q/scene_0010.jpg": {
+      "video_id": "-j8_YCWZ05Q",
+      "scene_idx": 10,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/VR2RLVBiMe8/scene_0052.jpg": {
+      "video_id": "VR2RLVBiMe8",
+      "scene_idx": 52,
+      "has_text": true,
+      "who": "leila",
+      "shot_type": "medium",
+      "format": "talking_head"
+    },
+    "frames/yb2cLMMuMdQ/scene_0004.jpg": {
+      "video_id": "yb2cLMMuMdQ",
+      "scene_idx": 4,
+      "format": "none",
+      "who": "alex",
+      "has_text": true,
+      "shot_type": "none"
+    },
+    "frames/Msk6CwtDrYQ/scene_0016.jpg": {
+      "video_id": "Msk6CwtDrYQ",
+      "scene_idx": 16,
+      "format": "talking_head",
+      "has_text": true,
+      "shot_type": "medium",
+      "who": "leila"
+    },
+    "frames/Kg2Ux47hwg4/scene_0024.jpg": {
+      "video_id": "Kg2Ux47hwg4",
+      "scene_idx": 24,
+      "who": "leila",
+      "format": "talking_head",
+      "shot_type": "medium",
+      "has_text": false
+    },
+    "frames/ZC0RgDJ3J7Q/scene_0264.jpg": {
+      "video_id": "ZC0RgDJ3J7Q",
+      "scene_idx": 264,
+      "shot_type": "close",
+      "format": "talking_head",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/Vx_sSMAJjNg/scene_0099.jpg": {
+      "video_id": "Vx_sSMAJjNg",
+      "scene_idx": 99,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "sharran",
+      "has_text": true
+    },
+    "frames/_KlZoPxbStk/scene_0057.jpg": {
+      "video_id": "_KlZoPxbStk",
+      "scene_idx": 57,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/sL16tsGafcQ/scene_0056.jpg": {
+      "video_id": "sL16tsGafcQ",
+      "scene_idx": 56,
+      "format": "talking_head",
+      "shot_type": "pip",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/fr78adfAnuA/scene_0031.jpg": {
+      "video_id": "fr78adfAnuA",
+      "scene_idx": 31,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/Kg2Ux47hwg4/scene_0124.jpg": {
+      "video_id": "Kg2Ux47hwg4",
+      "scene_idx": 124,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/cgsWQd5EM1k/scene_0021.jpg": {
+      "video_id": "cgsWQd5EM1k",
+      "scene_idx": 21,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/A_tx40lNpf8/scene_0009.jpg": {
+      "video_id": "A_tx40lNpf8",
+      "scene_idx": 9,
+      "format": "none",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/LCc-wecNPKg/scene_0017.jpg": {
+      "video_id": "LCc-wecNPKg",
+      "scene_idx": 17,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/rMJIOK_FgJk/scene_0112.jpg": {
+      "video_id": "rMJIOK_FgJk",
+      "scene_idx": 112,
+      "format": "talking_head",
+      "shot_type": "pip",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/OcH0864CLPs/scene_0021.jpg": {
+      "video_id": "OcH0864CLPs",
+      "scene_idx": 21,
+      "format": "talking_head",
+      "shot_type": "close",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/vbcelc94VRQ/scene_0049.jpg": {
+      "video_id": "vbcelc94VRQ",
+      "scene_idx": 49,
+      "format": "talking_head",
+      "shot_type": "close",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/DmenYQ_MEEA/scene_0116.jpg": {
+      "video_id": "DmenYQ_MEEA",
+      "scene_idx": 116,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/DVtuTp3ykcA/scene_0149.jpg": {
+      "video_id": "DVtuTp3ykcA",
+      "scene_idx": 149,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/RWQHNc1u-cE/scene_0182.jpg": {
+      "video_id": "RWQHNc1u-cE",
+      "scene_idx": 182,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/rMJIOK_FgJk/scene_0117.jpg": {
+      "video_id": "rMJIOK_FgJk",
+      "scene_idx": 117,
+      "format": "whiteboard",
+      "shot_type": "medium",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/PRFzRtzhZrw/scene_0074.jpg": {
+      "video_id": "PRFzRtzhZrw",
+      "scene_idx": 74,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/UMiAzkNEM4U/scene_0018.jpg": {
+      "video_id": "UMiAzkNEM4U",
+      "scene_idx": 18,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/NqtWADqiMCo/scene_0006.jpg": {
+      "video_id": "NqtWADqiMCo",
+      "scene_idx": 6,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/UMiAzkNEM4U/scene_0023.jpg": {
+      "video_id": "UMiAzkNEM4U",
+      "scene_idx": 23,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/9q5ojtkqsBs/scene_0039.jpg": {
+      "video_id": "9q5ojtkqsBs",
+      "scene_idx": 39,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/k5-57282taI/scene_0031.jpg": {
+      "video_id": "k5-57282taI",
+      "scene_idx": 31,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/k5-57282taI/scene_0039.jpg": {
+      "video_id": "k5-57282taI",
+      "scene_idx": 39,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/DVtuTp3ykcA/scene_0156.jpg": {
+      "video_id": "DVtuTp3ykcA",
+      "scene_idx": 156,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/xO4lpL0FNLg/scene_0158.jpg": {
+      "video_id": "xO4lpL0FNLg",
+      "scene_idx": 158,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/hHkdbr6_JJs/scene_0004.jpg": {
+      "video_id": "hHkdbr6_JJs",
+      "scene_idx": 4,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/sL16tsGafcQ/scene_0124.jpg": {
+      "video_id": "sL16tsGafcQ",
+      "scene_idx": 124,
+      "format": "whiteboard",
+      "shot_type": "medium",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/oJsLMjaspG0/scene_0026.jpg": {
+      "video_id": "oJsLMjaspG0",
+      "scene_idx": 26,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/cXytK82N93Y/scene_0247.jpg": {
+      "video_id": "cXytK82N93Y",
+      "scene_idx": 247,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/A248pGXTSoY/scene_0070.jpg": {
+      "video_id": "A248pGXTSoY",
+      "scene_idx": 70,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/0iDZ8UDvlWU/scene_0226.jpg": {
+      "video_id": "0iDZ8UDvlWU",
+      "scene_idx": 226,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/9q5ojtkqsBs/scene_0067.jpg": {
+      "video_id": "9q5ojtkqsBs",
+      "scene_idx": 67,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/aMxcZY6aIFU/scene_0183.jpg": {
+      "video_id": "aMxcZY6aIFU",
+      "scene_idx": 183,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/a0l48z18fJU/scene_0025.jpg": {
+      "video_id": "a0l48z18fJU",
+      "scene_idx": 25,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/RWQHNc1u-cE/scene_0143.jpg": {
+      "video_id": "RWQHNc1u-cE",
+      "scene_idx": 143,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/ISQkh8bu6EU/scene_0094.jpg": {
+      "video_id": "ISQkh8bu6EU",
+      "scene_idx": 94,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/ZC0RgDJ3J7Q/scene_0110.jpg": {
+      "video_id": "ZC0RgDJ3J7Q",
+      "scene_idx": 110,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/R23CiC80t7c/scene_0133.jpg": {
+      "video_id": "R23CiC80t7c",
+      "scene_idx": 133,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/6by3XnwdsMQ/scene_0240.jpg": {
+      "video_id": "6by3XnwdsMQ",
+      "scene_idx": 240,
+      "shot_type": "medium",
+      "format": "talking_head",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/7FiKGWYA65g/scene_0187.jpg": {
+      "video_id": "7FiKGWYA65g",
+      "scene_idx": 187,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/LpNODHhn-60/scene_0269.jpg": {
+      "video_id": "LpNODHhn-60",
+      "scene_idx": 269,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/XsWSvz-aewA/scene_0084.jpg": {
+      "video_id": "XsWSvz-aewA",
+      "scene_idx": 84,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/jfW6gL6hKhk/scene_0026.jpg": {
+      "video_id": "jfW6gL6hKhk",
+      "scene_idx": 26,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/jfW6gL6hKhk/scene_0060.jpg": {
+      "video_id": "jfW6gL6hKhk",
+      "scene_idx": 60,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/9OkBN4uor5M/scene_0098.jpg": {
+      "video_id": "9OkBN4uor5M",
+      "scene_idx": 98,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/cgsWQd5EM1k/scene_0082.jpg": {
+      "video_id": "cgsWQd5EM1k",
+      "scene_idx": 82,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/ZuJryiwxjDw/scene_0134.jpg": {
+      "video_id": "ZuJryiwxjDw",
+      "scene_idx": 134,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/3fsJFUvA6Ts/scene_0063.jpg": {
+      "video_id": "3fsJFUvA6Ts",
+      "scene_idx": 63,
+      "format": "talking_head",
+      "shot_type": "pip",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/OQf2Ba-Lp_4/scene_0081.jpg": {
+      "video_id": "OQf2Ba-Lp_4",
+      "scene_idx": 81,
+      "format": "whiteboard",
+      "shot_type": "pip",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/fr78adfAnuA/scene_0091.jpg": {
+      "video_id": "fr78adfAnuA",
+      "scene_idx": 91,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/6BQ3whjWG3M/scene_0099.jpg": {
+      "video_id": "6BQ3whjWG3M",
+      "scene_idx": 99,
+      "format": "whiteboard",
+      "shot_type": "medium",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/BZrgkgCF79g/scene_0126.jpg": {
+      "video_id": "BZrgkgCF79g",
+      "scene_idx": 126,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/XsWSvz-aewA/scene_0060.jpg": {
+      "video_id": "XsWSvz-aewA",
+      "scene_idx": 60,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/luvQRkxM-pQ/scene_0026.jpg": {
+      "video_id": "luvQRkxM-pQ",
+      "scene_idx": 26,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "sharran",
+      "has_text": true
+    },
+    "frames/_KlZoPxbStk/scene_0082.jpg": {
+      "video_id": "_KlZoPxbStk",
+      "scene_idx": 82,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/A248pGXTSoY/scene_0027.jpg": {
+      "video_id": "A248pGXTSoY",
+      "scene_idx": 27,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/cXytK82N93Y/scene_0029.jpg": {
+      "video_id": "cXytK82N93Y",
+      "scene_idx": 29,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/Msk6CwtDrYQ/scene_0201.jpg": {
+      "video_id": "Msk6CwtDrYQ",
+      "scene_idx": 201,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/e1awpbZxVnw/scene_0079.jpg": {
+      "video_id": "e1awpbZxVnw",
+      "scene_idx": 79,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/HGZOxBfnF-E/scene_0201.jpg": {
+      "video_id": "HGZOxBfnF-E",
+      "scene_idx": 201,
+      "format": "whiteboard",
+      "shot_type": "medium",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/a0l48z18fJU/scene_0016.jpg": {
+      "video_id": "a0l48z18fJU",
+      "scene_idx": 16,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/MH-IMJxbUY4/scene_0295.jpg": {
+      "video_id": "MH-IMJxbUY4",
+      "scene_idx": 295,
+      "format": "mozi_tank",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": true
+    },
+    "frames/EonibwnAEME/scene_0067.jpg": {
+      "video_id": "EonibwnAEME",
+      "scene_idx": 67,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/e1awpbZxVnw/scene_0023.jpg": {
+      "video_id": "e1awpbZxVnw",
+      "scene_idx": 23,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/7FiKGWYA65g/scene_0200.jpg": {
+      "video_id": "7FiKGWYA65g",
+      "scene_idx": 200,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/4vxWJUx32Rw/scene_0173.jpg": {
+      "video_id": "4vxWJUx32Rw",
+      "scene_idx": 173,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/oJsLMjaspG0/scene_0173.jpg": {
+      "video_id": "oJsLMjaspG0",
+      "scene_idx": 173,
+      "format": "none",
+      "shot_type": "b_roll",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/3fsJFUvA6Ts/scene_0082.jpg": {
+      "video_id": "3fsJFUvA6Ts",
+      "scene_idx": 82,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "alex",
+      "has_text": false
+    },
+    "frames/g3QTLRlmevc/scene_0102.jpg": {
+      "video_id": "g3QTLRlmevc",
+      "scene_idx": 102,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/R23CiC80t7c/scene_0182.jpg": {
+      "video_id": "R23CiC80t7c",
+      "scene_idx": 182,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/j64UB9hU6BM/scene_0066.jpg": {
+      "video_id": "j64UB9hU6BM",
+      "scene_idx": 66,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/g3QTLRlmevc/scene_0336.jpg": {
+      "video_id": "g3QTLRlmevc",
+      "scene_idx": 336,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/Rccmhnt1ur4/scene_0083.jpg": {
+      "video_id": "Rccmhnt1ur4",
+      "scene_idx": 83,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    },
+    "frames/RJNDXnboXd8/scene_0234.jpg": {
+      "video_id": "RJNDXnboXd8",
+      "scene_idx": 234,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/9OkBN4uor5M/scene_0154.jpg": {
+      "video_id": "9OkBN4uor5M",
+      "scene_idx": 154,
+      "format": "talking_head",
+      "shot_type": "medium",
+      "who": "leila",
+      "has_text": false
+    },
+    "frames/0iDZ8UDvlWU/scene_0211.jpg": {
+      "video_id": "0iDZ8UDvlWU",
+      "scene_idx": 211,
+      "format": "talking_head",
+      "shot_type": "close",
+      "who": "leila",
+      "has_text": true
+    },
+    "frames/ISQkh8bu6EU/scene_0039.jpg": {
+      "video_id": "ISQkh8bu6EU",
+      "scene_idx": 39,
+      "format": "talking_head",
+      "shot_type": "close",
+      "who": "sharran",
+      "has_text": false
+    },
+    "frames/NqtWADqiMCo/scene_0032.jpg": {
+      "video_id": "NqtWADqiMCo",
+      "scene_idx": 32,
+      "format": "animation",
+      "shot_type": "animation",
+      "who": "none",
+      "has_text": false
+    }
+  },
+  "updated": "2026-06-12T15:27:25.394Z"
+}

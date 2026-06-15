@@ -1,0 +1,316 @@
+{
+  "labels": {
+    "frames/cgsWQd5EM1k/scene_0006.jpg": {
+      "video_id": "cgsWQd5EM1k",
+      "scene_idx": 6,
+      "is_animation": false,
+      "talking_head_pose": "none"
+    },
+    "frames/Jmkq5RLjm0U/scene_0946.jpg": {
+      "video_id": "Jmkq5RLjm0U",
+      "scene_idx": 946,
+      "is_animation": false,
+      "talking_head_pose": "front_view",
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/R23CiC80t7c/scene_0170.jpg": {
+      "video_id": "R23CiC80t7c",
+      "scene_idx": 170,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/Jmkq5RLjm0U/scene_0874.jpg": {
+      "video_id": "Jmkq5RLjm0U",
+      "scene_idx": 874,
+      "is_animation": false,
+      "talking_head_pose": "front_view",
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/0iDZ8UDvlWU/scene_0193.jpg": {
+      "video_id": "0iDZ8UDvlWU",
+      "scene_idx": 193,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/aMxcZY6aIFU/scene_0179.jpg": {
+      "video_id": "aMxcZY6aIFU",
+      "scene_idx": 179,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/OWorFLIbRoo/scene_0037.jpg": {
+      "video_id": "OWorFLIbRoo",
+      "scene_idx": 37,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/cgsWQd5EM1k/scene_0214.jpg": {
+      "video_id": "cgsWQd5EM1k",
+      "scene_idx": 214,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/cXytK82N93Y/scene_0143.jpg": {
+      "video_id": "cXytK82N93Y",
+      "scene_idx": 143,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/MH-IMJxbUY4/scene_0126.jpg": {
+      "video_id": "MH-IMJxbUY4",
+      "scene_idx": 126,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/OcH0864CLPs/scene_0043.jpg": {
+      "video_id": "OcH0864CLPs",
+      "scene_idx": 43,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/oJsLMjaspG0/scene_0342.jpg": {
+      "video_id": "oJsLMjaspG0",
+      "scene_idx": 342,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/Jmkq5RLjm0U/scene_0549.jpg": {
+      "video_id": "Jmkq5RLjm0U",
+      "scene_idx": 549,
+      "is_animation": true,
+      "talking_head_pose": "none"
+    },
+    "frames/Jmkq5RLjm0U/scene_0138.jpg": {
+      "video_id": "Jmkq5RLjm0U",
+      "scene_idx": 138,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/u3H7CfpfwHQ/scene_0192.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 192,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/OQf2Ba-Lp_4/scene_0225.jpg": {
+      "video_id": "OQf2Ba-Lp_4",
+      "scene_idx": 225,
+      "is_animation": false,
+      "talking_head_pose": "none"
+    },
+    "frames/RWQHNc1u-cE/scene_0045.jpg": {
+      "video_id": "RWQHNc1u-cE",
+      "scene_idx": 45,
+      "talking_head_pose": "none",
+      "is_animation": true
+    },
+    "frames/g3QTLRlmevc/scene_0139.jpg": {
+      "video_id": "g3QTLRlmevc",
+      "scene_idx": 139,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/Jmkq5RLjm0U/scene_0704.jpg": {
+      "video_id": "Jmkq5RLjm0U",
+      "scene_idx": 704,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/oJsLMjaspG0/scene_0434.jpg": {
+      "video_id": "oJsLMjaspG0",
+      "scene_idx": 434,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/EonibwnAEME/scene_0017.jpg": {
+      "video_id": "EonibwnAEME",
+      "scene_idx": 17,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/Msk6CwtDrYQ/scene_0094.jpg": {
+      "video_id": "Msk6CwtDrYQ",
+      "scene_idx": 94,
+      "talking_head_pose": "none",
+      "is_animation": true
+    },
+    "frames/k5-57282taI/scene_0009.jpg": {
+      "video_id": "k5-57282taI",
+      "scene_idx": 9,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/sL16tsGafcQ/scene_0056.jpg": {
+      "video_id": "sL16tsGafcQ",
+      "scene_idx": 56,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/MH-IMJxbUY4/scene_0299.jpg": {
+      "video_id": "MH-IMJxbUY4",
+      "scene_idx": 299,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0290.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 290,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/g3QTLRlmevc/scene_0295.jpg": {
+      "video_id": "g3QTLRlmevc",
+      "scene_idx": 295,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/OQf2Ba-Lp_4/scene_0381.jpg": {
+      "video_id": "OQf2Ba-Lp_4",
+      "scene_idx": 381,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0273.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 273,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/N5MExtki_VI/scene_0053.jpg": {
+      "video_id": "N5MExtki_VI",
+      "scene_idx": 53,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0201.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 201,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0390.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 390,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/u3H7CfpfwHQ/scene_0398.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 398,
+      "is_animation": false,
+      "talking_head_pose": "none"
+    },
+    "frames/u3H7CfpfwHQ/scene_0302.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 302,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/u3H7CfpfwHQ/scene_0514.jpg": {
+      "video_id": "u3H7CfpfwHQ",
+      "scene_idx": 514,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/g3QTLRlmevc/scene_0206.jpg": {
+      "video_id": "g3QTLRlmevc",
+      "scene_idx": 206,
+      "is_animation": false,
+      "talking_head_pose": "none"
+    },
+    "frames/9OkBN4uor5M/scene_0222.jpg": {
+      "video_id": "9OkBN4uor5M",
+      "scene_idx": 222,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/vbcelc94VRQ/scene_0076.jpg": {
+      "video_id": "vbcelc94VRQ",
+      "scene_idx": 76,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/4vxWJUx32Rw/scene_0152.jpg": {
+      "video_id": "4vxWJUx32Rw",
+      "scene_idx": 152,
+      "talking_head_pose": "none",
+      "is_animation": false
+    },
+    "frames/vbcelc94VRQ/scene_0118.jpg": {
+      "video_id": "vbcelc94VRQ",
+      "scene_idx": 118,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/LpNODHhn-60/scene_0035.jpg": {
+      "video_id": "LpNODHhn-60",
+      "scene_idx": 35,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/Vx_sSMAJjNg/scene_0165.jpg": {
+      "video_id": "Vx_sSMAJjNg",
+      "scene_idx": 165,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/PRFzRtzhZrw/scene_0104.jpg": {
+      "video_id": "PRFzRtzhZrw",
+      "scene_idx": 104,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/xO4lpL0FNLg/scene_0022.jpg": {
+      "video_id": "xO4lpL0FNLg",
+      "scene_idx": 22,
+      "is_animation": false,
+      "talking_head_pose": "front_view"
+    },
+    "frames/A248pGXTSoY/scene_0053.jpg": {
+      "video_id": "A248pGXTSoY",
+      "scene_idx": 53,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/jfW6gL6hKhk/scene_0000.jpg": {
+      "video_id": "jfW6gL6hKhk",
+      "scene_idx": 0,
+      "talking_head_pose": "front_view",
+      "is_animation": false
+    },
+    "frames/VR2RLVBiMe8/scene_0007.jpg": {
+      "video_id": "VR2RLVBiMe8",
+      "scene_idx": 7,
+      "is_animation": true,
+      "talking_head_pose": "none"
+    },
+    "frames/A_tx40lNpf8/scene_0057.jpg": {
+      "video_id": "A_tx40lNpf8",
+      "scene_idx": 57,
+      "is_animation": false,
+      "talking_head_pose": "front_view",
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/7FiKGWYA65g/scene_0110.jpg": {
+      "video_id": "7FiKGWYA65g",
+      "scene_idx": 110,
+      "talking_head_pose": "front_view",
+      "is_animation": false,
+      "notes": "[migrated_from_side_view]"
+    },
+    "frames/DmenYQ_MEEA/scene_0067.jpg": {
+      "video_id": "DmenYQ_MEEA",
+      "scene_idx": 67,
+      "talking_head_pose": "none",
+      "is_animation": false
+    }
+  },
+  "updated": "2026-06-12T20:52:03.890Z"
+}

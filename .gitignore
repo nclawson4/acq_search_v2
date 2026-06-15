@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Raw media (regenerable via download script)
+ingest/media/
+*.mp4
+*.m4a
+*.mp3
+*.wav
+*.webm
+*.opus
+
+# Frames
+ingest/frames/
+
+# Ingest cache (regenerable but expensive — kept locally, not committed)
+ingest/cache/
+
+# Logs
+ingest/logs/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Claude Code session artifacts
+.claude/
