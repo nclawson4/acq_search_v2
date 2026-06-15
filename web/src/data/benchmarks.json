@@ -93,21 +93,6 @@
       "source": "eval/query_parser_eval.py · eval/parser_ab.py · eval/parser_ab_snapshots/",
       "note": "Improvement number is from the A/B eval in this session. The 4 failures are edge cases in time-phrase compounding and rare visual concepts; they fall back to the original query and the hybrid stage still finds the answer.",
       "meets_target": true
-    },
-    {
-      "id": "rerank",
-      "name": "LLM relevance judge (rerank)",
-      "what": "Scores each candidate against the query's content ask, surfaces a one-sentence reason.",
-      "model": "gpt-4o-mini, JSON-mode, structured_satisfied + verified_visual_facts context",
-      "metric_label": "uses verified visual + structural dims to avoid double-judging",
-      "metric_value": "diagnostic-driven prompt + few-shots",
-      "metric_extras": [
-        {"k": "diagnostic", "v": "50-query failure-mode audit"},
-        {"k": "visual-only short-circuit", "v": "skips judge when CLIP did the work"}
-      ],
-      "source": "eval/judge_diagnostic.py · ingest/lib/reranker.py",
-      "note": "No global accuracy gate (relevance is subjective). The judge was rebuilt from a failure-mode audit (see eval/judge_diagnostic.py) that catalogued where it was contradicting verified filters or refusing to credit visual matches.",
-      "meets_target": true
     }
   ],
   "summary": {
