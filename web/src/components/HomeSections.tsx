@@ -75,9 +75,18 @@ function GoldenChip({ children, tone = "default" }: { children: React.ReactNode;
   return <span className={`rounded-full ${palette} text-[10px] px-2 py-0.5`}>{children}</span>;
 }
 
-function GoldenCard({ row, verification }: { row: GoldenRow; verification: string }) {
+function GoldenCard({
+  row,
+  verification,
+  showRank = 1,
+}: {
+  row: GoldenRow;
+  verification: string;
+  /** 1-based rank of the candidate to feature on this card. Default = 1 (top result). */
+  showRank?: number;
+}) {
   const p = row.response.parsed;
-  const top = row.response.results[0];
+  const top = row.response.results[showRank - 1] ?? row.response.results[0];
   const judge = top?.judge_score ?? null;
   return (
     <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 overflow-hidden">
@@ -176,19 +185,32 @@ function GoldenCard({ row, verification }: { row: GoldenRow; verification: strin
 }
 
 // Each verification is hand-written but derives from the actual data each query
-// returned. Keep these in lock-step with golden-queries.json — when re-running
+// returned. Keep these in lock-step with golden-queries.json. When re-running
 // the script, re-check that the verification still describes what came back.
-const VERIFICATIONS: string[] = [
-  // Leila + leadership + talking head
-  "Top result is Leila discussing leadership. The voice filter is correct, the transcript is on-topic, and the visual concept 'talking head video' is preserved through retrieval.",
+type Verification = { text: string; showRank?: number };
+const VERIFICATIONS: Verification[] = [
+  // Leila + leadership + talking head: feature rank 2 (the user judged this
+  // visual a stronger representative of Leila-on-leadership content).
+  {
+    showRank: 2,
+    text: "Voice is Leila, the transcript directly addresses effective leadership and energy management, and the visual concept 'talking head video' is preserved through retrieval.",
+  },
   // Sharran less than 3 weeks ago + real estate
-  "Time filter correctly pulled a 21-day window: only 2 scenes in the corpus satisfy all three constraints (sharran + real-estate + ≤21d). The system is honest about scarcity rather than padding the list.",
+  {
+    text: "Time filter correctly pulled a 21-day window. Only 2 scenes in the corpus satisfy all three constraints (sharran + real-estate + ≤21d). The system is honest about scarcity rather than padding the list.",
+  },
   // Animations + stress and anxiety
-  "Visual concept 'Animations' triggers the visual-only short-circuit. CLIP visual match is the verification, and the transcript-only judge is skipped because transcripts rarely mention the visual format by name.",
-  // Alex + another person + offer
-  "Speaker filter set to alex; the unnamed 'another person' did NOT cause the parser to drop the named speaker. Judge correctly graded down candidates that mentioned 'offer' but weren't on-topic.",
+  {
+    text: "Visual concept 'Animations' triggers the visual-only short-circuit. CLIP visual match is the verification, and the transcript-only judge is skipped because transcripts rarely mention the visual format by name.",
+  },
+  // Alex + churn
+  {
+    text: "Speaker correctly extracted as Alex, retrieval reduced to the single topic word 'churn'. Top result is Alex on churn rates in memberships, directly on-topic.",
+  },
   // Alex writing on a whiteboard
-  "Speaker + visual concept extracted independently; visual-only short-circuit because there's no remaining topic ask. All 5 results are Alex.",
+  {
+    text: "Speaker and visual concept extracted independently. Visual-only short-circuit fires because there is no remaining topic ask. All 5 results are Alex.",
+  },
 ];
 
 function GoldenSetsSection() {
@@ -219,9 +241,17 @@ function GoldenSetsSection() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        {rows.map((row, i) => (
-          <GoldenCard key={row.q} row={row} verification={VERIFICATIONS[i] || ""} />
-        ))}
+        {rows.map((row, i) => {
+          const v = VERIFICATIONS[i] || { text: "" };
+          return (
+            <GoldenCard
+              key={row.q}
+              row={row}
+              verification={v.text}
+              showRank={v.showRank ?? 1}
+            />
+          );
+        })}
       </div>
 
       {/* Aggregate row */}

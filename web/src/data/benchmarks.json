@@ -8,7 +8,7 @@
       "what": "Cuts each video into discrete scenes at visual transitions.",
       "model": "PySceneDetect ContentDetector (threshold 27)",
       "metric_label": "deterministic",
-      "metric_value": "no error",
+      "metric_value": "100%",
       "source": "ingest/scripts/extract_scenes.py",
       "note": "Threshold-based on luma deltas; reproducible bit-for-bit per video. No accuracy gate because there is nothing to learn. Same input always produces the same scenes.",
       "meets_target": true

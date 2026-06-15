@@ -14,7 +14,7 @@ const QUERIES = [
   "Leila talking about leadership, talking head video",
   "Sharran less than 3 weeks ago talking about real estate",
   "Animations talking about stress and anxiety",
-  "Alex talking with another person about their offer",
+  "Alex talking about churn",
   "Alex writing on a whiteboard",
 ];
 

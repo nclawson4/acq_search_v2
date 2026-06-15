@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T17:54:11.133Z",
+  "generated_at": "2026-06-15T18:26:05.480Z",
   "backend": "https://nclawson4--acq-search-v2-backend-fastapi-app.modal.run",
   "queries": [
     {
       "q": "Leila talking about leadership, talking head video",
-      "latency_ms": 7681,
+      "latency_ms": 3044,
       "response": {
         "query": "Leila talking about leadership, talking head video",
         "parsed": {
@@ -25,11 +25,11 @@
           "judge_query": "leadership",
           "is_visual_only": false,
           "clean_query": "leadership talking head video",
-          "reasoning": "Leila is the speaker, and the visual concept is a talking head video about leadership.",
+          "reasoning": "Leila is the speaker, and the topic is leadership with a front-view talking head visual.",
           "_parsed_by": "llm",
-          "_ts": 1781546056
+          "_ts": 1781547266
         },
-        "parsed_reasoning": "Leila is the speaker, and the visual concept is a talking head video about leadership.",
+        "parsed_reasoning": "Leila is the speaker, and the topic is leadership with a front-view talking head visual.",
         "parsed_by": "llm",
         "filters_applied": {
           "speaker": "leila",
@@ -52,8 +52,8 @@
             "rank": 1,
             "score": 0.6531228423118591,
             "judge_score": 1,
-            "why": "speaker=leila (audio voice match verified). Leila discusses key aspects of leadership and the importance of making tough decisions.",
-            "judge_reason": "Leila discusses key aspects of leadership and the importance of making tough decisions.",
+            "why": "speaker=leila (audio voice match verified). Leila explains key aspects of effective leadership and the importance of handling upset people.",
+            "judge_reason": "Leila explains key aspects of effective leadership and the importance of handling upset people.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -108,8 +108,8 @@
             "rank": 2,
             "score": 0.6222449541091919,
             "judge_score": 0.7,
-            "why": "speaker=leila (audio voice match verified). Talks about leading effectively and managing energy, relevant to leadership.",
-            "judge_reason": "Talks about leading effectively and managing energy, relevant to leadership.",
+            "why": "speaker=leila (audio voice match verified). Mentions leading effectively and managing energy, relevant to leadership.",
+            "judge_reason": "Mentions leading effectively and managing energy, relevant to leadership.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -161,8 +161,8 @@
             "rank": 3,
             "score": 0.5892897248268127,
             "judge_score": 0.7,
-            "why": "speaker=leila (audio voice match verified). Discusses misconceptions about leadership and personal growth in that role.",
-            "judge_reason": "Discusses misconceptions about leadership and personal growth in that role.",
+            "why": "speaker=leila (audio voice match verified). Talks about leadership skills and experiences, relevant to the concept of leadership.",
+            "judge_reason": "Talks about leadership skills and experiences, relevant to the concept of leadership.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -215,8 +215,8 @@
             "rank": 4,
             "score": 0.6588801145553589,
             "judge_score": 0.4,
-            "why": "speaker=leila (audio voice match verified). Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
-            "judge_reason": "Mentions leadership but focuses on personal narrative rather than specific leadership principles.",
+            "why": "speaker=leila (audio voice match verified). Discusses leadership changes but not specific leadership principles.",
+            "judge_reason": "Discusses leadership changes but not specific leadership principles.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -270,8 +270,8 @@
             "rank": 5,
             "score": 0.5713911056518555,
             "judge_score": 0.4,
-            "why": "speaker=leila (audio voice match verified). Mentions leadership in context of energy management, but not directly about leadership principles.",
-            "judge_reason": "Mentions leadership in context of energy management, but not directly about leadership principles.",
+            "why": "speaker=leila (audio voice match verified). Discusses energy management in leadership but not core leadership principles.",
+            "judge_reason": "Discusses energy management in leadership but not core leadership principles.",
             "structural_dims": [
               "speaker=leila (audio voice match verified)",
               "is_animation=false (live-footage frame, visual classifier verified)",
@@ -327,7 +327,7 @@
     },
     {
       "q": "Sharran less than 3 weeks ago talking about real estate",
-      "latency_ms": 4143,
+      "latency_ms": 4878,
       "response": {
         "query": "Sharran less than 3 weeks ago talking about real estate",
         "parsed": {
@@ -350,7 +350,7 @@
           "clean_query": "real estate",
           "reasoning": "Sharran filter + last-21-day window; topic is real estate.",
           "_parsed_by": "llm",
-          "_ts": 1781546061
+          "_ts": 1781547971
         },
         "parsed_reasoning": "Sharran filter + last-21-day window; topic is real estate.",
         "parsed_by": "llm",
@@ -485,7 +485,7 @@
     },
     {
       "q": "Animations talking about stress and anxiety",
-      "latency_ms": 3221,
+      "latency_ms": 3068,
       "response": {
         "query": "Animations talking about stress and anxiety",
         "parsed": {
@@ -501,16 +501,16 @@
           "age_group": null,
           "lessons_categories": null,
           "instructional_only": false,
-          "visual_concept": "Animations",
-          "retrieval_query": "stress anxiety Animations",
+          "visual_concept": "animations",
+          "retrieval_query": "stress anxiety animations",
           "judge_query": null,
           "is_visual_only": true,
-          "clean_query": "stress anxiety Animations",
-          "reasoning": "The query specifies animations as the visual concept, with a focus on stress and anxiety.",
+          "clean_query": "stress anxiety animations",
+          "reasoning": "The query specifies animations as the visual concept, with stress and anxiety as the topic.",
           "_parsed_by": "llm",
-          "_ts": 1781546065
+          "_ts": 1781547976
         },
-        "parsed_reasoning": "The query specifies animations as the visual concept, with a focus on stress and anxiety.",
+        "parsed_reasoning": "The query specifies animations as the visual concept, with stress and anxiety as the topic.",
         "parsed_by": "llm",
         "filters_applied": {
           "speaker": null,
@@ -525,7 +525,7 @@
           "instructional_only": false,
           "max_age_days": null,
           "min_age_days": null,
-          "retrieval_query": "stress anxiety Animations"
+          "retrieval_query": "stress anxiety animations"
         },
         "n": 5,
         "results": [
@@ -533,11 +533,11 @@
             "rank": 1,
             "score": 0.7037400603294373,
             "judge_score": 1,
-            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
-            "judge_reason": "Matched on \"Animations\" visually.",
+            "why": "is_animation=true (visual classifier verified). Matched on \"animations\" visually.",
+            "judge_reason": "Matched on \"animations\" visually.",
             "structural_dims": [
               "is_animation=true (visual classifier verified)",
-              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+              "visual: \"animations\" (CLIP visual retrieval matched this)"
             ],
             "video_id": "4vxWJUx32Rw",
             "scene_idx": 17,
@@ -585,11 +585,11 @@
             "rank": 2,
             "score": 0.6675573587417603,
             "judge_score": 1,
-            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
-            "judge_reason": "Matched on \"Animations\" visually.",
+            "why": "is_animation=true (visual classifier verified). Matched on \"animations\" visually.",
+            "judge_reason": "Matched on \"animations\" visually.",
             "structural_dims": [
               "is_animation=true (visual classifier verified)",
-              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+              "visual: \"animations\" (CLIP visual retrieval matched this)"
             ],
             "video_id": "7FiKGWYA65g",
             "scene_idx": 104,
@@ -637,11 +637,11 @@
             "rank": 3,
             "score": 0.6540299654006958,
             "judge_score": 1,
-            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
-            "judge_reason": "Matched on \"Animations\" visually.",
+            "why": "is_animation=true (visual classifier verified). Matched on \"animations\" visually.",
+            "judge_reason": "Matched on \"animations\" visually.",
             "structural_dims": [
               "is_animation=true (visual classifier verified)",
-              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+              "visual: \"animations\" (CLIP visual retrieval matched this)"
             ],
             "video_id": "PRFzRtzhZrw",
             "scene_idx": 165,
@@ -691,11 +691,11 @@
             "rank": 4,
             "score": 0.6464765071868896,
             "judge_score": 1,
-            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
-            "judge_reason": "Matched on \"Animations\" visually.",
+            "why": "is_animation=true (visual classifier verified). Matched on \"animations\" visually.",
+            "judge_reason": "Matched on \"animations\" visually.",
             "structural_dims": [
               "is_animation=true (visual classifier verified)",
-              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+              "visual: \"animations\" (CLIP visual retrieval matched this)"
             ],
             "video_id": "R23CiC80t7c",
             "scene_idx": 142,
@@ -743,11 +743,11 @@
             "rank": 5,
             "score": 0.6433759927749634,
             "judge_score": 1,
-            "why": "is_animation=true (visual classifier verified). Matched on \"Animations\" visually.",
-            "judge_reason": "Matched on \"Animations\" visually.",
+            "why": "is_animation=true (visual classifier verified). Matched on \"animations\" visually.",
+            "judge_reason": "Matched on \"animations\" visually.",
             "structural_dims": [
               "is_animation=true (visual classifier verified)",
-              "visual: \"Animations\" (CLIP visual retrieval matched this)"
+              "visual: \"animations\" (CLIP visual retrieval matched this)"
             ],
             "video_id": "0iDZ8UDvlWU",
             "scene_idx": 177,
@@ -794,15 +794,15 @@
       }
     },
     {
-      "q": "Alex talking with another person about their offer",
-      "latency_ms": 4920,
+      "q": "Alex talking about churn",
+      "latency_ms": 5072,
       "response": {
-        "query": "Alex talking with another person about their offer",
+        "query": "Alex talking about churn",
         "parsed": {
           "speaker": "alex",
           "required_speakers": null,
-          "speakers_count": "dialogue",
-          "is_animation": false,
+          "speakers_count": "solo",
+          "is_animation": null,
           "talking_head_pose": null,
           "max_age_days": null,
           "min_age_days": null,
@@ -812,21 +812,21 @@
           "lessons_categories": null,
           "instructional_only": false,
           "visual_concept": null,
-          "retrieval_query": "offer",
-          "judge_query": "offer",
+          "retrieval_query": "churn",
+          "judge_query": "churn",
           "is_visual_only": false,
-          "clean_query": "offer",
-          "reasoning": "Alex is speaking with another person; topic is offers.",
+          "clean_query": "churn",
+          "reasoning": "Extracted topic 'churn' from Alex's discussion.",
           "_parsed_by": "llm",
-          "_ts": 1781546068
+          "_ts": 1781547978
         },
-        "parsed_reasoning": "Alex is speaking with another person; topic is offers.",
+        "parsed_reasoning": "Extracted topic 'churn' from Alex's discussion.",
         "parsed_by": "llm",
         "filters_applied": {
           "speaker": "alex",
           "required_speakers": null,
-          "speakers_count": "dialogue",
-          "is_animation": false,
+          "speakers_count": "solo",
+          "is_animation": null,
           "talking_head_pose": null,
           "industries": null,
           "audience": null,
@@ -835,39 +835,142 @@
           "instructional_only": false,
           "max_age_days": null,
           "min_age_days": null,
-          "retrieval_query": "offer"
+          "retrieval_query": "churn"
         },
         "n": 5,
         "results": [
           {
             "rank": 1,
-            "score": 0.4128366708755493,
+            "score": 0.8030082583427429,
             "judge_score": 1,
-            "why": "speaker=alex (audio voice match verified). Alex discusses donating books as an offer for new entrepreneurs.",
-            "judge_reason": "Alex discusses donating books as an offer for new entrepreneurs.",
+            "why": "speaker=alex (audio voice match verified). Alex discusses churn rates in memberships, focusing on critical timeframes.",
+            "judge_reason": "Alex discusses churn rates in memberships, focusing on critical timeframes.",
             "structural_dims": [
               "speaker=alex (audio voice match verified)",
-              "is_animation=false (live-footage frame, visual classifier verified)",
-              "speakers_count=dialogue (audio diarization verified)"
+              "speakers_count=solo (audio diarization verified)"
             ],
-            "video_id": "Q8xXSMe8E4Q",
-            "scene_idx": 5,
-            "start_s": 365.031,
-            "end_s": 397.397,
-            "frame_url": "/api/frames/Q8xXSMe8E4Q/0005",
-            "youtube_url": "https://www.youtube.com/watch?v=Q8xXSMe8E4Q&t=365s",
+            "video_id": "3fsJFUvA6Ts",
+            "scene_idx": 20,
+            "start_s": 175.375,
+            "end_s": 185.118,
+            "frame_url": "/api/frames/3fsJFUvA6Ts/0020",
+            "youtube_url": "https://www.youtube.com/watch?v=3fsJFUvA6Ts&t=175s",
             "voice": "alex",
             "voices_present": [
               "alex"
             ],
-            "speakers_count": "dialogue",
+            "speakers_count": "solo",
             "segment": {
-              "video_id": "Q8xXSMe8E4Q",
-              "segment_idx": 6,
-              "start_s": 352.8,
-              "end_s": 397.5,
-              "topic_title": "Outro: Skool Backpack book donation pitch",
-              "summary": "Alex pitches the $16 ultimate business backpack: three books donated from 3.6M total launch copies, plus 30 days of Skool free. He notes he loses money on it.",
+              "video_id": "3fsJFUvA6Ts",
+              "segment_idx": 1,
+              "start_s": 79.5,
+              "end_s": 230.5,
+              "topic_title": "Advantage 1 part B: Net revenue retention over 100% and cohort churn data",
+              "summary": "Alex explains net revenue retention can exceed 100% via low-tier-to-high-tier expansion. Shares Skool cohort data: 20%+ churn month 1, 10% at month 3, 2% past month 6. The goal: get customers to month six.",
+              "lessons_categories": [
+                "operations",
+                "pricing"
+              ],
+              "industries": [
+                "general_business",
+                "saas"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=3fsJFUvA6Ts&t=80s",
+            "recency_days": 41,
+            "upload_date": "2026-05-02",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": null,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 2,
+            "score": 0.5137746930122375,
+            "judge_score": 0.4,
+            "why": "speaker=alex (audio voice match verified). Mentions user retention and growth, but not specifically about churn.",
+            "judge_reason": "Mentions user retention and growth, but not specifically about churn.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "speakers_count=solo (audio diarization verified)"
+            ],
+            "video_id": "qsXxckCbci0",
+            "scene_idx": 132,
+            "start_s": 3742.155,
+            "end_s": 3759.339,
+            "frame_url": "/api/frames/qsXxckCbci0/0132",
+            "youtube_url": "https://www.youtube.com/watch?v=qsXxckCbci0&t=3742s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "qsXxckCbci0",
+              "segment_idx": 16,
+              "start_s": 3722.3,
+              "end_s": 3947,
+              "topic_title": "Growth-as-a-line vs growth-as-cumulative-retention (Facebook framework)",
+              "summary": "Alex on the Facebook head-of-growth visual: people think growth is a line, it's actually compounding retention. Revenue retention > logo retention — Skool's 20M users as the example. 100%+ NRR is the game.",
+              "lessons_categories": [
+                "operations",
+                "scaling",
+                "pricing"
+              ],
+              "industries": [
+                "saas"
+              ],
+              "audience": [
+                "business_owners"
+              ]
+            },
+            "segment_youtube_url": "https://www.youtube.com/watch?v=qsXxckCbci0&t=3722s",
+            "recency_days": 149,
+            "upload_date": "2026-01-14",
+            "signals": {
+              "visual_weight": 0.5,
+              "transcript_weight": 0.2,
+              "speaker_filter": "alex",
+              "is_animation_filter": null,
+              "talking_head_pose_filter": null,
+              "reranked": true
+            }
+          },
+          {
+            "rank": 3,
+            "score": 0.7804146409034729,
+            "judge_score": 0,
+            "why": "speaker=alex (audio voice match verified). Content is about business functions, not related to churn.",
+            "judge_reason": "Content is about business functions, not related to churn.",
+            "structural_dims": [
+              "speaker=alex (audio voice match verified)",
+              "speakers_count=solo (audio diarization verified)"
+            ],
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 32,
+            "start_s": 199.199,
+            "end_s": 206.006,
+            "frame_url": "/api/frames/-j8_YCWZ05Q/0032",
+            "youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=199s",
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "segment": {
+              "video_id": "-j8_YCWZ05Q",
+              "segment_idx": 3,
+              "start_s": 154.7,
+              "end_s": 205.6,
+              "topic_title": "Roadmap promo: acquisition.com/roadmap mid-roll",
+              "summary": "Alex pitches his free 10-stage scaling roadmap covering eight business functions, available at acquisition.com/roadmap.",
               "lessons_categories": [
                 "none"
               ],
@@ -878,213 +981,102 @@
                 "business_owners"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=Q8xXSMe8E4Q&t=353s",
-            "recency_days": 64,
-            "upload_date": "2026-04-09",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=-j8_YCWZ05Q&t=155s",
+            "recency_days": 80,
+            "upload_date": "2026-03-24",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
               "speaker_filter": "alex",
-              "is_animation_filter": false,
-              "talking_head_pose_filter": null,
-              "reranked": true
-            }
-          },
-          {
-            "rank": 2,
-            "score": 0.6061595678329468,
-            "judge_score": 0.4,
-            "why": "speaker=alex (audio voice match verified). Mentions offers related to coaching but not specifically about the offer itself.",
-            "judge_reason": "Mentions offers related to coaching but not specifically about the offer itself.",
-            "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "is_animation=false (live-footage frame, visual classifier verified)",
-              "speakers_count=dialogue (audio diarization verified)"
-            ],
-            "video_id": "N5MExtki_VI",
-            "scene_idx": 72,
-            "start_s": 245.912,
-            "end_s": 266.85,
-            "frame_url": "/api/frames/N5MExtki_VI/0072",
-            "youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=246s",
-            "voice": "alex",
-            "voices_present": [
-              "alex",
-              "sharran"
-            ],
-            "speakers_count": "dialogue",
-            "segment": {
-              "video_id": "N5MExtki_VI",
-              "segment_idx": 1,
-              "start_s": 134.5,
-              "end_s": 301.6,
-              "topic_title": "Built a second product when they should have fixed supply",
-              "summary": "Alex diagnoses the mistake of building a low-touch product when the real problem was supply constraint. CAC was same for both tiers so economics broke. Always ask: what problem are we solving and can we solve it without a new product?",
-              "lessons_categories": [
-                "operations",
-                "pricing",
-                "scaling"
-              ],
-              "industries": [
-                "services",
-                "education"
-              ],
-              "audience": [
-                "business_owners"
-              ]
-            },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=N5MExtki_VI&t=134s",
-            "recency_days": 133,
-            "upload_date": "2026-01-30",
-            "signals": {
-              "visual_weight": 0.5,
-              "transcript_weight": 0.2,
-              "speaker_filter": "alex",
-              "is_animation_filter": false,
-              "talking_head_pose_filter": null,
-              "reranked": true
-            }
-          },
-          {
-            "rank": 3,
-            "score": 0.45635178685188293,
-            "judge_score": 0.4,
-            "why": "speaker=alex (audio voice match verified). Talks about sales calls and offers but lacks direct relevance to the query.",
-            "judge_reason": "Talks about sales calls and offers but lacks direct relevance to the query.",
-            "structural_dims": [
-              "speaker=alex (audio voice match verified)",
-              "is_animation=false (live-footage frame, visual classifier verified)",
-              "speakers_count=dialogue (audio diarization verified)"
-            ],
-            "video_id": "MH-IMJxbUY4",
-            "scene_idx": 243,
-            "start_s": 1178.094,
-            "end_s": 1180.596,
-            "frame_url": "/api/frames/MH-IMJxbUY4/0243",
-            "youtube_url": "https://www.youtube.com/watch?v=MH-IMJxbUY4&t=1178s",
-            "voice": "alex",
-            "voices_present": [
-              "alex",
-              "sharran"
-            ],
-            "speakers_count": "dialogue",
-            "segment": {
-              "video_id": "MH-IMJxbUY4",
-              "segment_idx": 7,
-              "start_s": 1072.9,
-              "end_s": 1275.2,
-              "topic_title": "Damaging admissions sales technique",
-              "summary": "Alex tells Joel to front-load damaging admissions on sales calls: list all the reasons it won't work before the benefits. Lets prospects self-qualify and makes the good claims more believable. Use age 53 as a no-AI proof.",
-              "lessons_categories": [
-                "sales"
-              ],
-              "industries": [
-                "general_business"
-              ],
-              "audience": [
-                "business_owners"
-              ]
-            },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=MH-IMJxbUY4&t=1073s",
-            "recency_days": 104,
-            "upload_date": "2026-02-28",
-            "signals": {
-              "visual_weight": 0.5,
-              "transcript_weight": 0.2,
-              "speaker_filter": "alex",
-              "is_animation_filter": false,
+              "is_animation_filter": null,
               "talking_head_pose_filter": null,
               "reranked": true
             }
           },
           {
             "rank": 4,
-            "score": 0.48288828134536743,
+            "score": 0.577009916305542,
             "judge_score": 0,
-            "why": "speaker=alex (audio voice match verified). Content discusses business growth strategies, not offers.",
-            "judge_reason": "Content discusses business growth strategies, not offers.",
+            "why": "speaker=alex (audio voice match verified). Discusses passion, unrelated to churn.",
+            "judge_reason": "Discusses passion, unrelated to churn.",
             "structural_dims": [
               "speaker=alex (audio voice match verified)",
-              "is_animation=false (live-footage frame, visual classifier verified)",
-              "speakers_count=dialogue (audio diarization verified)"
+              "speakers_count=solo (audio diarization verified)"
             ],
-            "video_id": "OQf2Ba-Lp_4",
-            "scene_idx": 473,
-            "start_s": 2043.041,
-            "end_s": 2063.228,
-            "frame_url": "/api/frames/OQf2Ba-Lp_4/0473",
-            "youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=2043s",
+            "video_id": "_KlZoPxbStk",
+            "scene_idx": 4,
+            "start_s": 19.953,
+            "end_s": 22.155,
+            "frame_url": "/api/frames/_KlZoPxbStk/0004",
+            "youtube_url": "https://www.youtube.com/watch?v=_KlZoPxbStk&t=20s",
             "voice": "alex",
             "voices_present": [
-              "alex",
-              "sharran"
+              "alex"
             ],
-            "speakers_count": "dialogue",
+            "speakers_count": "solo",
             "segment": {
-              "video_id": "OQf2Ba-Lp_4",
-              "segment_idx": 9,
-              "start_s": 1843.7,
-              "end_s": 2080.7,
-              "topic_title": "Prioritized recap: six moves projected to double the business",
-              "summary": "Alex stack-ranks fixes: 1) 10% price raise, 2) pay off debt, 3) new landing page, 4) better ads, 5) email reactivation, 6) own search terms, 7) HOA outbound. Estimates 2-3x lift from page-and-ads alone, 10-20% from retargeting, uncapped from outbound.",
+              "video_id": "_KlZoPxbStk",
+              "segment_idx": 0,
+              "start_s": 0,
+              "end_s": 49.1,
+              "topic_title": "Alex's cold open: passion in Latin means suffering",
+              "summary": "Alex opens with the etymology: passion comes from Latin for suffering, originally describing Christ's crucifixion. He sets up via a young man who quit his job for entrepreneurship and didn't love every second of it — and asked Alex what to do.",
               "lessons_categories": [
-                "scaling",
-                "marketing",
-                "pricing"
+                "mindset",
+                "personal_development"
               ],
               "industries": [
-                "services"
+                "general_business"
               ],
               "audience": [
-                "business_owners"
+                "business_owners",
+                "personal_life_advice"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=OQf2Ba-Lp_4&t=1844s",
-            "recency_days": 35,
-            "upload_date": "2026-05-08",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=_KlZoPxbStk&t=0s",
+            "recency_days": 115,
+            "upload_date": "2026-02-17",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
               "speaker_filter": "alex",
-              "is_animation_filter": false,
+              "is_animation_filter": null,
               "talking_head_pose_filter": null,
               "reranked": true
             }
           },
           {
             "rank": 5,
-            "score": 0.44389790296554565,
+            "score": 0.545989453792572,
             "judge_score": 0,
-            "why": "speaker=alex (audio voice match verified). Focuses on a Guinness World Record event, unrelated to offers.",
-            "judge_reason": "Focuses on a Guinness World Record event, unrelated to offers.",
+            "why": "speaker=alex (audio voice match verified). Content is about media strategy, not related to churn.",
+            "judge_reason": "Content is about media strategy, not related to churn.",
             "structural_dims": [
               "speaker=alex (audio voice match verified)",
-              "is_animation=false (live-footage frame, visual classifier verified)",
-              "speakers_count=dialogue (audio diarization verified)"
+              "speakers_count=solo (audio diarization verified)"
             ],
-            "video_id": "u3H7CfpfwHQ",
-            "scene_idx": 499,
-            "start_s": 1521.103,
-            "end_s": 1531.196,
-            "frame_url": "/api/frames/u3H7CfpfwHQ/0499",
-            "youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=1521s",
+            "video_id": "Jmkq5RLjm0U",
+            "scene_idx": 715,
+            "start_s": 4844.757,
+            "end_s": 4861.106,
+            "frame_url": "/api/frames/Jmkq5RLjm0U/0715",
+            "youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=4845s",
             "voice": "alex",
             "voices_present": [
-              "alex",
-              "sharran"
+              "alex"
             ],
-            "speakers_count": "dialogue",
+            "speakers_count": "solo",
             "segment": {
-              "video_id": "u3H7CfpfwHQ",
-              "segment_idx": 9,
-              "start_s": 1450,
-              "end_s": 1602,
-              "topic_title": "Closing — Layla and Alex on impact, history made",
-              "summary": "Layla on the impact angle — never before in history has someone donated books to beat a world record. Alex with the Aussies shoey ('this is for my Aussies'). 30 minutes left to push for final tally.",
+              "video_id": "Jmkq5RLjm0U",
+              "segment_idx": 13,
+              "start_s": 4507.1,
+              "end_s": 4990.6,
+              "topic_title": "Repost your best content + the Simpsons intro lesson",
+              "summary": "Alex tells viewers to repost last year's best piece — new audience hasn't seen it, and reminders compound. Uses The Simpsons opening (Bart writing on the board changes every episode) as the variety-within-consistency template.",
               "lessons_categories": [
-                "branding",
                 "content",
-                "mindset"
+                "marketing",
+                "branding"
               ],
               "industries": [
                 "general_business"
@@ -1093,14 +1085,14 @@
                 "business_owners"
               ]
             },
-            "segment_youtube_url": "https://www.youtube.com/watch?v=u3H7CfpfwHQ&t=1450s",
-            "recency_days": 161,
-            "upload_date": "2026-01-02",
+            "segment_youtube_url": "https://www.youtube.com/watch?v=Jmkq5RLjm0U&t=4507s",
+            "recency_days": 90,
+            "upload_date": "2026-03-14",
             "signals": {
               "visual_weight": 0.5,
               "transcript_weight": 0.2,
               "speaker_filter": "alex",
-              "is_animation_filter": false,
+              "is_animation_filter": null,
               "talking_head_pose_filter": null,
               "reranked": true
             }
@@ -1110,7 +1102,7 @@
     },
     {
       "q": "Alex writing on a whiteboard",
-      "latency_ms": 2910,
+      "latency_ms": 597,
       "response": {
         "query": "Alex writing on a whiteboard",
         "parsed": {
@@ -1131,11 +1123,11 @@
           "judge_query": null,
           "is_visual_only": true,
           "clean_query": "writing on a whiteboard",
-          "reasoning": "Alex is writing on a whiteboard; visual concept is whiteboard.",
+          "reasoning": "Alex is writing on a whiteboard; no topic is specified.",
           "_parsed_by": "llm",
-          "_ts": 1781546073
+          "_ts": 1781546637
         },
-        "parsed_reasoning": "Alex is writing on a whiteboard; visual concept is whiteboard.",
+        "parsed_reasoning": "Alex is writing on a whiteboard; no topic is specified.",
         "parsed_by": "llm",
         "filters_applied": {
           "speaker": "alex",
