@@ -9,19 +9,14 @@ import benchmarkData from "../data/benchmarks.json";
 // ─────────────────────────────────────────────────────────────────────────────
 function Section({
   title,
-  kicker,
   children,
 }: {
   title: string;
-  kicker: string;
   children: React.ReactNode;
 }) {
   return (
     <section className="border-t border-zinc-200 dark:border-zinc-800 pt-12 mt-16">
       <div className="mb-8">
-        <p className="text-xs uppercase tracking-[0.18em] text-blue-600 dark:text-blue-400 font-semibold mb-2">
-          {kicker}
-        </p>
         <h2 className="text-2xl font-semibold tracking-tight">{title}</h2>
       </div>
       {children}
@@ -221,7 +216,7 @@ function GoldenSetsSection() {
   const rows = (goldenData as { queries: GoldenRow[] }).queries;
 
   return (
-    <Section kicker="proof · 1" title="Golden sets">
+    <Section title="Golden sets">
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6 max-w-3xl leading-relaxed">
         Five canonical queries an editor would type. Each was run against the live production
         backend; the panels below show exactly what came back. Re-runnable: see
@@ -322,7 +317,7 @@ function ValidationBenchmarksSection() {
   };
   const targetPct = (data.target_recall * 100).toFixed(0);
   return (
-    <Section kicker="proof · 2" title="Validation benchmarks">
+    <Section title="Validation benchmarks">
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div className="md:col-span-2 text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-2">
           <p>
@@ -421,7 +416,7 @@ function FailureRecoverySection() {
   }, []);
 
   return (
-    <Section kicker="proof · 3" title="Failure recovery">
+    <Section title="Failure recovery">
       <div className="grid md:grid-cols-3 gap-6 mb-6">
         <div className="md:col-span-2 text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed space-y-2">
           <p>
@@ -539,7 +534,7 @@ function CostRow({ label, cost, note }: { label: string; cost: string; note?: st
 
 function CostOptimizationSection() {
   return (
-    <Section kicker="proof · 4" title="Cost optimization">
+    <Section title="Cost optimization">
       <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-6 max-w-3xl leading-relaxed">
         Every line below is reasoned from public per-unit prices and the measured token / second
         counts this system actually uses. Ranges where the inputs are uncertain are flagged
