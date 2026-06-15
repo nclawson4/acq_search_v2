@@ -616,7 +616,7 @@ function CostOptimizationSection() {
             />
           </ul>
           <div className="mt-4 flex items-baseline justify-between border-t border-zinc-200 dark:border-zinc-800 pt-3">
-            <p className="font-semibold">Total per TB</p>
+            <p className="font-semibold">Total per TB (one-time cost)</p>
             <p className="text-xl font-semibold font-mono">≈ $180</p>
           </div>
           <p className="text-[11px] text-zinc-500 mt-2 leading-snug">
