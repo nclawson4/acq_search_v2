@@ -567,47 +567,49 @@ function CostOptimizationSection() {
             <span className="text-xs text-zinc-500">per 1 TB of source video</span>
           </div>
           <p className="text-xs text-zinc-500 mb-4 leading-snug">
-            1 TB ≈ 200,000 minutes (3,333 hours) of long-form video at typical YouTube bitrate.
+            1 TB ≈ 250 hours (15,000 minutes) of source video at typical 1080p master bitrate
+            (~10 Mbps). The corpus on disk — not re-encoded streaming files.
           </p>
           <ul className="space-y-0">
             <CostRow
               label="Deepgram nova-3 transcription"
-              cost="$860"
-              note="$0.0043/min × 200,000 min — diarized, with entities/sentiment/topics enabled"
+              cost="≈ $65"
+              note="$0.0043/min × 15,000 min — diarized, with entities/sentiment/topics enabled"
             />
             <CostRow
               label="Visual classifier (gpt-4o-mini vision)"
-              cost="≈ $40"
-              note="~1 scene per 30s of source, $0.0001 per labeled keyframe"
+              cost="≈ $3"
+              note="~1 scene per 30s of source ≈ 30k keyframes × $0.0001 each"
             />
             <CostRow
               label="CLIP frame embedding (CPU compute)"
-              cost="≈ $70"
-              note="ViT-L-14 on Modal CPU; ~1s/scene × ~400k scenes at $0.00018/sec"
+              cost="≈ $6"
+              note="ViT-L-14 on Modal CPU; ~1s/scene × 30k scenes at $0.00018/sec"
             />
             <CostRow
               label="Scene detection + speaker fingerprinting"
-              cost="≈ $20"
-              note="PySceneDetect + Resemblyzer; deterministic CPU, negligible at this scale"
+              cost="≈ $5"
+              note="PySceneDetect + Resemblyzer; deterministic CPU, no API calls"
             />
             <CostRow
-              label="Topic segment curation (LLM-assisted)"
-              cost="$50 – $5,000"
-              note="$50 if hand-curated for a small batch (current corpus); ~$5K/TB if fully LLM-generated with gpt-4o"
+              label="Topic segment curation"
+              cost="$100 – $2,500"
+              note="~$100 if LLM-generated with gpt-4o; ~$500–2,500 if hand-curated by an editor (≈ 500 videos at this scale)"
             />
             <CostRow
               label="Storage (Vercel Blob, npz, transcripts)"
-              cost="< $5/mo"
-              note="~100 GB thumbnails + few hundred MB metadata"
+              cost="< $1/mo"
+              note="~600 MB of thumbnails + a few hundred MB of metadata — source video stays on your NAS"
             />
           </ul>
           <div className="mt-4 flex items-baseline justify-between border-t border-zinc-200 dark:border-zinc-800 pt-3">
             <p className="font-semibold">Total per TB</p>
-            <p className="text-xl font-semibold font-mono">≈ $1,000 – $6,000</p>
+            <p className="text-xl font-semibold font-mono">≈ $180 – $2,580</p>
           </div>
           <p className="text-[11px] text-zinc-500 mt-2 leading-snug">
-            Range driven entirely by topic-segment policy. The current 66-video corpus was hand-curated;
-            anything bigger benefits from LLM-assisted segmentation at the higher end.
+            Range driven almost entirely by topic-segment policy. Fully LLM-generated comes in
+            under $200/TB; a human-curated pass on every video can take that to a few thousand.
+            Everything else is rounding error at this scale.
           </p>
         </div>
 
