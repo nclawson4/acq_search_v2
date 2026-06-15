@@ -1,0 +1,3 @@
+results/*.npy
+results/*.log
+results/bake_*.json
