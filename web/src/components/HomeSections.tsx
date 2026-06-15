@@ -663,41 +663,42 @@ function CostOptimizationSection() {
 
       {/* ROI */}
       <div className="mt-6 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5 bg-zinc-50/50 dark:bg-zinc-900/30">
-        <h3 className="font-semibold mb-3">Editor time saved</h3>
-        <p className="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed max-w-3xl mb-4">
-          We are deliberately conservative. The baseline assumes the editor already has searchable
-          transcripts — not the worst case of scrubbing audio frame by frame. Without transcripts the
-          gap is much larger; with them it&apos;s still meaningful.
-        </p>
-        <div className="grid md:grid-cols-3 gap-4 text-sm">
-          <div className="rounded-lg bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 p-4">
-            <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">Without this system</p>
-            <p className="mt-1 leading-relaxed">
-              Editor opens the transcript tool, runs a keyword search, scans hits, jumps to
-              timestamps, watches each candidate clip to verify. <span className="font-medium">5–15 minutes per moment</span> on a query they know exists; longer for vague memory.
-            </p>
+        <h3 className="font-semibold mb-4">Editor time saved</h3>
+
+        {/* Per-query comparison */}
+        <div className="grid grid-cols-3 items-center gap-4 mb-6">
+          <div className="text-center">
+            <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">Without</p>
+            <p className="text-3xl md:text-4xl font-semibold mt-1">5–15<span className="text-base font-normal text-zinc-500"> min</span></p>
+            <p className="text-[11px] text-zinc-500 mt-1">search transcripts, scrub, verify</p>
           </div>
-          <div className="rounded-lg bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 p-4">
-            <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">With this system</p>
-            <p className="mt-1 leading-relaxed">
-              Editor types the moment in plain English, gets 5 ranked thumbnails in ~5 seconds, scans
-              and clicks. <span className="font-medium">≈ 2 minutes per moment</span>, dominated by the editor reading the
-              candidates — not by hunting.
-            </p>
-          </div>
-          <div className="rounded-lg bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 p-4">
-            <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">Conservative saving</p>
-            <p className="mt-1 leading-relaxed">
-              Middle estimate: <span className="font-medium">~5 min saved per query</span>. An editor doing 10 queries/day,
-              5 days/week, 50 weeks/year saves <span className="font-medium">~208 hours/year</span>. At a $50–75/hr blended
-              rate, that&apos;s <span className="font-medium">$10K–16K/year per editor</span>.
-            </p>
+          <div className="text-center text-zinc-400 text-3xl">→</div>
+          <div className="text-center">
+            <p className="text-[10px] uppercase tracking-wider text-zinc-500 font-semibold">With</p>
+            <p className="text-3xl md:text-4xl font-semibold mt-1 text-emerald-700 dark:text-emerald-400">~2<span className="text-base font-normal text-zinc-500"> min</span></p>
+            <p className="text-[11px] text-zinc-500 mt-1">type, scan 5 thumbnails, click</p>
           </div>
         </div>
-        <p className="text-[11px] text-zinc-500 italic mt-4 leading-snug">
-          We&apos;re not counting clips found that wouldn&apos;t have been found at all (the &ldquo;I know there&apos;s
-          a moment about X somewhere&rdquo; case). That happens, but it&apos;s hard to value without an
-          editor-side baseline, so it&apos;s excluded from this number.
+
+        {/* Per-editor / year */}
+        <div className="grid grid-cols-3 gap-4 text-center rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 p-4">
+          <div>
+            <p className="text-2xl font-semibold">~5 min</p>
+            <p className="text-[10px] uppercase tracking-wider text-zinc-500">saved per query</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold">~208 hr</p>
+            <p className="text-[10px] uppercase tracking-wider text-zinc-500">per editor / year</p>
+          </div>
+          <div>
+            <p className="text-2xl font-semibold text-emerald-700 dark:text-emerald-400">$10K–16K</p>
+            <p className="text-[10px] uppercase tracking-wider text-zinc-500">per editor / year</p>
+          </div>
+        </div>
+
+        <p className="text-[11px] text-zinc-500 italic mt-3 leading-snug">
+          Conservative: 10 queries/day × 5d × 50w at $50–75/hr blended. Baseline assumes editor
+          already has searchable transcripts. Excludes clips that wouldn&apos;t have been found at all.
         </p>
       </div>
     </Section>
