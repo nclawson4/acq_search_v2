@@ -219,15 +219,6 @@ const VERIFICATIONS: Verification[] = [
 
 function GoldenSetsSection() {
   const rows = (goldenData as { queries: GoldenRow[] }).queries;
-  const meanLatency = rows.reduce((s, r) => s + r.latency_ms, 0) / rows.length;
-  const topJudgeAvg =
-    rows.reduce((s, r) => s + (r.response.results[0]?.judge_score ?? 0), 0) / rows.length;
-  const speakerHits = rows.filter((r) => {
-    const want = r.response.parsed.speaker;
-    if (!want) return true;
-    const top = r.response.results[0];
-    return top?.voice === want;
-  }).length;
 
   return (
     <Section kicker="proof · 1" title="Golden sets">
@@ -258,23 +249,6 @@ function GoldenSetsSection() {
         })}
       </div>
 
-      {/* Aggregate row */}
-      <div className="grid grid-cols-3 gap-4 text-center rounded-xl border border-zinc-200 dark:border-zinc-800 p-4">
-        <div>
-          <p className="text-2xl font-semibold">{(topJudgeAvg).toFixed(2)}</p>
-          <p className="text-[10px] uppercase tracking-wider text-zinc-500">avg top judge score</p>
-        </div>
-        <div>
-          <p className="text-2xl font-semibold">
-            {speakerHits}/{rows.length}
-          </p>
-          <p className="text-[10px] uppercase tracking-wider text-zinc-500">speaker filter held</p>
-        </div>
-        <div>
-          <p className="text-2xl font-semibold">{(meanLatency / 1000).toFixed(1)}s</p>
-          <p className="text-[10px] uppercase tracking-wider text-zinc-500">avg end-to-end latency</p>
-        </div>
-      </div>
     </Section>
   );
 }
