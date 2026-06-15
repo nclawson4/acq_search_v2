@@ -169,11 +169,6 @@ function GoldenCard({
             {verification}
           </p>
         </div>
-
-        <div className="flex items-center justify-between text-[10px] text-zinc-500 pt-1 border-t border-zinc-100 dark:border-zinc-900">
-          <span>{row.response.n} result{row.response.n === 1 ? "" : "s"} returned</span>
-          <span>backend latency: {(row.latency_ms / 1000).toFixed(1)}s</span>
-        </div>
       </div>
     </div>
   );
