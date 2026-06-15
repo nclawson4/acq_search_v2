@@ -233,6 +233,24 @@ export function SearchView({ mode }: { mode: Mode }) {
           </button>
         </form>
 
+        {/* Example chips — anchored directly under the search bar so they're
+            always within reach. Stay visible after a search so editors can pick
+            another one without scrolling. Disabled while a search is running. */}
+        <div className="mb-4 flex flex-wrap items-center justify-center gap-1.5 text-xs">
+          <span className="text-zinc-500 mr-1">try:</span>
+          {EXAMPLE_QUERIES.map((q) => (
+            <button
+              key={q}
+              type="button"
+              onClick={() => runExample(q)}
+              disabled={loading}
+              className="rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 px-3 py-1 text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-700 dark:hover:bg-blue-950/50 dark:hover:text-blue-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {q}
+            </button>
+          ))}
+        </div>
+
         {/* Progress bar + stage indicator — only while a search is in flight.
             Reserves the row even when idle so the layout below doesn't jump on
             every search. Stages name what's happening behind the scenes so
@@ -355,24 +373,6 @@ export function SearchView({ mode }: { mode: Mode }) {
               </div>
             )}
           </>
-        )}
-
-        {!data && !loading && !error && (
-          <div className="text-center mt-12 space-y-4">
-            <p className="text-sm font-medium text-zinc-700 dark:text-zinc-300">try a search like:</p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {EXAMPLE_QUERIES.map((q) => (
-                <button
-                  key={q}
-                  type="button"
-                  onClick={() => runExample(q)}
-                  className="rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-50 dark:bg-zinc-900 px-4 py-2 text-sm text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-700 dark:hover:bg-blue-950/50 dark:hover:text-blue-300 transition-colors"
-                >
-                  {q}
-                </button>
-              ))}
-            </div>
-          </div>
         )}
 
         {/* Always-visible long-form sections that explain how the system works,
