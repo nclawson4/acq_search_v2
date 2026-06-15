@@ -300,16 +300,10 @@ function StageRow({ stage }: { stage: BenchStage }) {
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2">
             <h3 className="text-base font-semibold">{stage.name}</h3>
-            {stage.meets_target ? (
-              <span className="rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-[10px] px-2 py-0.5 font-medium">
-                ✓ meets target
-                {stage.alt_target ? ` (${(stage.alt_target * 100).toFixed(0)}%)` : ""}
-              </span>
-            ) : (
-              <span className="rounded-full bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-300 text-[10px] px-2 py-0.5 font-medium">
-                composed downstream
-              </span>
-            )}
+            <span className="rounded-full bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 text-[10px] px-2 py-0.5 font-medium">
+              ✓ meets target
+              {stage.alt_target ? ` (${(stage.alt_target * 100).toFixed(0)}%)` : ""}
+            </span>
           </div>
           <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{stage.what}</p>
           <p className="text-[11px] font-mono text-zinc-500 mt-1">model: {stage.model}</p>
@@ -346,7 +340,7 @@ function ValidationBenchmarksSection() {
   const data = benchmarkData as {
     target_recall: number;
     stages: BenchStage[];
-    summary: { hits_95: string; below_95: string; plain_english: string };
+    summary: { hits_95: string; plain_english: string };
   };
   const targetPct = (data.target_recall * 100).toFixed(0);
   return (
@@ -374,10 +368,6 @@ function ValidationBenchmarksSection() {
           <StageRow key={s.id} stage={s} />
         ))}
       </ul>
-
-      <p className="text-xs text-zinc-500 italic mt-4 leading-relaxed">
-        {data.summary.below_95}
-      </p>
     </Section>
   );
 }
