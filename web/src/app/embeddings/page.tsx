@@ -60,10 +60,11 @@ export default function EmbeddingsPage() {
         </div>
 
         <header className="mb-12 text-center">
-          <h1 className="text-3xl font-semibold tracking-tight">Image search, two ways</h1>
+          <h1 className="text-3xl font-semibold tracking-tight">CLIP vs Gemini Embedding 2</h1>
           <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-            Six real searches an editor might run. The same database was searched with two
-            different image-search models. The top five scenes each one returned are shown below.
+            Six real searches an editor might run. The same database was searched with two image
+            embedding models &mdash; OpenAI&apos;s CLIP (ViT-L-14) and Google&apos;s Gemini
+            Embedding 2 at 3072 dimensions. The top five scenes each one returned are shown below.
           </p>
         </header>
 
@@ -74,8 +75,8 @@ export default function EmbeddingsPage() {
                 &ldquo;{row.query}&rdquo;
               </h2>
               <div className="space-y-6">
-                <Column label="Model A" hits={row.clip.hits} />
-                <Column label="Model B" hits={row.gem_3072.hits} />
+                <Column label="CLIP (ViT-L-14)" hits={row.clip.hits} />
+                <Column label="Gemini Embedding 2 (3072 dim)" hits={row.gem_3072.hits} />
               </div>
             </section>
           ))}
