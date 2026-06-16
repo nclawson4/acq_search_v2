@@ -1,0 +1,1451 @@
+{
+  "queries": [
+    {
+      "query": "Leila talking about leadership, talking head video",
+      "parsed": {
+        "speaker": "leila",
+        "required_speakers": null,
+        "visual_concept": "talking head video",
+        "retrieval_query": "leadership talking head video",
+        "judge_query": "leadership",
+        "max_age_days": null,
+        "min_age_days": null,
+        "speakers_count": "solo"
+      },
+      "clip": {
+        "latency_ms": 19923,
+        "hits": [
+          {
+            "frame_idx": 10453,
+            "video_id": "ZC0RgDJ3J7Q",
+            "scene_idx": 87,
+            "score": 0.31187382340431213,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 147,
+            "judge_score": 1.0,
+            "judge_reason": "Leila discusses leadership principles and the importance of honesty in leadership."
+          },
+          {
+            "frame_idx": 12383,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 1,
+            "score": 0.2905972898006439,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 88,
+            "judge_score": 1.0,
+            "judge_reason": "Leila talks about new leadership roles and changing the narrative around them."
+          },
+          {
+            "frame_idx": 6225,
+            "video_id": "LpNODHhn-60",
+            "scene_idx": 330,
+            "score": 0.27625566720962524,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 126,
+            "judge_score": 0.7,
+            "judge_reason": "Leila mentions leading people effectively, but focuses on performance and burnout."
+          },
+          {
+            "frame_idx": 3094,
+            "video_id": "DmenYQ_MEEA",
+            "scene_idx": 152,
+            "score": 0.25351566076278687,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 225,
+            "judge_score": 0.7,
+            "judge_reason": "Leila emphasizes the importance of rest for leaders, linking it to effective leadership."
+          },
+          {
+            "frame_idx": 10460,
+            "video_id": "ZC0RgDJ3J7Q",
+            "scene_idx": 94,
+            "score": 0.2531854212284088,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 147,
+            "judge_score": 1.0,
+            "judge_reason": "Leila explains the challenges of leadership and the necessity of difficult conversations."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 4422,
+        "hits": [
+          {
+            "frame_idx": 9484,
+            "video_id": "RWQHNc1u-cE",
+            "scene_idx": 165,
+            "score": 0.6375195980072021,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 11,
+            "judge_score": 0.4,
+            "judge_reason": "Leila discusses leadership influence but focuses on credit and blame dynamics."
+          },
+          {
+            "frame_idx": 6225,
+            "video_id": "LpNODHhn-60",
+            "scene_idx": 330,
+            "score": 0.6369736194610596,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 126,
+            "judge_score": 0.7,
+            "judge_reason": "Leila mentions leading people effectively, but focuses on performance and burnout."
+          },
+          {
+            "frame_idx": 10460,
+            "video_id": "ZC0RgDJ3J7Q",
+            "scene_idx": 94,
+            "score": 0.6367059946060181,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 147,
+            "judge_score": 1.0,
+            "judge_reason": "Leila explains the challenges of leadership and the necessity of difficult conversations."
+          },
+          {
+            "frame_idx": 1349,
+            "video_id": "6by3XnwdsMQ",
+            "scene_idx": 210,
+            "score": 0.6362547874450684,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 77,
+            "judge_score": 0.4,
+            "judge_reason": "Leila outlines various leadership responsibilities but lacks a direct focus on leadership."
+          },
+          {
+            "frame_idx": 12942,
+            "video_id": "hT4ilfJVZeQ",
+            "scene_idx": 3,
+            "score": 0.6347001791000366,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 133,
+            "judge_score": 1.0,
+            "judge_reason": "Leila shares her journey in leadership and the skills needed to be a top leader."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1672,
+        "hits": [
+          {
+            "frame_idx": 9484,
+            "video_id": "RWQHNc1u-cE",
+            "scene_idx": 165,
+            "score": 0.6344866752624512,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 11,
+            "judge_score": 0.4,
+            "judge_reason": "Leila discusses leadership influence but focuses on credit and blame dynamics."
+          },
+          {
+            "frame_idx": 12383,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 1,
+            "score": 0.6298182010650635,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 88,
+            "judge_score": 1.0,
+            "judge_reason": "Leila talks about new leadership roles and changing the narrative around them."
+          },
+          {
+            "frame_idx": 12942,
+            "video_id": "hT4ilfJVZeQ",
+            "scene_idx": 3,
+            "score": 0.6289376020431519,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 133,
+            "judge_score": 1.0,
+            "judge_reason": "Leila shares her journey in leadership and the skills needed to be a top leader."
+          },
+          {
+            "frame_idx": 1349,
+            "video_id": "6by3XnwdsMQ",
+            "scene_idx": 210,
+            "score": 0.6277457475662231,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 77,
+            "judge_score": 0.4,
+            "judge_reason": "Leila outlines various leadership responsibilities but lacks a direct focus on leadership."
+          },
+          {
+            "frame_idx": 1493,
+            "video_id": "7FiKGWYA65g",
+            "scene_idx": 16,
+            "score": 0.6271189451217651,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 91,
+            "judge_score": 0.7,
+            "judge_reason": "Leila discusses communication skills for leaders, relevant but not solely focused on leadership."
+          }
+        ]
+      }
+    },
+    {
+      "query": "Sharran less than 3 weeks ago talking about real estate",
+      "parsed": {
+        "speaker": "sharran",
+        "required_speakers": null,
+        "visual_concept": null,
+        "retrieval_query": "real estate",
+        "judge_query": "real estate",
+        "max_age_days": 21,
+        "min_age_days": null,
+        "speakers_count": null
+      },
+      "clip": {
+        "latency_ms": 2094,
+        "hits": [
+          {
+            "frame_idx": 9613,
+            "video_id": "Rccmhnt1ur4",
+            "scene_idx": 75,
+            "score": 0.2285897433757782,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 9,
+            "judge_score": 0.4,
+            "judge_reason": "Mentions estate value but not directly related to real estate transactions."
+          },
+          {
+            "frame_idx": 15289,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 71,
+            "score": 0.22604286670684814,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15277,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 59,
+            "score": 0.22002151608467102,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 0.0,
+            "judge_reason": "Focuses on crowdsourced funding for an airline, unrelated to real estate."
+          },
+          {
+            "frame_idx": 15285,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 67,
+            "score": 0.21397604048252106,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran talks about acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 9611,
+            "video_id": "Rccmhnt1ur4",
+            "scene_idx": 73,
+            "score": 0.21077391505241394,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 9,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses financial habits, not directly related to real estate."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 1761,
+        "hits": [
+          {
+            "frame_idx": 15287,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 69,
+            "score": 0.6443732380867004,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15289,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 71,
+            "score": 0.6347874402999878,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15288,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 70,
+            "score": 0.6272451877593994,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15300,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 82,
+            "score": 0.5923337340354919,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 0.0,
+            "judge_reason": "Focuses on airline acquisition, unrelated to real estate."
+          },
+          {
+            "frame_idx": 15254,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 36,
+            "score": 0.5900360345840454,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses Spirit Airlines, unrelated to real estate."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1847,
+        "hits": [
+          {
+            "frame_idx": 15287,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 69,
+            "score": 0.6331888437271118,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15289,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 71,
+            "score": 0.6156670451164246,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15288,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 70,
+            "score": 0.6124991178512573,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran discusses acquiring REMAX, directly addressing real estate."
+          },
+          {
+            "frame_idx": 15270,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 52,
+            "score": 0.584399402141571,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 0.0,
+            "judge_reason": "Focuses on an airline idea, unrelated to real estate."
+          },
+          {
+            "frame_idx": 15300,
+            "video_id": "vbcelc94VRQ",
+            "scene_idx": 82,
+            "score": 0.5833373665809631,
+            "voice": "sharran",
+            "voices_present": [
+              "sharran"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 21,
+            "judge_score": 0.0,
+            "judge_reason": "Focuses on airline acquisition, unrelated to real estate."
+          }
+        ]
+      }
+    },
+    {
+      "query": "Animations talking about stress and anxiety",
+      "parsed": {
+        "speaker": null,
+        "required_speakers": null,
+        "visual_concept": "Animations",
+        "retrieval_query": "stress anxiety Animations",
+        "judge_query": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "speakers_count": null
+      },
+      "clip": {
+        "latency_ms": 1566,
+        "hits": [
+          {
+            "frame_idx": 653,
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 17,
+            "score": 0.34224408864974976,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 154,
+            "judge_score": 1.0,
+            "judge_reason": "Animated content discussing stress management techniques and calming the nervous system."
+          },
+          {
+            "frame_idx": 1614,
+            "video_id": "7FiKGWYA65g",
+            "scene_idx": 104,
+            "score": 0.32053446769714355,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 91,
+            "judge_score": 0.0,
+            "judge_reason": "Content focuses on leadership challenges, not stress or anxiety."
+          },
+          {
+            "frame_idx": 9013,
+            "video_id": "R23CiC80t7c",
+            "scene_idx": 142,
+            "score": 0.30788588523864746,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 232,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses learning and productivity, not related to stress or anxiety."
+          },
+          {
+            "frame_idx": 1717,
+            "video_id": "7FiKGWYA65g",
+            "scene_idx": 181,
+            "score": 0.307452917098999,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 91,
+            "judge_score": 0.0,
+            "judge_reason": "Content about communication in business, not stress or anxiety."
+          },
+          {
+            "frame_idx": 8805,
+            "video_id": "PRFzRtzhZrw",
+            "scene_idx": 165,
+            "score": 0.30317676067352295,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 239,
+            "judge_score": 0.4,
+            "judge_reason": "Mentions suffering and learning, but not directly about stress or anxiety."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 1559,
+        "hits": [
+          {
+            "frame_idx": 9998,
+            "video_id": "VR2RLVBiMe8",
+            "scene_idx": 172,
+            "score": 0.6556699275970459,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 210,
+            "judge_score": 0.4,
+            "judge_reason": "Talks about emotions and decision-making, tangentially related to stress."
+          },
+          {
+            "frame_idx": 8805,
+            "video_id": "PRFzRtzhZrw",
+            "scene_idx": 165,
+            "score": 0.6549429893493652,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 239,
+            "judge_score": 0.4,
+            "judge_reason": "Mentions suffering and learning, but not directly about stress or anxiety."
+          },
+          {
+            "frame_idx": 653,
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 17,
+            "score": 0.6456888318061829,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 154,
+            "judge_score": 1.0,
+            "judge_reason": "Animated content discussing stress management techniques and calming the nervous system."
+          },
+          {
+            "frame_idx": 9182,
+            "video_id": "RJNDXnboXd8",
+            "scene_idx": 125,
+            "score": 0.6390037536621094,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 182,
+            "judge_score": 0.4,
+            "judge_reason": "Discusses mental energy and decision fatigue, somewhat related to stress."
+          },
+          {
+            "frame_idx": 720,
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 66,
+            "score": 0.6371552348136902,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 154,
+            "judge_score": 1.0,
+            "judge_reason": "Animated content discussing breathing techniques to manage stress and emotions."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1736,
+        "hits": [
+          {
+            "frame_idx": 8805,
+            "video_id": "PRFzRtzhZrw",
+            "scene_idx": 165,
+            "score": 0.6478679180145264,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 239,
+            "judge_score": 0.4,
+            "judge_reason": "Mentions suffering and learning, but not directly about stress or anxiety."
+          },
+          {
+            "frame_idx": 9998,
+            "video_id": "VR2RLVBiMe8",
+            "scene_idx": 172,
+            "score": 0.6449880599975586,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 210,
+            "judge_score": 0.4,
+            "judge_reason": "Talks about emotions and decision-making, tangentially related to stress."
+          },
+          {
+            "frame_idx": 653,
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 17,
+            "score": 0.6392920613288879,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 154,
+            "judge_score": 1.0,
+            "judge_reason": "Animated content discussing stress management techniques and calming the nervous system."
+          },
+          {
+            "frame_idx": 9182,
+            "video_id": "RJNDXnboXd8",
+            "scene_idx": 125,
+            "score": 0.6303024291992188,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 182,
+            "judge_score": 0.4,
+            "judge_reason": "Discusses mental energy and decision fatigue, somewhat related to stress."
+          },
+          {
+            "frame_idx": 720,
+            "video_id": "4vxWJUx32Rw",
+            "scene_idx": 66,
+            "score": 0.6263569593429565,
+            "voice": "leila",
+            "voices_present": [
+              "leila"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 154,
+            "judge_score": 1.0,
+            "judge_reason": "Animated content discussing breathing techniques to manage stress and emotions."
+          }
+        ]
+      }
+    },
+    {
+      "query": "Alex talking about churn",
+      "parsed": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "visual_concept": null,
+        "retrieval_query": "churn",
+        "judge_query": "churn",
+        "max_age_days": null,
+        "min_age_days": null,
+        "speakers_count": "solo"
+      },
+      "clip": {
+        "latency_ms": 580,
+        "hits": [
+          {
+            "frame_idx": 45,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 32,
+            "score": 0.3692500591278076,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 0.0,
+            "judge_reason": "Content does not address churn; focuses on business functions."
+          },
+          {
+            "frame_idx": 11,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 8,
+            "score": 0.3636934757232666,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex discusses user retention strategies and the impact of churn on growth."
+          },
+          {
+            "frame_idx": 477,
+            "video_id": "3fsJFUvA6Ts",
+            "scene_idx": 20,
+            "score": 0.363450825214386,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 41,
+            "judge_score": 1.0,
+            "judge_reason": "Alex explains churn rates and strategies to reduce churn in memberships."
+          },
+          {
+            "frame_idx": 469,
+            "video_id": "3fsJFUvA6Ts",
+            "scene_idx": 16,
+            "score": 0.3353372812271118,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 41,
+            "judge_score": 0.4,
+            "judge_reason": "Mentions churn but focuses more on revenue retention and structural churn."
+          },
+          {
+            "frame_idx": 49,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 34,
+            "score": 0.28262650966644287,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex details how churn decreases over time and its implications for retention."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 1658,
+        "hits": [
+          {
+            "frame_idx": 477,
+            "video_id": "3fsJFUvA6Ts",
+            "scene_idx": 20,
+            "score": 0.7134555578231812,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 41,
+            "judge_score": 1.0,
+            "judge_reason": "Alex explains churn rates and strategies to reduce churn in memberships."
+          },
+          {
+            "frame_idx": 11,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 8,
+            "score": 0.7089962959289551,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex discusses user retention strategies and the impact of churn on growth."
+          },
+          {
+            "frame_idx": 45,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 32,
+            "score": 0.706947922706604,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 0.0,
+            "judge_reason": "Content does not address churn; focuses on business functions."
+          },
+          {
+            "frame_idx": 49,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 34,
+            "score": 0.6917780637741089,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex details how churn decreases over time and its implications for retention."
+          },
+          {
+            "frame_idx": 63,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 42,
+            "score": 0.6797738075256348,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 0.7,
+            "judge_reason": "Discusses feedback from cancellations, relevant to churn but not directly focused."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1688,
+        "hits": [
+          {
+            "frame_idx": 11,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 8,
+            "score": 0.7048987150192261,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex discusses user retention strategies and the impact of churn on growth."
+          },
+          {
+            "frame_idx": 45,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 32,
+            "score": 0.7039263844490051,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 0.0,
+            "judge_reason": "Content does not address churn; focuses on business functions."
+          },
+          {
+            "frame_idx": 477,
+            "video_id": "3fsJFUvA6Ts",
+            "scene_idx": 20,
+            "score": 0.7036202549934387,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 41,
+            "judge_score": 1.0,
+            "judge_reason": "Alex explains churn rates and strategies to reduce churn in memberships."
+          },
+          {
+            "frame_idx": 49,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 34,
+            "score": 0.6839384436607361,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 1.0,
+            "judge_reason": "Alex details how churn decreases over time and its implications for retention."
+          },
+          {
+            "frame_idx": 63,
+            "video_id": "-j8_YCWZ05Q",
+            "scene_idx": 42,
+            "score": 0.6726781725883484,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 80,
+            "judge_score": 0.7,
+            "judge_reason": "Discusses feedback from cancellations, relevant to churn but not directly focused."
+          }
+        ]
+      }
+    },
+    {
+      "query": "Alex writing on a whiteboard",
+      "parsed": {
+        "speaker": "alex",
+        "required_speakers": null,
+        "visual_concept": "whiteboard",
+        "retrieval_query": "writing on a whiteboard",
+        "judge_query": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "speakers_count": "solo"
+      },
+      "clip": {
+        "latency_ms": 1616,
+        "hits": [
+          {
+            "frame_idx": 12900,
+            "video_id": "hHkdbr6_JJs",
+            "scene_idx": 10,
+            "score": 0.3428558111190796,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 56,
+            "judge_score": 0.4,
+            "judge_reason": "Discusses content creation but not specifically about writing on a whiteboard."
+          },
+          {
+            "frame_idx": 8185,
+            "video_id": "OQf2Ba-Lp_4",
+            "scene_idx": 339,
+            "score": 0.3408352732658386,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 35,
+            "judge_score": 0.0,
+            "judge_reason": "Unrelated content about email sequences, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 10296,
+            "video_id": "XsWSvz-aewA",
+            "scene_idx": 15,
+            "score": 0.33896225690841675,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 17,
+            "judge_score": 0.0,
+            "judge_reason": "Content about educational content types, not related to whiteboard."
+          },
+          {
+            "frame_idx": 3697,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 201,
+            "score": 0.3379404842853546,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Discussion about project management, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 5090,
+            "video_id": "Jmkq5RLjm0U",
+            "scene_idx": 1192,
+            "score": 0.33564284443855286,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 90,
+            "judge_score": 0.0,
+            "judge_reason": "Content about social media creators, not related to whiteboard."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 1614,
+        "hits": [
+          {
+            "frame_idx": 3618,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 122,
+            "score": 0.7171489000320435,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses customer value, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 10683,
+            "video_id": "ZuJryiwxjDw",
+            "scene_idx": 19,
+            "score": 0.712654709815979,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 109,
+            "judge_score": 0.0,
+            "judge_reason": "Content about wealth and income, not related to whiteboard."
+          },
+          {
+            "frame_idx": 3645,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 149,
+            "score": 0.7068556547164917,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Discussion about home improvements, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 3636,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 140,
+            "score": 0.7065075635910034,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Content about buying railings, not related to whiteboard."
+          },
+          {
+            "frame_idx": 4954,
+            "video_id": "Jmkq5RLjm0U",
+            "scene_idx": 1056,
+            "score": 0.7059452533721924,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 90,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses status and power dynamics, not relevant to whiteboard."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1721,
+        "hits": [
+          {
+            "frame_idx": 3618,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 122,
+            "score": 0.703582763671875,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Discusses customer value, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 3636,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 140,
+            "score": 0.7027633786201477,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Content about buying railings, not related to whiteboard."
+          },
+          {
+            "frame_idx": 10683,
+            "video_id": "ZuJryiwxjDw",
+            "scene_idx": 19,
+            "score": 0.7009840607643127,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 109,
+            "judge_score": 0.0,
+            "judge_reason": "Content about wealth and income, not related to whiteboard."
+          },
+          {
+            "frame_idx": 3645,
+            "video_id": "HGZOxBfnF-E",
+            "scene_idx": 149,
+            "score": 0.6998887062072754,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 59,
+            "judge_score": 0.0,
+            "judge_reason": "Discussion about home improvements, not relevant to whiteboard."
+          },
+          {
+            "frame_idx": 6359,
+            "video_id": "MH-IMJxbUY4",
+            "scene_idx": 130,
+            "score": 0.6989713907241821,
+            "voice": "alex",
+            "voices_present": [
+              "alex"
+            ],
+            "speakers_count": "solo",
+            "recency_days": 104,
+            "judge_score": 0.0,
+            "judge_reason": "Content about video creation, not related to whiteboard."
+          }
+        ]
+      }
+    },
+    {
+      "query": "Leila and Sharran talking together",
+      "parsed": {
+        "speaker": null,
+        "required_speakers": [
+          "leila",
+          "sharran"
+        ],
+        "visual_concept": null,
+        "retrieval_query": "Leila and Sharran talking together",
+        "judge_query": null,
+        "max_age_days": null,
+        "min_age_days": null,
+        "speakers_count": "dialogue"
+      },
+      "clip": {
+        "latency_ms": 588,
+        "hits": [
+          {
+            "frame_idx": 12464,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 82,
+            "score": 0.24350300431251526,
+            "voice": "leila",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "Sharran and Leila discuss business planning and adaptability, relevant to their collaboration."
+          },
+          {
+            "frame_idx": 12747,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 365,
+            "score": 0.23067787289619446,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They talk about team dynamics and growth, indicating their joint efforts in business."
+          },
+          {
+            "frame_idx": 12601,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 219,
+            "score": 0.22986887395381927,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.4,
+            "judge_reason": "Leila promotes investment in operating companies, somewhat related to their partnership."
+          },
+          {
+            "frame_idx": 12853,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 471,
+            "score": 0.22370854020118713,
+            "voice": "leila",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 1.0,
+            "judge_reason": "Sharran and Leila discuss leadership and communication challenges, directly reflecting their collaborative dialogue."
+          },
+          {
+            "frame_idx": 12886,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 504,
+            "score": 0.2157069444656372,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They discuss message delivery and company transitions, relevant to their joint roles."
+          }
+        ]
+      },
+      "gem_768": {
+        "latency_ms": 1234,
+        "hits": [
+          {
+            "frame_idx": 12886,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 504,
+            "score": 0.5862669348716736,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They discuss message delivery and company transitions, relevant to their joint roles."
+          },
+          {
+            "frame_idx": 12747,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 365,
+            "score": 0.5752206444740295,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They talk about team dynamics and growth, indicating their joint efforts in business."
+          },
+          {
+            "frame_idx": 12601,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 219,
+            "score": 0.5721218585968018,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.4,
+            "judge_reason": "Leila promotes investment in operating companies, somewhat related to their partnership."
+          },
+          {
+            "frame_idx": 12818,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 436,
+            "score": 0.5612401962280273,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.4,
+            "judge_reason": "Leila reflects on leadership experience, tangentially related to their partnership."
+          },
+          {
+            "frame_idx": 12464,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 82,
+            "score": 0.5593621134757996,
+            "voice": "leila",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "Sharran and Leila discuss business planning and adaptability, relevant to their collaboration."
+          }
+        ]
+      },
+      "gem_3072": {
+        "latency_ms": 1038,
+        "hits": [
+          {
+            "frame_idx": 12886,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 504,
+            "score": 0.5770074725151062,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They discuss message delivery and company transitions, relevant to their joint roles."
+          },
+          {
+            "frame_idx": 12601,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 219,
+            "score": 0.5641021132469177,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.4,
+            "judge_reason": "Leila promotes investment in operating companies, somewhat related to their partnership."
+          },
+          {
+            "frame_idx": 12747,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 365,
+            "score": 0.5636516809463501,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "They talk about team dynamics and growth, indicating their joint efforts in business."
+          },
+          {
+            "frame_idx": 12862,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 480,
+            "score": 0.5535118579864502,
+            "voice": "leila",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.7,
+            "judge_reason": "Leila addresses change management, relevant to their collaborative efforts in business."
+          },
+          {
+            "frame_idx": 12818,
+            "video_id": "g3QTLRlmevc",
+            "scene_idx": 436,
+            "score": 0.551645040512085,
+            "voice": "sharran",
+            "voices_present": [
+              "leila",
+              "sharran"
+            ],
+            "speakers_count": "dialogue",
+            "recency_days": 88,
+            "judge_score": 0.4,
+            "judge_reason": "Leila reflects on leadership experience, tangentially related to their partnership."
+          }
+        ]
+      }
+    }
+  ],
+  "generated_at": 1781569435
+}
