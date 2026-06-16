@@ -45,8 +45,15 @@ function Column({ label, hits }: { label: string; hits: Hit[] }) {
   );
 }
 
+// Sink the Sharran real-estate query to the bottom of the page.
+const PIN_LAST = "Sharran less than 3 weeks ago talking about real estate";
+
 export default function EmbeddingsPage() {
-  const rows = (data as { queries: Row[] }).queries;
+  const rows = [...(data as { queries: Row[] }).queries].sort((a, b) => {
+    const aLast = a.query === PIN_LAST ? 1 : 0;
+    const bLast = b.query === PIN_LAST ? 1 : 0;
+    return aLast - bLast;
+  });
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
       <main className="mx-auto max-w-5xl px-4 py-12">
