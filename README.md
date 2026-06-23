@@ -68,7 +68,7 @@ Parser extracts `required_speakers=[leila, sharran]` and `speakers_count=dialogu
 ### Recovery on failure
 
 - Code is on a tagged baseline. Rollback is one Vercel or Modal CLI call.
-- Caches, vectors, and frame images are bundled into the Modal image. They are not pulled from a third party at request time.
+- Caches and vectors are bundled into the Modal image, so they are not pulled from a third party at request time. Frame images are served from Vercel Blob.
 - CLIP model weights are baked into the build image, so there is no HuggingFace dependency at runtime.
 - OpenAI is the only external dependency on the hot path; rate-limit retries live in the OpenAI client.
 

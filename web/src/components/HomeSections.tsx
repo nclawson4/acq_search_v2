@@ -492,7 +492,7 @@ function FailureRecoverySection() {
           </p>
           <ul className="space-y-1.5 text-sm text-zinc-700 dark:text-zinc-300">
             <li>• Code is on a tagged baseline; rollback is one Vercel or Modal CLI call</li>
-            <li>• Caches, vectors, and frame images are bundled into the Modal image, not pulled from a third party at request time</li>
+            <li>• Caches and vectors are bundled into the Modal image, not pulled from a third party at request time; frame images are served from Vercel Blob</li>
             <li>• CLIP model weights are baked into the build image, so there is no HuggingFace dependency at runtime</li>
             <li>• OpenAI is the only external dependency on the hot path; rate-limit retries live in the OpenAI client</li>
           </ul>
