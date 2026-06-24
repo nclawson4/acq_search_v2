@@ -1,0 +1,313 @@
+{
+  "queries": [
+    {
+      "query": "writing on a white board talking about a specific business strategy",
+      "marengo": [
+        {
+          "video_id": "UMiAzkNEM4U",
+          "t": 562.2,
+          "score": 0.166,
+          "frame": "/mvg/UMiAzkNEM4U_562_2.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 1108.6,
+          "score": 0.1642,
+          "frame": "/mvg/3fsJFUvA6Ts_1108_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "t": 626.6,
+          "score": 0.1541,
+          "frame": "/mvg/OWorFLIbRoo_626_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 281.6,
+          "score": 0.1539,
+          "frame": "/mvg/3fsJFUvA6Ts_281_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "UMiAzkNEM4U",
+          "t": 694.3,
+          "score": 0.1532,
+          "frame": "/mvg/UMiAzkNEM4U_694_3.jpg",
+          "matched": true
+        }
+      ],
+      "google": [
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 202.3,
+          "score": 0.4213,
+          "frame": "/mvg/3fsJFUvA6Ts_202_3.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 281.6,
+          "score": 0.4144,
+          "frame": "/mvg/3fsJFUvA6Ts_281_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 373.4,
+          "score": 0.4072,
+          "frame": "/mvg/3fsJFUvA6Ts_373_4.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 1108.6,
+          "score": 0.4068,
+          "frame": "/mvg/3fsJFUvA6Ts_1108_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 1045.2,
+          "score": 0.4004,
+          "frame": "/mvg/3fsJFUvA6Ts_1045_2.jpg",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "query": "Animations talking about stress and anxiety",
+      "marengo": [
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 49.3,
+          "score": 0.172,
+          "frame": "/mvg/4vxWJUx32Rw_49_3.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "t": 665.4,
+          "score": 0.1573,
+          "frame": "/mvg/ZC0RgDJ3J7Q_665_4.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 409,
+          "score": 0.1521,
+          "frame": "/mvg/4vxWJUx32Rw_409_0.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 653.1,
+          "score": 0.1447,
+          "frame": "/mvg/4vxWJUx32Rw_653_1.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 545.1,
+          "score": 0.1424,
+          "frame": "/mvg/4vxWJUx32Rw_545_1.jpg",
+          "matched": true
+        }
+      ],
+      "google": [
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 781,
+          "score": 0.405,
+          "frame": "/mvg/4vxWJUx32Rw_781_0.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 129.4,
+          "score": 0.3853,
+          "frame": "/mvg/4vxWJUx32Rw_129_4.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 653.1,
+          "score": 0.3785,
+          "frame": "/mvg/4vxWJUx32Rw_653_1.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 62.7,
+          "score": 0.3752,
+          "frame": "/mvg/4vxWJUx32Rw_62_7.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "4vxWJUx32Rw",
+          "t": 315,
+          "score": 0.3745,
+          "frame": "/mvg/4vxWJUx32Rw_315_0.jpg",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "query": "side profile of man talking about real estate",
+      "marengo": [
+        {
+          "video_id": "OWorFLIbRoo",
+          "t": 62.1,
+          "score": 0.1104,
+          "frame": "/mvg/OWorFLIbRoo_62_1.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "t": 100.1,
+          "score": 0.1084,
+          "frame": "/mvg/Rccmhnt1ur4_100_1.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "t": 827,
+          "score": 0.102,
+          "frame": "/mvg/OWorFLIbRoo_827_0.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "t": 49.4,
+          "score": 0.0985,
+          "frame": "/mvg/OWorFLIbRoo_49_4.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "_Kpi8HgzKw8",
+          "t": 684.9,
+          "score": 0.0976,
+          "frame": "/mvg/_Kpi8HgzKw8_684_9.jpg",
+          "matched": true
+        }
+      ],
+      "google": [
+        {
+          "video_id": "UMiAzkNEM4U",
+          "t": 677.3,
+          "score": 0.3946,
+          "frame": "/mvg/UMiAzkNEM4U_677_3.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "-j8_YCWZ05Q",
+          "t": 346.3,
+          "score": 0.3904,
+          "frame": "/mvg/-j8_YCWZ05Q_346_3.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "OWorFLIbRoo",
+          "t": 785.5,
+          "score": 0.383,
+          "frame": "/mvg/OWorFLIbRoo_785_5.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "Rccmhnt1ur4",
+          "t": 100.1,
+          "score": 0.3811,
+          "frame": "/mvg/Rccmhnt1ur4_100_1.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "3fsJFUvA6Ts",
+          "t": 202.3,
+          "score": 0.3802,
+          "frame": "/mvg/3fsJFUvA6Ts_202_3.jpg",
+          "matched": true
+        }
+      ]
+    },
+    {
+      "query": "leadership related content, woman talking right to the camera",
+      "marengo": [
+        {
+          "video_id": "ZC0RgDJ3J7Q",
+          "t": 364.6,
+          "score": 0.1643,
+          "frame": "/mvg/ZC0RgDJ3J7Q_364_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 776.3,
+          "score": 0.1546,
+          "frame": "/mvg/6by3XnwdsMQ_776_3.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 607.5,
+          "score": 0.1474,
+          "frame": "/mvg/6by3XnwdsMQ_607_5.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 9.8,
+          "score": 0.1467,
+          "frame": "/mvg/6by3XnwdsMQ_9_8.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 107.6,
+          "score": 0.146,
+          "frame": "/mvg/6by3XnwdsMQ_107_6.jpg",
+          "matched": true
+        }
+      ],
+      "google": [
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 1162,
+          "score": 0.4376,
+          "frame": "/mvg/6by3XnwdsMQ_1162_0.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 99.6,
+          "score": 0.4364,
+          "frame": "/mvg/6by3XnwdsMQ_99_6.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 669.9,
+          "score": 0.4341,
+          "frame": "/mvg/6by3XnwdsMQ_669_9.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 594.2,
+          "score": 0.431,
+          "frame": "/mvg/6by3XnwdsMQ_594_2.jpg",
+          "matched": true
+        },
+        {
+          "video_id": "6by3XnwdsMQ",
+          "t": 0,
+          "score": 0.4275,
+          "frame": "/mvg/6by3XnwdsMQ_0_0.jpg",
+          "matched": true
+        }
+      ]
+    }
+  ],
+  "has_google": true
+}
