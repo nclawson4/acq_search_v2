@@ -18,10 +18,11 @@ import asyncio
 import os
 import re
 import sys
+import time
 from pathlib import Path
 from typing import Literal, Optional
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -39,6 +40,8 @@ from lib.hybrid import (  # noqa: E402
 from lib.reranker import rerank_async  # noqa: E402
 from lib.structural import compute_dims_satisfied, compose_why  # noqa: E402
 from lib.query_parser import parse_async as llm_parse_async  # noqa: E402
+from lib import observability as obs  # noqa: E402
+from lib import spend  # noqa: E402
 
 # Load .env if present (for OPENAI_API_KEY used by the reranker)
 try:
@@ -191,20 +194,45 @@ def _empty_parse() -> dict:
 
 app = FastAPI(title="acq-search-v2 retrieval", version="0.1.0")
 
+# CORS allow-list. The browser only ever talks to the Next.js proxy (same
+# origin); it never calls this Modal backend cross-origin, so locking this down
+# does not affect the live site — it just stops arbitrary third-party origins
+# from driving the backend from a browser. Override with ALLOWED_ORIGINS (comma
+# separated); set ALLOWED_ORIGIN_REGEX to also permit Vercel preview URLs
+# (e.g. https://.*\.vercel\.app).
+_DEFAULT_ORIGINS = ["https://acq-search-v2.vercel.app", "http://localhost:3000"]
+_origins_env = os.getenv("ALLOWED_ORIGINS", "").strip()
+_allowed_origins = [o.strip() for o in _origins_env.split(",") if o.strip()] or _DEFAULT_ORIGINS
+_allowed_origin_regex = os.getenv("ALLOWED_ORIGIN_REGEX") or None
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # web + MCP both call this; tighten later if needed
+    allow_origins=_allowed_origins,
+    allow_origin_regex=_allowed_origin_regex,
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
 STATE = None  # populated at startup
+_COLD = False  # flipped True after the index loads; first request reports cold_start
 
 
 @app.on_event("startup")
 def _startup() -> None:
-    global STATE
-    STATE = load_index(utt_pad_s=0.0)
+    global STATE, _COLD
+    try:
+        STATE = load_index(utt_pad_s=0.0)
+    except Exception as e:
+        # Surface the index-load failure in a structured log before crashing the
+        # boot exactly as today (so Modal still replaces the container).
+        obs.log_error("startup", e, failing_dependency="npz")
+        raise
+    _COLD = True
+    obs.log_event(
+        "startup.load_index",
+        frames=int(STATE.vectors.shape[0]),
+        topic_segments=len(STATE.segments_by_key),
+    )
 
 
 class SearchRequest(BaseModel):
@@ -283,7 +311,17 @@ class SearchResponse(BaseModel):
     results: list[SearchResult]
 
 
-async def _build_response_async(req: SearchRequest) -> SearchResponse:
+async def _build_response_async(req: SearchRequest, request_id: str | None = None) -> SearchResponse:
+    # Establish the per-request correlation context BEFORE creating the parser
+    # task — asyncio.create_task snapshots the context at creation time, so the
+    # parser's cost/error logs would otherwise have no request_id.
+    global _COLD
+    cold = _COLD
+    _COLD = False
+    obs.set_request_context(request_id or obs.new_request_id(), cold_start=cold)
+    _t_start = time.perf_counter()
+    obs.log_event("search.start", query=req.query, k=req.k, rerank=req.rerank)
+
     assert STATE is not None
 
     # Parse the query first. With auto_parse + llm_parse, try the LLM (async, in
@@ -291,7 +329,9 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     parsed: dict
     parsed_by = "regex"
     parsed_reasoning = ""
+    llm_fell_back = False
 
+    _t_parse = time.perf_counter()
     llm_task = None
     if req.auto_parse and req.llm_parse:
         llm_task = asyncio.create_task(llm_parse_async(req.query))
@@ -306,11 +346,19 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
             parsed_by = "llm"
             parsed_reasoning = llm_parsed.get("reasoning") or ""
         else:
+            llm_fell_back = True
             parsed = parse_query(req.query) if req.auto_parse else _empty_parse()
     elif req.auto_parse:
         parsed = parse_query(req.query)
     else:
         parsed = _empty_parse()
+    obs.log_event(
+        "parse.done",
+        parsed_by=parsed_by,
+        llm_attempted=llm_task is not None,
+        llm_fell_back=llm_fell_back,
+        parse_ms=round((time.perf_counter() - _t_parse) * 1000, 1),
+    )
 
     # Caller-provided filters take precedence over parsed
     speaker = req.speaker or parsed.get("speaker")
@@ -342,6 +390,7 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     if parsed_by == "llm" and retrieval_query and retrieval_query != req.query:
         qv = embed_query_text(STATE, retrieval_query)
 
+    _t_retrieve = time.perf_counter()
     scores = score_query(STATE, qv, query_text=retrieval_query,
                          w_visual=req.w_visual, w_transcript=req.w_transcript,
                          w_segment=req.w_segment)
@@ -354,6 +403,11 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
         instructional_only=instructional_only,
         min_duration_s=req.min_duration_s, max_duration_s=req.max_duration_s,
         max_age_days=max_age_days, min_age_days=min_age_days,
+    )
+    obs.log_event(
+        "retrieve.done",
+        candidates_returned=len(hits),
+        retrieve_ms=round((time.perf_counter() - _t_retrieve) * 1000, 1),
     )
 
     structural_dims = compute_dims_satisfied(
@@ -377,10 +431,16 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
     if do_rerank:
         # The judge grades against judge_query (topic-only) when available — the
         # full query has speaker + visual + time noise the judge shouldn't re-judge.
+        _t_rerank = time.perf_counter()
         judge_target = judge_query or req.query
         hits = await rerank_async(
             STATE, judge_target, hits,
             structural_satisfied=structural_dims,
+        )
+        obs.log_event(
+            "rerank.done",
+            n=len(hits),
+            rerank_ms=round((time.perf_counter() - _t_rerank) * 1000, 1),
         )
         # Re-sort by judge score (descending); break ties with similarity
         hits.sort(key=lambda h: (
@@ -435,6 +495,33 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
             },
         ))
 
+    _judge = [h.get("judge_score") for h in hits]
+    _jn = [s for s in _judge if s is not None]
+    obs.log_event(
+        "search.done",
+        parsed_by=parsed_by,
+        n=len(results),
+        rerank_skipped=not do_rerank,
+        is_visual_only=visual_only,
+        judge_score_max=(max(_jn) if _jn else None),
+        judge_score_mean=(round(sum(_jn) / len(_jn), 4) if _jn else None),
+        judge_null_count=sum(1 for s in _judge if s is None),
+        cost_usd=obs.request_cost_usd(),
+        total_ms=round((time.perf_counter() - _t_start) * 1000, 1),
+        # Snapshot of the discriminating filters — an empty result set is almost
+        # always over-filtering on speaker + time, undiagnosable without these.
+        filters={
+            "speaker": speaker, "required_speakers": required_speakers,
+            "speakers_count": speakers_count, "is_animation": is_animation,
+            "talking_head_pose": talking_head_pose,
+            "max_age_days": max_age_days, "min_age_days": min_age_days,
+        },
+    )
+
+    # Account this query's measured cost against the shared daily counter that
+    # the proxy reads to enforce the $5/day cap. Fire-and-forget; never blocks.
+    spend.bump_daily_cost(obs.request_cost_usd())
+
     return SearchResponse(
         query=req.query,
         parsed=parsed,
@@ -455,11 +542,16 @@ async def _build_response_async(req: SearchRequest) -> SearchResponse:
 
 
 @app.get("/healthz")
-def healthz() -> dict:
+def healthz(response: Response) -> dict:
+    # When the index failed to load, /search 500s on the STATE assert — so report
+    # 503 here instead of a misleading ok:true, letting the proxy/monitor see it.
+    if STATE is None:
+        response.status_code = 503
+        return {"ok": False, "indexed_frames": 0, "topic_segments": 0, "error": "index not loaded"}
     return {
         "ok": True,
-        "indexed_frames": int(STATE.vectors.shape[0]) if STATE is not None else 0,
-        "topic_segments": len(STATE.segments_by_key) if STATE is not None else 0,
+        "indexed_frames": int(STATE.vectors.shape[0]),
+        "topic_segments": len(STATE.segments_by_key),
     }
 
 
@@ -502,12 +594,18 @@ def segment_scenes(video_id: str, segment_idx: int) -> dict:
 
 
 @app.post("/search", response_model=SearchResponse)
-async def search_post(req: SearchRequest) -> SearchResponse:
-    return await _build_response_async(req)
+async def search_post(req: SearchRequest, request: Request) -> SearchResponse:
+    rid = request.headers.get("x-request-id") or None
+    try:
+        return await _build_response_async(req, request_id=rid)
+    except Exception as e:
+        obs.log_error("search", e)
+        raise
 
 
 @app.get("/search", response_model=SearchResponse)
 async def search_get(
+    request: Request,
     q: str = Query(..., description="query text"),
     speaker: Optional[Literal["alex", "leila", "sharran"]] = None,
     required_speakers: Optional[list[str]] = Query(None, description="CSV-friendly list; pass repeats: ?required_speakers=alex&required_speakers=sharran"),
@@ -518,12 +616,17 @@ async def search_get(
     auto_parse: bool = True,
     rerank: bool = True,
 ) -> SearchResponse:
+    rid = request.headers.get("x-request-id") or None
     rs = None
     if required_speakers:
         rs = [s for s in required_speakers if s in ("alex", "leila", "sharran")] or None
-    return await _build_response_async(SearchRequest(
-        query=q, speaker=speaker, required_speakers=rs,
-        is_animation=is_animation, talking_head_pose=talking_head_pose,
-        speakers_count=speakers_count, k=k,
-        auto_parse=auto_parse, rerank=rerank,
-    ))
+    try:
+        return await _build_response_async(SearchRequest(
+            query=q, speaker=speaker, required_speakers=rs,
+            is_animation=is_animation, talking_head_pose=talking_head_pose,
+            speakers_count=speakers_count, k=k,
+            auto_parse=auto_parse, rerank=rerank,
+        ), request_id=rid)
+    except Exception as e:
+        obs.log_error("search", e)
+        raise

@@ -36,10 +36,15 @@ type SmokeCheck = {
   error?: string;
 };
 
+function newRequestId(): string {
+  return crypto.randomUUID().replace(/-/g, "");
+}
+
 async function checkBackend(): Promise<BackendCheck> {
   const t0 = Date.now();
   try {
     const r = await fetch(`${BACKEND_URL}/healthz`, {
+      headers: { "x-request-id": newRequestId() },
       signal: AbortSignal.timeout(8000),
       cache: "no-store",
     });
@@ -64,7 +69,7 @@ async function runSmoke(): Promise<SmokeCheck> {
     // We still get parser + hybrid retrieval, which is the meaningful end-to-end path.
     const r = await fetch(`${BACKEND_URL}/search`, {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: { "content-type": "application/json", "x-request-id": newRequestId() },
       body: JSON.stringify({ query: SMOKE_QUERY, k: 1, rerank: false }),
       signal: AbortSignal.timeout(45000),
       cache: "no-store",

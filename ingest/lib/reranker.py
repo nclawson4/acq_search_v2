@@ -27,6 +27,11 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+try:
+    from lib import observability as obs
+except Exception:  # pragma: no cover - telemetry is strictly optional
+    obs = None  # type: ignore
+
 MODEL = "gpt-4o-mini"
 MAX_SNIPPET_CHARS = 900          # baseline budget; grows to fit scene-internal content
 MAX_SNIPPET_HARD_CAP = 2500      # absolute ceiling regardless of scene length
@@ -333,6 +338,8 @@ async def rerank_async(
         "candidates": payload["candidates"],
     }
 
+    import time as _time
+    _t0 = _time.perf_counter()
     try:
         resp = await client.chat.completions.create(
             model=MODEL,
@@ -347,6 +354,11 @@ async def rerank_async(
             max_tokens=2000,
             temperature=0.0,
         )
+        if obs:
+            obs.record_llm_cost(
+                "judge", MODEL, getattr(resp, "usage", None),
+                latency_ms=(_time.perf_counter() - _t0) * 1000,
+            )
         data = json.loads(resp.choices[0].message.content or "{}")
         scored = {int(s["idx"]): s for s in (data.get("scores") or [])
                   if isinstance(s, dict) and "idx" in s}
@@ -360,7 +372,10 @@ async def rerank_async(
                 c["why"] = str(s.get("reason", ""))[:200]
         return candidates
     except Exception as e:
-        # Soft-fail: keep retrieval results, just no rerank
+        # Soft-fail: keep retrieval results, just no rerank. The user sees a graceful
+        # degradation; telemetry makes the dead judge LOUD so it can be diagnosed.
+        if obs:
+            obs.log_error("rerank", e, failing_dependency="openai", n_candidates=len(candidates))
         for c in candidates:
             c["judge_score"] = None
             c["why"] = f"(rerank unavailable: {type(e).__name__})"

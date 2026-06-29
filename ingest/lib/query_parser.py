@@ -33,6 +33,11 @@ if str(ROOT) not in sys.path:
 
 from config import CACHE_DIR  # noqa: E402
 
+try:
+    from lib import observability as obs  # noqa: E402
+except Exception:  # pragma: no cover - telemetry is strictly optional
+    obs = None  # type: ignore
+
 CACHE_PATH = CACHE_DIR / "query_parser_cache.json"
 MODEL = "gpt-4o-mini"
 
@@ -399,22 +404,31 @@ async def parse_async(query: str, *, force: bool = False, timeout_s: float = 6.0
     h = _hash(query)
     if not force:
         if h in _MEM_CACHE:
+            if obs:
+                obs.log_event("parse.cache_hit", source="mem")
             return _MEM_CACHE[h]
         disk = _load_cache()
         if h in disk:
             _MEM_CACHE[h] = disk[h]
+            if obs:
+                obs.log_event("parse.cache_hit", source="disk")
             return disk[h]
 
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
+        if obs:
+            obs.log_event("parse.fallback", level="warn", reason="no_api_key")
         return None
 
     try:
         from openai import AsyncOpenAI  # type: ignore
     except ImportError:
+        if obs:
+            obs.log_event("parse.fallback", level="warn", reason="import_error")
         return None
 
     client = AsyncOpenAI(api_key=api_key)
+    _t0 = time.perf_counter()
     try:
         resp = await asyncio.wait_for(
             client.chat.completions.create(
@@ -428,12 +442,30 @@ async def parse_async(query: str, *, force: bool = False, timeout_s: float = 6.0
             ),
             timeout=timeout_s,
         )
-    except (asyncio.TimeoutError, Exception):
+    except asyncio.TimeoutError:
+        # Distinct from a generic failure: the LLM was too slow, fall back to regex.
+        if obs:
+            obs.log_event("parse.fallback", level="warn", reason="timeout",
+                          timeout_s=timeout_s)
         return None
+    except Exception as e:
+        # NOTE: deliberately Exception (not BaseException) so asyncio.CancelledError
+        # — used by Modal to cancel in-flight requests — is never swallowed.
+        if obs:
+            obs.log_error("parse", e, failing_dependency="openai")
+        return None
+
+    if obs:
+        obs.record_llm_cost(
+            "parser", MODEL, getattr(resp, "usage", None),
+            latency_ms=(time.perf_counter() - _t0) * 1000,
+        )
 
     try:
         raw = json.loads(resp.choices[0].message.content or "{}")
     except json.JSONDecodeError:
+        if obs:
+            obs.log_event("parse.fallback", level="warn", reason="json_error")
         return None
 
     parsed = _validate(raw, query)
