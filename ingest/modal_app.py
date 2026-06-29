@@ -93,7 +93,10 @@ app = modal.App("acq-search-v2-backend")
     min_containers=0,           # scale-to-zero when idle
     max_containers=4,
     scaledown_window=300,       # 5 min warm window after last request
-    secrets=[modal.Secret.from_name("openai-key")],  # mounts OPENAI_API_KEY into env
+    secrets=[
+        modal.Secret.from_name("openai-key"),    # OPENAI_API_KEY (parser + reranker)
+        modal.Secret.from_name("upstash-v2"),     # UPSTASH_* for the daily cost-cap counter
+    ],
 )
 @modal.concurrent(max_inputs=8)
 @modal.asgi_app()
